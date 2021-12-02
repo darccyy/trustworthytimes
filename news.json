@@ -1,11 +1,39 @@
-[
-  {
-    "headline": "Bruh Bruh"
+{
+  "example": {
+    "headline": "HEADLINE",
+    "subtitle": "subtitle",
+    "image": "https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "alt": "Headline image",
+    "author": "darcy",
+    "time": "11:00",
+    "topic": [
+      "home",
+      "tech",
+      "other"
+    ],
+    "body": [
+      "this is the body",
+      "blah blah",
+      "> quote",
+      "this is /italic/, *bold*, */both*/, _underline_, /_iu/_, *_bu*_, /*_bui/*_",
+      "fancy: [yellow]{color: yellow}, [red bg]{background-color: red; color:yellow}"
+    ]
   },
-  {
-    "headline": "Other news"
+  "other": {
+    "headline": "Other news",
+    "subtitle": "this is another article",
+    "image": "https://images.pexels.com/photos/3251664/pexels-photo-3251664.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "alt": "other image",
+    "author": "other person",
+    "time": "12:00",
+    "topic": [
+      "home",
+      "tech",
+      "another again"
+    ],
+    "body": [
+      "blah blah blah"
+    ]
   },
-  {
-    "headline": "idk"
-  }
-]
+  "empty": {}
+}
