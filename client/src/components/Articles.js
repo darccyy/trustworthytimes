@@ -1,6 +1,11 @@
 import React, { Component } from "react";
+import loadImages from "../functions.js";
 
 class Articles extends Component {
+  async componentDidMount() {
+    loadImages();
+  }
+
   render() {
     return (
       <ul className="Articles">
@@ -14,6 +19,7 @@ class Articles extends Component {
                   <img
                     src={article.image}
                     alt={article.alt || "Headline image"}
+                    className="unloaded"
                   />
                 </div>
 
