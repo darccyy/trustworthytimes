@@ -13,25 +13,19 @@ class App extends Component {
   }
 
   render() {
-    const URL = window.location.href.split("/").slice(0, 3).join("/");
-
-    var PATH = window.location.href;
-    while (PATH.includes("//")) {
-      PATH = PATH.split("//").join("/");
-    }
-    PATH = PATH.split("/").slice(2);
-
-    this.state.URL = URL;
+    var PATH = window.location.pathname.split("/").slice(1);
 
     return (
-      <div>
+      <div id="App">
         <header>
           <h1>
-            <a href={URL}>FreshTrust News</a>
+            <a href={window.location.origin}>
+              <img src="/image/title.png" alt="Trustworthy Times" />
+            </a>
           </h1>
         </header>
 
-        <content>
+        <main>
           {(() => {
             if (PATH.join("") === "") {
               return <Articles state={this.state} />;
@@ -49,7 +43,7 @@ class App extends Component {
 
             return <FourOFour />;
           })()}
-        </content>
+        </main>
       </div>
     );
   }

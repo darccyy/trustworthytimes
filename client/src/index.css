@@ -1,0 +1,81 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  padding: 5px;
+}
+
+header {
+  font-size: 20px;
+}
+header h1 {
+  padding: 10px 20px 0 20px;
+  margin: 0;
+}
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+header h1 a img {
+  max-height: 100px;
+}
+
+main {
+  padding: 10px 20px 0 20px;
+}
+main .Articles {
+  margin-top: 0;
+  padding-left: 0;
+}
+main .Articles li {
+  display: flex;
+  list-style: none;
+}
+main .Articles li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+main .Articles li a {
+  cursor: default;
+}
+main .Articles li a:hover .headline {
+  text-decoration: underline;
+}
+main .Articles li a .img-wrap {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #313334;
+}
+main .Articles li a .img-wrap img {
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0, -25%);
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+main .Articles li a .img-wrap img::before {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: white;
+}
+main .Articles li a .text-wrap {
+  display: inline-block;
+  margin-left: 10px;
+  color: white;
+}
+main .Articles li a .text-wrap .headline {
+  margin: 10px 0 0 0;
+  cursor: pointer;
+}
+main .Articles li a .text-wrap .subtitle {
+  margin: 5px 0 0 0;
+  font-weight: 500;
+  color: #A0A0A0;
+  cursor: pointer;
+}

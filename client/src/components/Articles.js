@@ -9,7 +9,7 @@ class Articles extends Component {
 
           return (
             <li key={id}>
-              <a href={this.props.state.URL + "/news/" + id}>
+              <a href={window.location.origin + "/news/" + id}>
                 <div className="img-wrap">
                   <img
                     src={article.image}

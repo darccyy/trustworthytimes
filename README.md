@@ -1,3 +1,5 @@
-# FreshTrust News!
+# The Trustworthy Times
 
-Blah blah blah
+(Formerly FreshTrust News)
+
+https://trustworthytimes.herokuapp.com
