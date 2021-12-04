@@ -85,6 +85,9 @@ main .Articles li a .text-wrap .subtitle {
   cursor: pointer;
 }
 
+.ContentArticle {
+  color: white;
+}
 .ContentArticle .headline {
   margin: 10px 0;
   font-size: 40px;
@@ -109,12 +112,21 @@ main .Articles li a .text-wrap .subtitle {
   width: 200px;
 }
 
-.loading-spinner {
+.loading {
+  color: white;
+}
+.loading .loading-spinner {
   display: inline-block;
   animation: spin;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+blockquote {
+  padding: 10px;
+  border-left: 10px solid #2a353b;
+  background-color: #1d2224;
 }
 
 @keyframes spin {

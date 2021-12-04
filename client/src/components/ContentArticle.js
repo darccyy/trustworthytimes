@@ -1,9 +1,9 @@
-import React, {Component} from "react";
-import loadImages from "../functions.js"
+import React, { Component } from "react";
+import { loadImages, formatArticle } from "../functions.js";
 
 class ContentArticle extends Component {
   async componentDidMount() {
-    loadImages()
+    loadImages();
   }
 
   render() {
@@ -23,7 +23,9 @@ class ContentArticle extends Component {
           </div>
         </div>
 
-        <p className="body">{article.body || "This is a news article"}</p>
+        <section className="body">
+          {formatArticle(article.body)}
+        </section>
       </div>
     );
   }

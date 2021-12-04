@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Articles from "./components/Articles.js";
 import ContentArticle from "./components/ContentArticle.js";
 import FourOFour from "./components/FourOFour.js";
-import loadImages from "./functions.js";
+import {loadImages} from "./functions.js";
 
 class App extends Component {
   state = { news: null };
@@ -37,7 +37,7 @@ class App extends Component {
             // Before news loads
             if (this.state.news === null) {
               return (
-                <h2>
+                <h2 className="loading">
                   <span className="loading-spinner">&#x21bb;</span> Loading...
                 </h2>
               );
