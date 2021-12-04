@@ -5,7 +5,7 @@
   "repository": {},
   "license": "MIT",
   "engines": {
-    "node": "6.9.1"
+    "node": "16.13.0"
   },
   "dependencies": {
     "concurrently": "^6.4.0",
