@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Helmet from "react-helmet";
+
 import Articles from "./components/Articles.js";
 import ContentArticle from "./components/ContentArticle.js";
 import FourOFour from "./components/FourOFour.js";
-import {loadImages} from "./functions.js";
+import { loadImages } from "./functions.js";
 
 class App extends Component {
   state = { news: null };
@@ -20,6 +22,56 @@ class App extends Component {
 
     return (
       <div id="App">
+        <Helmet>
+          <title>
+            {(() => {
+              if (PATH.join("") === "") {
+                return "";
+              }
+
+              if (this.state.news === null) {
+                return "Loading - ";
+              }
+
+              if (PATH[0] === "news") {
+                if (this.state.news[PATH[1]]) {
+                  return (
+                    (this.state.news[PATH[1]].headline || "Article") + " - "
+                  );
+                }
+              }
+
+              return "404 - ";
+            })()}
+            Trustworthy Times
+          </title>
+
+          <meta
+            name="description"
+            content={(() => {
+              if (PATH.join("") === "") {
+                return "The Trustworthy Times - The most honest news source";
+              }
+
+              if (this.state.news === null) {
+                return "Loading...";
+              }
+
+              if (PATH[0] === "news") {
+                if (this.state.news[PATH[1]]) {
+                  return (
+                    (this.state.news[PATH[1]].headline || "Article") +
+                    "\n" +
+                    (this.state.news[PATH[1]].subtitle || "Article Description")
+                  );
+                }
+              }
+
+              return "404 - Unknown path";
+            })()}
+          />
+        </Helmet>
+
         <header>
           <h1>
             <a href={window.location.origin}>

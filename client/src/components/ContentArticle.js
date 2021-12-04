@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
+
 import { loadImages, formatArticle } from "../functions.js";
 
 class ContentArticle extends Component {

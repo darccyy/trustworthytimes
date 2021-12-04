@@ -123,6 +123,10 @@ main .Articles li a .text-wrap .subtitle {
   animation-timing-function: linear;
 }
 
+.FourOFour {
+  color: white;
+}
+
 blockquote {
   padding: 10px;
   border-left: 10px solid #2a353b;

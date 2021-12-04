@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {loadImages} from "../functions.js";
+
+import { loadImages } from "../functions.js";
 
 class Articles extends Component {
   async componentDidMount() {
