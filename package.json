@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "repository": {},
+  "description": "The most honest news source",
   "license": "MIT",
   "engines": {
     "node": "16.13.0"

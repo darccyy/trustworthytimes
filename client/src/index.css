@@ -88,6 +88,19 @@ main .Articles li a .text-wrap .subtitle {
 .ContentArticle {
   color: white;
 }
+.ContentArticle .topics {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #888;
+}
+.ContentArticle .topics span:not(:first-of-type) {
+  margin-left: 10px;
+}
+.ContentArticle .topics span:not(:first-of-type)::before {
+  content: "/";
+  margin-right: 10px;
+  color: #444;
+}
 .ContentArticle .headline {
   margin: 10px 0;
   font-size: 40px;
@@ -144,8 +157,9 @@ main .Articles li a .text-wrap .subtitle {
 footer {
   margin-top: 70px;
 }
-footer, footer * {
-  color: #212324;
+footer,
+footer * {
+  color: #262829;
 }
 
 blockquote {

@@ -12,6 +12,12 @@ class ContentArticle extends Component {
 
     return (
       <div className="ContentArticle">
+        <h1 className="topics">
+          {(article.topic || ["Home", "Other"]).map(i => {
+            return <span key={i}>{i || "Something"}</span>;
+          })}
+        </h1>
+
         <h1 className="headline">{article.headline || "[No headline]"}</h1>
 
         <h2 className="stats">

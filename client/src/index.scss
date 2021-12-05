@@ -105,6 +105,22 @@ main {
 .ContentArticle {
   color: white;
 
+  .topics {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #888;
+
+    span:not(:first-of-type) {
+      margin-left: 10px;
+
+      &::before {
+        content: "/";
+        margin-right: 10px;
+        color: #444;
+      }
+    }
+  }
+
   .headline {
     margin: 10px 0;
     font-size: 40px;
@@ -175,8 +191,9 @@ main {
 footer {
   margin-top: 70px;
 
-  &, * {
-    color: #212324;
+  &,
+  * {
+    color: #262829;
   }
 }
 

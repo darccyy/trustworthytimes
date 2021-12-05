@@ -48,7 +48,7 @@ class App extends Component {
         </Helmet>
 
         <header>
-          <h1>
+          <h1 title="The most honest news source">
             <a href={window.location.origin}>
               <img
                 src="/image/title.png"
