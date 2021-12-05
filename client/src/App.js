@@ -45,31 +45,6 @@ class App extends Component {
             })()}
             Trustworthy Times
           </title>
-
-          <meta
-            name="description"
-            content={(() => {
-              if (PATH.join("") === "") {
-                return "The Trustworthy Times - The most honest news source";
-              }
-
-              if (this.state.news === null) {
-                return "Loading...";
-              }
-
-              if (PATH[0] === "news") {
-                if (this.state.news[PATH[1]]) {
-                  return (
-                    (this.state.news[PATH[1]].headline || "Article") +
-                    "\n" +
-                    (this.state.news[PATH[1]].subtitle || "Article Description")
-                  );
-                }
-              }
-
-              return "404 - Unknown path";
-            })()}
-          />
         </Helmet>
 
         <header>
