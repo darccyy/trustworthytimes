@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import { loadImages, formatArticle } from "../functions.js";
 
@@ -14,6 +14,21 @@ class ContentArticle extends Component {
       <div className="ContentArticle">
         <h1 className="headline">{article.headline || "[No headline]"}</h1>
 
+        <h2 className="stats">
+          <span className="author">
+            <i className="fa fa-user"></i>
+            {article.author || "Unknown Author"}
+          </span>
+          <span className="time">
+            <i className="fa fa-calendar"></i>
+            {article.time || "Unknown Time"}
+          </span>
+          <span className="topic">
+            <i className="fa fa-tags"></i>
+            {article.topic.slice(-1)[0] || "Unknown Topic"}
+          </span>
+        </h2>
+
         <div className="img-contain">
           <div className="img-wrap">
             <img
@@ -24,9 +39,7 @@ class ContentArticle extends Component {
           </div>
         </div>
 
-        <section className="body">
-          {formatArticle(article.body)}
-        </section>
+        <section className="body">{formatArticle(article.body)}</section>
       </div>
     );
   }

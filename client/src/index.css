@@ -92,6 +92,17 @@ main .Articles li a .text-wrap .subtitle {
   margin: 10px 0;
   font-size: 40px;
 }
+.ContentArticle .stats {
+  font-size: 17px;
+  font-weight: 500;
+  color: #AAA;
+}
+.ContentArticle .stats span:not(:first-of-type) {
+  margin-left: 10px;
+}
+.ContentArticle .stats span i {
+  margin-right: 5px;
+}
 .ContentArticle .img-contain {
   display: block;
   height: 200px;
@@ -111,6 +122,9 @@ main .Articles li a .text-wrap .subtitle {
 .ContentArticle .img-contain .img-wrap img.unloaded {
   width: 200px;
 }
+.ContentArticle .body a {
+  color: white;
+}
 
 .loading {
   color: white;
@@ -125,6 +139,13 @@ main .Articles li a .text-wrap .subtitle {
 
 .FourOFour {
   color: white;
+}
+
+footer {
+  margin-top: 70px;
+}
+footer, footer * {
+  color: #212324;
 }
 
 blockquote {

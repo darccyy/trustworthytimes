@@ -89,6 +89,18 @@ class App extends Component {
             return <FourOFour />; // 404 Page
           })()}
         </main>
+
+        <footer>
+          DISCLAIMER This is a parody website. Do not take this as fact. This
+          website is not copyrighted. If you feel that this website is using
+          your property, or is harmful in any way, please contact us right away{" "}
+          <a href="https://github.com/darccyy/trustworthytimes/issues/new">
+            HERE
+          </a>{" "}
+          All characters and other entities appearing in this work are
+          fictitious. Any resemblance to real persons, dead or alive, or other
+          real-life entities, past or present, is purely coincidental.
+        </footer>
       </div>
     );
   }

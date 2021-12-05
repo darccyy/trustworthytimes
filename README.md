@@ -8,8 +8,11 @@ Visit: [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
 # Todo
 
-- [ ] Make look better
 - [ ] Add articles
+- [ ] Add skeleton loading
+- [ ] Add descriptions, titles
+- [ ] Add issue templates
+- [ ] Make look better
 
 ## Completed
 

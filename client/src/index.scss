@@ -110,6 +110,22 @@ main {
     font-size: 40px;
   }
 
+  .stats {
+    font-size: 17px;
+    font-weight: 500;
+    color: #AAA;
+
+    span {
+      &:not(:first-of-type) {
+        margin-left: 10px;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
   .img-contain {
     display: block;
     height: 200px;
@@ -132,6 +148,12 @@ main {
       }
     }
   }
+
+  .body {
+    a {
+      color: white;
+    }
+  }
 }
 
 .loading {
@@ -148,6 +170,14 @@ main {
 
 .FourOFour {
   color: white;
+}
+
+footer {
+  margin-top: 70px;
+
+  &, * {
+    color: #212324;
+  }
 }
 
 blockquote {

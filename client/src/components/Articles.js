@@ -11,6 +11,10 @@ class Articles extends Component {
     return (
       <ul className="Articles">
         {Object.values(this.props.state.news).map((article, index) => {
+          if (article.hide) {
+            return "";
+          }
+
           var id = Object.keys(this.props.state.news)[index];
 
           return (

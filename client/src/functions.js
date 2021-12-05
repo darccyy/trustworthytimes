@@ -14,25 +14,24 @@ function loadImages() {
 }
 
 function formatArticle(array) {
-  if (!array || array.constructor !== Array) {
+  if (!array || array.constructor !== Array || array.length < 1) {
     return "This is a news article";
   }
 
   var formats = { em: "/", strong: "*", u: "_" };
 
-  return array.map(line => {
+  return array.map((line, i) => {
     return (
-      <div key={line}>
+      <div key={i}>
         <span>
           {(() => {
             var string = "";
             var escaped = false;
             var format = {};
-            var style = ["", ""];
-            var scope = "";
+            var span = { style: "", link: "", text: "", scope: "" };
 
-            I: for (var i in line) {
-              var char = line[i];
+            I: for (var j in line) {
+              var char = line[j];
 
               if (!escaped) {
                 if (char === "~") {
@@ -40,33 +39,40 @@ function formatArticle(array) {
                   continue;
                 }
 
-                if (!scope) {
-                  if ("{[".includes(char)) {
-                    scope = char;
+                if (!span.scope) {
+                  if ("<{[".includes(char)) {
+                    span.scope = char;
                     continue;
                   }
-                } else if ("}]".includes(char)) {
-                  scope = "";
+                } else if (">}]".includes(char)) {
+                  span.scope = "";
                   if (char === "]") {
-                    string += `<span style="${style[0]}">${style[1]}</span>`;
+                    if (span.link) {
+                      string += `<a href="${span.link}" style="${span.style}">${span.text}</a>`;
+                    } else {
+                      string += `<span style="${span.style}">${span.text}</span>`;
+                    }
 
-                    style = ["", ""];
+                    span = { style: "", link: "", text: "" };
                   }
                   continue;
                 }
 
-                if (scope === "{") {
-                  style[0] += char;
+                if (span.scope === "{") {
+                  span.style += char;
                   continue;
-                } else if (scope === "[") {
-                  style[1] += char;
+                } else if (span.scope === "<") {
+                  span.link += char;
+                  continue;
+                } else if (span.scope === "[") {
+                  span.text += char;
                   continue;
                 }
 
-                for (var j in formats) {
-                  if (char === formats[j]) {
-                    format[j] = !format[j];
-                    string += `<${format[j] ? "" : "/"}${j}>`;
+                for (var k in formats) {
+                  if (char === formats[k]) {
+                    format[k] = !format[k];
+                    string += `<${format[k] ? "" : "/"}${k}>`;
                     continue I;
                   }
                 }
