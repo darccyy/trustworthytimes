@@ -18,7 +18,7 @@ function formatArticle(array) {
     return "This is a news article";
   }
 
-  var formats = { em: "/", strong: "*", u: "_" };
+  var formats = { i: "/", b: "*", u: "_", s: "-", code: "`" };
 
   return array.map((line, i) => {
     return (

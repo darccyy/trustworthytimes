@@ -17,5 +17,6 @@ Visit: [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
 ## Completed
 
+- [x] Add proper mobile support
 - [x] Add descriptions, titles
 - [x] Add article formatting

@@ -32,7 +32,7 @@
     ]
   },
   "amongus": {
-    "headline": "'AMONG US' breaks world record for being CRINGE",
+    "headline": "'AMONG US' Breaks World Record For Being CRINGE",
     "subtitle": "Video game under fire for being called 'Cringe' by 'Ali-A'",
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e",
     "alt": "Person gaming very epicly",
@@ -50,7 +50,7 @@
     ]
   },
   "boughtpalace": {
-    "headline": "How one man BOUGHT Buckingham Palace",
+    "headline": "How One Man BOUGHT Buckingham Palace",
     "subtitle": "This charming individual has BOUGHT the castle of royalty in BRITAIN!",
     "image": "https://images.unsplash.com/photo-1556821862-33ec0be5c2c0",
     "alt": "Building that resembles Buckingham Palace",
@@ -91,7 +91,7 @@
     ]
   },
   "catoven": {
-    "headline": "How many CATS can one fit in an OVEN?",
+    "headline": "How Many CATS Can One Fit In An OVEN?",
     "subtitle": "We ask this everyday... but now we FIND OUT!",
     "image": "https://images.unsplash.com/photo-1517330218601-cd55b21a35af",
     "alt": "Household cat on a household oven",
@@ -108,6 +108,42 @@
       "This was said by the Chief Experiment Scientist Delora Mlakar here at FreshTrust Labs (Child company to FreshTrust News). We agree with her. So we went ahead and put as many cats as we could fit into a standard kitchen oven. Standard Robert said this in response:",
       "> You would not believe the results!",
       "And here is the results: /We forgor💀/"
+    ]
+  },
+  "sciencefood": {
+    "headline": "Cutting 3 Things Decreases Your Risk of DEATH",
+    "subtitle": "Scientist Doctor says this. It is true trust me.",
+    "image": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
+    "alt": "Picture of 'Fried Potatoes', whatever that is",
+    "author": "Dr Willy Nuttle",
+    "time": "{TIME_UPLOADED}",
+    "topic": [
+      "Health",
+      "**human health i mean",
+      "Dieting Tips"
+    ],
+    "body": [
+      "So do you want to have a greater chance of living in real life and existence? Just listen to this Food Science Doctor with a real -doctorates- degree",
+      "> Simply not consuming cyanide, arsenic, and magic potions can extend your life by up to 20 years",
+      "Says Foodologist Dr Willy Nuttle from Food Science Lab. The lab is not in the middle of the ocean."
+    ]
+  },
+  "monkeyphoto": {
+    "headline": "Viral Photo of MONKEY was actually FAKE",
+    "subtitle": "An image circulating the web was recently fact-checked as FALSE!",
+    "image": "https://freshtrust.github.io/images/monke-tomato.png",
+    "alt": "Totally 'Real' photo of monkey / tomato hybrid",
+    "author": "u/XLarge_'s Nemesis",
+    "time": "Quarter past Six in the Afternoon",
+    "topic": [
+      "Monkey Photos",
+      "Possible Fakes",
+      "Tomatoes"
+    ],
+    "body": [
+      "The image pictured above, submitted by user `XLarge~_` on Rebbit has taken the internet by storm about how cool it is.",
+      "But recent evidence released by photography scientists say that the image might be faked!",
+      "Some conspiracy theorists have pointed out that '/MoNkE iS nOt ToMaTo!/' but these comments have been brushed off as just plain stupid. "
     ]
   },
   "empty": {
