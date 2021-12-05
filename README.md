@@ -8,6 +8,9 @@ Visit: [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
 # Todo
 
-- [ ] Add article formatting
 - [ ] Make look better
 - [ ] Add articles
+
+## Completed
+
+- [x] Add article formatting
