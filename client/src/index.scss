@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: #181a1b !important;
+  background-color: #131516 !important;
 }
 
 body {
@@ -24,6 +24,7 @@ header {
 
       img {
         max-height: 100px;
+        max-width: 100%;
       }
     }
   }
@@ -55,6 +56,7 @@ main {
 
 
         .img-wrap {
+          position: relative;
           display: flex;
           float: left;
           width: 100px;
@@ -63,7 +65,7 @@ main {
 
           @media (max-width: 950px) {
             margin: auto;
-            width: 100%;
+            width: calc(100vw - 80px);
           }
 
           img {
@@ -74,8 +76,8 @@ main {
 
             &::before {
               position: absolute;
-              left: 5px;
-              bottom: 5px;
+              left: 0px;
+              bottom: 0px;
               color: white;
             }
           }
@@ -169,11 +171,13 @@ main {
       display: inline-block;
       height: 100%;
       background-color: #313334;
+      border-radius: 3px;
 
       img {
         display: block;
         max-width: 100%;
         height: 100%;
+        border-radius: 3px;
 
         &.unloaded {
           width: 200px;
@@ -184,10 +188,15 @@ main {
 
   .body {
     margin-top: 10px;
-    line-height: 120%;
+    line-height: 150%;
 
     a {
       color: white;
+    }
+
+    li {
+      margin-left: 30px;
+      padding-left: 10px;
     }
   }
 }

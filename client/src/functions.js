@@ -18,7 +18,7 @@ function formatArticle(array) {
     return "This is a news article";
   }
 
-  var formats = { i: "/", b: "*", u: "_", s: "-", code: "`" };
+  var formats = { i: "/", b: "*", u: "_", s: "~", code: "`" };
 
   return array.map((line, i) => {
     return (
@@ -34,7 +34,7 @@ function formatArticle(array) {
               var char = line[j];
 
               if (!escaped) {
-                if (char === "~") {
+                if (char === "^") {
                   escaped = true;
                   continue;
                 }
@@ -78,7 +78,7 @@ function formatArticle(array) {
                 }
               }
 
-              if (char !== "~") {
+              if (char !== "^") {
                 escaped = false;
               }
 
@@ -96,17 +96,21 @@ function formatArticle(array) {
                   header + 1,
                 )}</h${header}>`;
               }
+            } else if (string.startsWith("-")) {
+              string = `<li key=${j}>${string.slice(2)}</li>`;
             }
 
-            string = (
+            if (string === "") {
+              string = "<br>";
+            }
+
+            return (
               <span
                 dangerouslySetInnerHTML={{
                   __html: string,
                 }}
               ></span>
             );
-
-            return string;
           })()}
         </span>
       </div>

@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: #181a1b !important;
+  background-color: #131516 !important;
 }
 
 body {
@@ -24,6 +24,7 @@ header h1 a {
 }
 header h1 a img {
   max-height: 100px;
+  max-width: 100%;
 }
 
 main {
@@ -47,6 +48,7 @@ main .Articles li a:hover .headline {
   text-decoration: underline;
 }
 main .Articles li a .img-wrap {
+  position: relative;
   display: flex;
   float: left;
   width: 100px;
@@ -56,7 +58,7 @@ main .Articles li a .img-wrap {
 @media (max-width: 950px) {
   main .Articles li a .img-wrap {
     margin: auto;
-    width: 100%;
+    width: calc(100vw - 80px);
   }
 }
 main .Articles li a .img-wrap img {
@@ -67,8 +69,8 @@ main .Articles li a .img-wrap img {
 }
 main .Articles li a .img-wrap img::before {
   position: absolute;
-  left: 5px;
-  bottom: 5px;
+  left: 0px;
+  bottom: 0px;
   color: white;
 }
 main .Articles li a .text-wrap {
@@ -144,21 +146,27 @@ main .Articles li a .text-wrap .subtitle {
   display: inline-block;
   height: 100%;
   background-color: #313334;
+  border-radius: 3px;
 }
 .ContentArticle .img-contain .img-wrap img {
   display: block;
   max-width: 100%;
   height: 100%;
+  border-radius: 3px;
 }
 .ContentArticle .img-contain .img-wrap img.unloaded {
   width: 200px;
 }
 .ContentArticle .body {
   margin-top: 10px;
-  line-height: 120%;
+  line-height: 150%;
 }
 .ContentArticle .body a {
   color: white;
+}
+.ContentArticle .body li {
+  margin-left: 30px;
+  padding-left: 10px;
 }
 
 .loading {

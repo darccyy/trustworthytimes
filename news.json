@@ -14,6 +14,8 @@
     ],
     "body": [
       "this is the body",
+      "- Dot point",
+      "- Dot point 2",
       "<https://epicwebsite.github.io>[this is a link]",
       "{color: red}<https://epicwebsite.github.io>[this is a RED link]",
       "<https://epicwebsite.github.io>{color: red}[this is a RED link]",
@@ -25,17 +27,17 @@
       "blah blah",
       "> quote */_bui_*/",
       "this is /italic/, *bold*, */both*/, _underline_, /_iu/_, *_bu*_, /*_bui/*_",
-      "this is *NOT* ~/italic~/, ~*bold~*, ~*~/both~*~/, ~_underline~_, ~/~_iu~/~_, ~*~_bu~*~_, ~/~*~_bui~/~*~_",
-      "Escaped characters (with ~~): ~* ~~ ~a",
-      "*NOT* fancy: ~{color: yellow~}~[yellow~], ~{background-color: red; color:yellow~}~[red bg~]",
+      "this is *NOT* ^/italic^/, ^*bold^*, ^*^/both^*^/, ^_underline^_, ^/^_iu^/^_, ^*^_bu^*^_, ^/^*^_bui^/^*^_",
+      "Escaped characters (with ^^): ^* ^^ ^a",
+      "*NOT* fancy: ^{color: yellow^}^[yellow^], ^{background-color: red; color:yellow^}^[red bg^]",
       "fancy: {color: yellow}[yellow], {background-color: red; color:yellow}[red bg]"
     ]
   },
   "amongus": {
     "headline": "'AMONG US' Breaks World Record For Being CRINGE",
     "subtitle": "Video game under fire for being called 'Cringe' by 'Ali-A'",
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e",
-    "alt": "Person gaming very epicly",
+    "image": "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "People gaming very epicly",
     "author": "Kotcheru Kinglson",
     "time": "8:00PM",
     "topic": [
@@ -52,7 +54,7 @@
   "boughtpalace": {
     "headline": "How One Man BOUGHT Buckingham Palace",
     "subtitle": "This charming individual has BOUGHT the castle of royalty in BRITAIN!",
-    "image": "https://images.unsplash.com/photo-1556821862-33ec0be5c2c0",
+    "image": "https://images.pexels.com/photos/3960662/pexels-photo-3960662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "alt": "Building that resembles Buckingham Palace",
     "author": "Sir Reginald Fancybottom Esq.",
     "time": "Meat hour",
@@ -62,7 +64,7 @@
       "Events"
     ],
     "body": [
-      "BuckingHam Palace, AKA ~*~*~*~*ingHam Palace, is the home of the Queen of Bri{color:#AAA}[t]ain and her many friends. As a national symbol of Big Castle, it is of course off the property market, for the most part, but local man known as Lawrence Hylda purchased this big house for just under $103. But how did he do it, you ask. We asked him in this exclusive interview",
+      "BuckingHam Palace, AKA ^*^*^*^*ingHam Palace, is the home of the Queen of Bri{color:#AAA}[t]ain and her many friends. As a national symbol of Big Castle, it is of course off the property market, for the most part, but local man known as Lawrence Hylda purchased this big house for just under $103. But how did he do it, you ask. We asked him in this exclusive interview",
       "# FreshTrust Journalist Sir Reginald Fancybottom Esq.",
       "> Hello there.",
       "# Lawrence Hylda, new legal owner of the Royal Family",
@@ -93,8 +95,8 @@
   "catoven": {
     "headline": "How Many CATS Can One Fit In An OVEN?",
     "subtitle": "We ask this everyday... but now we FIND OUT!",
-    "image": "https://images.unsplash.com/photo-1517330218601-cd55b21a35af",
-    "alt": "Household cat on a household oven",
+    "image": "https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Person putting a cat in the oven",
     "author": "Djungelskog",
     "time": "Right NOW!",
     "topic": [
@@ -113,8 +115,8 @@
   "sciencefood": {
     "headline": "Cutting 3 Things Decreases Your Risk of DEATH",
     "subtitle": "Scientist Doctor says this. It is true trust me.",
-    "image": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
-    "alt": "Picture of 'Fried Potatoes', whatever that is",
+    "image": "https://images.pexels.com/photos/9028872/pexels-photo-9028872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    "alt": "Robot arm getting pointed at (Rude)",
     "author": "Dr Willy Nuttle",
     "time": "{TIME_UPLOADED}",
     "topic": [
@@ -123,7 +125,7 @@
       "Dieting Tips"
     ],
     "body": [
-      "So do you want to have a greater chance of living in real life and existence? Just listen to this Food Science Doctor with a real -doctorates- degree",
+      "So do you want to have a greater chance of living in real life and existence? Just listen to this Food Science Doctor with a real ~doctorates~ degree",
       "> Simply not consuming cyanide, arsenic, and magic potions can extend your life by up to 20 years",
       "Says Foodologist Dr Willy Nuttle from Food Science Lab. The lab is not in the middle of the ocean."
     ]
@@ -141,9 +143,35 @@
       "Tomatoes"
     ],
     "body": [
-      "The image pictured above, submitted by user `XLarge~_` on Rebbit has taken the internet by storm about how cool it is.",
+      "The image pictured above, submitted by user `XLarge^_` on Rebbit has taken the internet by storm about how cool it is.",
       "But recent evidence released by photography scientists say that the image might be faked!",
       "Some conspiracy theorists have pointed out that '/MoNkE iS nOt ToMaTo!/' but these comments have been brushed off as just plain stupid. "
+    ]
+  },
+  "vaccine": {
+    "headline": "Scientists suggest VACCINE contains CHEMICALS",
+    "subtitle": "Vaccines are containing CHEMICALS! 👽",
+    "image": "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "So-called 'Doctor' making a 'Vaccine' with 'CHEMICALS'",
+    "author": "Mr Mind Awakened",
+    "time": "THE TRUTH",
+    "topic": [
+      "Health",
+      "Immune System",
+      "CHEMICALS"
+    ],
+    "body": [
+      "Everyone has a vaccine, except for some people, maybe even a lot.",
+      "I'm not sure. Vaccine.",
+      "Doctors are saying that vaccines contain some CHEMICALS.",
+      "Chemicals include. These chemicals:",
+      "- H₂O - Everyone who. has eating this has DIED. or will DIE SOON",
+      "- i don't know the periodic table this is all i know.",
+      "this is INFORMATIONG!",
+      "dont for get to ~not~ do not ~dont~ vaccine",
+      "Trust me. the doctor's said this.",
+      "",
+      "{opacity:0.2}[this is satire. vaccinate please.]"
     ]
   },
   "empty": {
