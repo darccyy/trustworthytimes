@@ -105,6 +105,7 @@ function formatArticle(array) {
             if (string === "") {
               string = "<br>";
             }
+            string = string.replaceAll("\n", "<br>");
 
             return (
               <span

@@ -182,15 +182,62 @@
     ]
   },
   {
-    "id": "empty",
-    "hide": true,
-    "headline": "",
-    "subtitle": "",
-    "image": "",
-    "alt": "",
-    "author": "",
-    "time": "",
-    "topic": [],
-    "body": []
+    "id": "insaneshirt",
+    "headline": "INSANE Person Buys SHIRT",
+    "subtitle": "This is freaking everyone out. What the.",
+    "image": "https://images.pexels.com/photos/3760044/pexels-photo-3760044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "INSANE Person",
+    "author": "Clemens Wout",
+    "time": "13:63 PM",
+    "topic": [
+      "People",
+      "Insane People",
+      "Insane Acts"
+    ],
+    "body": [
+      "This seemingly mentally unstable person has just purchased a standard garment of the colo{opacity: 0.5}[u]r red from the popular retail store Tergat, and people are freaking out.",
+      "Although there is no solid evidence as to if this person is legitimately crazy, it is pretty clear from the fact that they bought such an item.",
+      "Rather weird.",
+      "> Ohh heheheeh HAHA blogogogogo BLAH!",
+      "This quote was said from someone else. It is unrelated do not ask how it got here."
+    ]
+  },
+  {
+    "id": "nazieverywhere",
+    "headline": "OMG! NAZIS EVERYWHERE",
+    "subtitle": ">:(",
+    "image": "https://images.pexels.com/photos/5291672/pexels-photo-5291672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Nice image of a lake 😁",
+    "author": "i forgor 💀",
+    "time": "3PM Maybe?",
+    "topic": [
+      "Annoyances",
+      "Expression of Annoyance",
+      "Rant"
+    ],
+    "body": [
+      ">:(",
+      "Not cool."
+    ]
+  },
+  {
+    "id": "baby",
+    "headline": "This Just IN! Baby CRIES!",
+    "subtitle": "Click to read the full story. 😏",
+    "image": "https://images.pexels.com/photos/161709/newborn-baby-feet-basket-161709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "alt": "Stupid Dumb BABY",
+    "author": "Disgruntled Parent",
+    "time": "2 AM! Have some RESPECT!",
+    "topic": [
+      "Human Children",
+      "Embarrassing Moments",
+      "Crying"
+    ],
+    "body": [
+      "I hate my baby. Shut up stupid idiot.",
+      "The baby, of course, has other ideas though >:(",
+      "> Wahahahhahhwhhwhwhwghghhgh \naWaHAHAAHHAHghhghhgajjKKjjjjjjMmMMmmmm D': ",
+      "Goodness me. The audacity. Stupid dumb baby."
+    ]
   }
 ]
