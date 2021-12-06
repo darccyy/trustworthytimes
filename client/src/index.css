@@ -30,6 +30,134 @@ header h1 a img {
 main {
   padding: 10px 20px 0 20px;
 }
+main .Slideshow {
+  position: relative;
+  z-index: 100;
+}
+main .Slideshow .wrap {
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  aspect-ratio: 5/3;
+  border-radius: 3px;
+  background-color: #313334;
+  overflow: hidden;
+}
+main .Slideshow .wrap ul {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-left: 0;
+  transform: translate(-100%, 0);
+}
+main .Slideshow .wrap ul.left, main .Slideshow .wrap ul.right {
+  animation: moveSlide-left;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+main .Slideshow .wrap ul.right {
+  animation: moveSlide-right;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+@keyframes moveSlide-left {
+  from {
+    transform: translate(-200%, 0);
+  }
+  to {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes moveSlide-right {
+  from {
+    transform: translate(0%, 0);
+  }
+  to {
+    transform: translate(-100%, 0);
+  }
+}
+main .Slideshow .wrap ul li {
+  position: relative;
+  float: left;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+main .Slideshow .wrap ul li:only-child {
+  margin-left: 100%;
+}
+main .Slideshow .wrap ul li a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+main .Slideshow .wrap ul li a img.main {
+  width: 100%;
+}
+main .Slideshow .wrap ul li a img.watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8%;
+  opacity: 0.3;
+}
+main .Slideshow .wrap ul li a .text-wrap {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  min-height: 20%;
+  max-height: 50%;
+  background-color: #000A;
+}
+@media (max-width: 600px) {
+  main .Slideshow .wrap ul li a .text-wrap {
+    bottom: 0;
+  }
+}
+main .Slideshow .wrap ul li a .text-wrap:hover {
+  background-color: #000000B0;
+}
+main .Slideshow .wrap ul li a .text-wrap h1 {
+  margin: 10px;
+  margin-bottom: 0;
+  font-size: clamp(10px, 5vw, 30px);
+}
+main .Slideshow .wrap ul li a .text-wrap h2 {
+  margin: 10px;
+  margin-top: 0;
+  font-size: clamp(5px, 3vw, 20px);
+  font-weight: 500;
+  color: #AAA;
+}
+main .Slideshow .wrap .nav-button {
+  position: absolute;
+  top: calc(50% - calc(clamp(5px, 7vw, 50px) / 2));
+  width: clamp(5px, 7vw, 50px);
+  height: clamp(5px, 7vw, 50px);
+  border: none;
+  border-radius: 2px;
+  font-size: clamp(5px, 4vw, 30px);
+  background-color: #0006;
+  color: #FFFA;
+  cursor: pointer;
+}
+main .Slideshow .wrap .nav-button:hover {
+  background-color: #0007;
+}
+main .Slideshow .wrap .nav-button.left {
+  left: 0;
+  padding: calc(clamp(5px, 7vw, 50px) * 0.1) calc(clamp(5px, 7vw, 50px) * 0.1) 0 0;
+}
+main .Slideshow .wrap .nav-button.right {
+  right: 0;
+  padding: calc(clamp(5px, 7vw, 50px) * 0.1) 0 0 calc(clamp(5px, 7vw, 50px) * 0.1);
+}
 main .Articles {
   margin-top: 0;
   padding-left: 0;
@@ -57,8 +185,9 @@ main .Articles li a .img-wrap {
 }
 @media (max-width: 950px) {
   main .Articles li a .img-wrap {
-    margin: auto;
     width: calc(100vw - 80px);
+    margin: auto;
+    margin-top: 10px;
   }
 }
 main .Articles li a .img-wrap img {
@@ -88,91 +217,89 @@ main .Articles li a .text-wrap .subtitle {
   color: #A0A0A0;
   cursor: pointer;
 }
-
-.ContentArticle {
+main .ContentArticle {
   color: white;
 }
-.ContentArticle .topics {
+main .ContentArticle .topics {
   margin: 5px 0;
   font-size: 15px;
   color: #888;
 }
-.ContentArticle .topics span:not(:first-of-type) {
+main .ContentArticle .topics span:not(:first-of-type) {
   margin-left: 10px;
 }
-.ContentArticle .topics span:not(:first-of-type)::before {
+main .ContentArticle .topics span:not(:first-of-type)::before {
   content: "/";
   margin-right: 10px;
   color: #444;
 }
 @media (max-width: 400px) {
-  .ContentArticle .topics span:not(:first-of-type) {
+  main .ContentArticle .topics span:not(:first-of-type) {
     display: block;
   }
-  .ContentArticle .topics span:not(:first-of-type):not(:first-of-type) {
+  main .ContentArticle .topics span:not(:first-of-type):not(:first-of-type) {
     margin-left: 0px;
   }
 }
-.ContentArticle .headline {
+main .ContentArticle .headline {
   margin: 10px 0;
   font-size: 40px;
 }
-.ContentArticle .stats {
+main .ContentArticle .stats {
   font-size: 17px;
   font-weight: 500;
   color: #AAA;
 }
-.ContentArticle .stats span:not(:first-of-type) {
+main .ContentArticle .stats span:not(:first-of-type) {
   margin-left: 10px;
 }
 @media (max-width: 500px) {
-  .ContentArticle .stats span {
+  main .ContentArticle .stats span {
     display: block;
   }
-  .ContentArticle .stats span:not(:first-of-type) {
+  main .ContentArticle .stats span:not(:first-of-type) {
     margin-left: 0px;
   }
 }
-.ContentArticle .stats span i {
+main .ContentArticle .stats span i {
   margin-right: 5px;
 }
-.ContentArticle .img-contain {
+main .ContentArticle .img-contain {
   display: block;
   height: 200px;
   border-radius: 5px;
   text-align: center;
 }
-.ContentArticle .img-contain .img-wrap {
+main .ContentArticle .img-contain .img-wrap {
   display: inline-block;
   height: 100%;
   background-color: #313334;
   border-radius: 3px;
 }
-.ContentArticle .img-contain .img-wrap img {
+main .ContentArticle .img-contain .img-wrap img {
   display: block;
   max-width: 100%;
   height: 100%;
   border-radius: 3px;
 }
-.ContentArticle .img-contain .img-wrap img.unloaded {
+main .ContentArticle .img-contain .img-wrap img.unloaded {
   width: 200px;
 }
-.ContentArticle .body {
+main .ContentArticle .body {
   margin-top: 10px;
   line-height: 150%;
 }
-.ContentArticle .body a {
+main .ContentArticle .body a {
   color: white;
 }
-.ContentArticle .body li {
+main .ContentArticle .body li {
   margin-left: 30px;
   padding-left: 10px;
 }
-
-.loading {
+main .loading {
   color: white;
 }
-.loading .loading-spinner {
+main .loading .loading-spinner {
   display: inline-block;
   animation: spin;
   animation-duration: 0.5s;

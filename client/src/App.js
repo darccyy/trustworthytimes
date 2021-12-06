@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import Articles from "./components/Articles.js";
+import Slideshow from "./components/Slideshow.js";
 import ContentArticle from "./components/ContentArticle.js";
 import FourOFour from "./components/FourOFour.js";
 
@@ -81,7 +82,10 @@ class App extends Component {
             // Home page
             if (this.state.PATH.join("") === "") {
               return (
-                <Articles state={{ news: shuffleArray(this.state.news) }} />
+                <div>
+                  <Slideshow state={{ news: shuffleArray(this.state.news) }} />
+                  <Articles state={{ news: shuffleArray(this.state.news) }} />
+                </div>
               );
             }
 
