@@ -265,15 +265,19 @@ main .ContentArticle .stats span i {
   margin-right: 5px;
 }
 main .ContentArticle .img-contain {
-  display: block;
-  height: 200px;
-  border-radius: 5px;
-  text-align: center;
+  max-width: 100%;
+}
+@media (min-width: 1000px) {
+  main .ContentArticle .img-contain {
+    float: right;
+    margin-top: -30px;
+  }
 }
 main .ContentArticle .img-contain .img-wrap {
-  display: inline-block;
-  height: 100%;
-  background-color: #313334;
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
   border-radius: 3px;
 }
 main .ContentArticle .img-contain .img-wrap img {
@@ -287,6 +291,7 @@ main .ContentArticle .img-contain .img-wrap img.unloaded {
 }
 main .ContentArticle .body {
   margin-top: 10px;
+  padding-right: 5px;
   line-height: 150%;
 }
 main .ContentArticle .body a {
@@ -295,6 +300,12 @@ main .ContentArticle .body a {
 main .ContentArticle .body li {
   margin-left: 30px;
   padding-left: 10px;
+}
+main .ContentArticle .body blockquote {
+  display: inline-block;
+}
+main .ContentArticle .body h1, main .ContentArticle .body h2, main .ContentArticle .body h3, main .ContentArticle .body h4 {
+  margin: 10px 0px;
 }
 main .loading {
   color: white;

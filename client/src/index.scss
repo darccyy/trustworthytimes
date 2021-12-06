@@ -315,15 +315,18 @@ main {
     }
 
     .img-contain {
-      display: block;
-      height: 200px;
-      border-radius: 5px;
-      text-align: center;
+      max-width: 100%;
+
+      @media (min-width: 1000px) {
+        float: right;
+        margin-top: -30px;
+      }
 
       .img-wrap {
-        display: inline-block;
-        height: 100%;
-        background-color: #313334;
+        display: block;
+        width: 500px;
+        max-width: 100%;
+        margin: auto;
         border-radius: 3px;
 
         img {
@@ -341,6 +344,7 @@ main {
 
     .body {
       margin-top: 10px;
+      padding-right: 5px;
       line-height: 150%;
 
       a {
@@ -350,6 +354,14 @@ main {
       li {
         margin-left: 30px;
         padding-left: 10px;
+      }
+
+      blockquote {
+        display: inline-block;
+      }
+
+      h1, h2, h3, h4 {
+        margin: 10px 0px;
       }
     }
   }

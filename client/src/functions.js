@@ -94,9 +94,9 @@ function formatArticle(array) {
               if (!header.split("#").join("")) {
                 header = header.length;
 
-                string = `<h${header}>  ${string.slice(
+                string = `<h${header + 1}>  ${string.slice(
                   header + 1,
-                )}</h${header}>`;
+                )}</h${header + 1}>`;
               }
             } else if (string.startsWith("-")) {
               string = `<li key=${j}>${string.slice(2)}</li>`;
