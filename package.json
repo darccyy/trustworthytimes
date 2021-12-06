@@ -14,8 +14,8 @@
     "react-helmet": "^6.1.0"
   },
   "scripts": {
-    "build": "npm run install-all && cd client && npm run build",
-    "install-all": "npm install && (cd client && npm install) && (cd server && npm install)",
+    "build": "npm run install && cd client && npm run build",
+    "install": "(cd client && npm install) && (cd ../server && npm install) && cd ../",
     "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start\"",
     "start:prod": "cd server && npm run start:prod"
   }
