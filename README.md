@@ -10,6 +10,8 @@ Visit: [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
 # Todo
 
+- [ ] Remove heroku-postbuild??
+- [ ] API Error handling
 - [ ] Add articles
 - [ ] Add skeleton loading
 - [ ] Add issue templates

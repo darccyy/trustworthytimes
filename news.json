@@ -1,5 +1,6 @@
-{
-  "example": {
+[
+  {
+    "id": "example",
     "hide": true,
     "headline": "HEADLINE",
     "subtitle": "subtitle",
@@ -33,7 +34,8 @@
       "fancy: {color: yellow}[yellow], {background-color: red; color:yellow}[red bg]"
     ]
   },
-  "amongus": {
+  {
+    "id": "amongus",
     "headline": "'AMONG US' Breaks World Record For Being CRINGE",
     "subtitle": "Video game under fire for being called 'Cringe' by 'Ali-A'",
     "image": "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -51,7 +53,8 @@
       "He said on stream. Many viewers were enraged by his comment on the game, and decided to not donate their salary through subs."
     ]
   },
-  "boughtpalace": {
+  {
+    "id": "boughtpalace",
     "headline": "How One Man BOUGHT Buckingham Palace",
     "subtitle": "This charming individual has BOUGHT the castle of royalty in BRITAIN!",
     "image": "https://images.pexels.com/photos/3960662/pexels-photo-3960662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -92,7 +95,8 @@
       "And that is how you buy the Palace. <https://amazon.com>[Click here for great deals and low prices]"
     ]
   },
-  "catoven": {
+  {
+    "id": "catoven",
     "headline": "How Many CATS Can One Fit In An OVEN?",
     "subtitle": "We ask this everyday... but now we FIND OUT!",
     "image": "https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -112,7 +116,8 @@
       "And here is the results: /We forgor💀/"
     ]
   },
-  "sciencefood": {
+  {
+    "id": "sciencefood",
     "headline": "Cutting 3 Things Decreases Your Risk of DEATH",
     "subtitle": "Scientist Doctor says this. It is true trust me.",
     "image": "https://images.pexels.com/photos/9028872/pexels-photo-9028872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
@@ -130,7 +135,8 @@
       "Says Foodologist Dr Willy Nuttle from Food Science Lab. The lab is not in the middle of the ocean."
     ]
   },
-  "monkeyphoto": {
+  {
+    "id": "monkeyphoto",
     "headline": "Viral Photo of MONKEY was actually FAKE",
     "subtitle": "An image circulating the web was recently fact-checked as FALSE!",
     "image": "https://freshtrust.github.io/images/monke-tomato.png",
@@ -148,7 +154,8 @@
       "Some conspiracy theorists have pointed out that '/MoNkE iS nOt ToMaTo!/' but these comments have been brushed off as just plain stupid. "
     ]
   },
-  "vaccine": {
+  {
+    "id": "vaccine",
     "headline": "Scientists suggest VACCINE contains CHEMICALS",
     "subtitle": "Vaccines are containing CHEMICALS! 👽",
     "image": "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -165,8 +172,8 @@
       "I'm not sure. Vaccine.",
       "Doctors are saying that vaccines contain some CHEMICALS.",
       "Chemicals include. These chemicals:",
-      "- H₂O - Everyone who. has eating this has DIED. or will DIE SOON",
-      "- i don't know the periodic table this is all i know.",
+      "- Dihydrogen Monoxide - Everyone who. has eating this has DIED. or will DIE SOON",
+      "- i don't know the chemicals this is all i know.",
       "this is INFORMATIONG!",
       "dont for get to ~not~ do not ~dont~ vaccine",
       "Trust me. the doctor's said this.",
@@ -174,7 +181,8 @@
       "{opacity:0.2}[this is satire. vaccinate please.]"
     ]
   },
-  "empty": {
+  {
+    "id": "empty",
     "hide": true,
     "headline": "",
     "subtitle": "",
@@ -185,4 +193,4 @@
     "topic": [],
     "body": []
   }
-}
+]

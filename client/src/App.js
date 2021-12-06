@@ -4,28 +4,35 @@ import Helmet from "react-helmet";
 import Articles from "./components/Articles.js";
 import ContentArticle from "./components/ContentArticle.js";
 import FourOFour from "./components/FourOFour.js";
-import { loadImages } from "./functions.js";
+
+import { loadImages, shuffleArray } from "./functions.js";
 
 class App extends Component {
   state = { news: null };
 
   async componentDidMount() {
-    fetch("/api/news")
-      .then(res => res.json())
-      .then(news => this.setState({ news }));
+    if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
+      fetch(`/api/news-single?id=${this.state.PATH[1]}`)
+        .then(res => res.json())
+        .then(news => this.setState({ news: [news] }));
+    } else {
+      fetch("/api/news")
+        .then(res => res.json())
+        .then(news => this.setState({ news }));
+    }
 
     loadImages();
   }
 
   render() {
-    var PATH = window.location.pathname.split("/").slice(1);
+    this.state.PATH = window.location.pathname.split("/").slice(1);
 
     return (
       <div id="App">
         <Helmet>
           <title>
             {(() => {
-              if (PATH.join("") === "") {
+              if (this.state.PATH.join("") === "") {
                 return "";
               }
 
@@ -33,11 +40,9 @@ class App extends Component {
                 return "Loading - ";
               }
 
-              if (PATH[0] === "news") {
-                if (this.state.news[PATH[1]]) {
-                  return (
-                    (this.state.news[PATH[1]].headline || "Article") + " - "
-                  );
+              if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
+                if (this.state.news[0]) {
+                  return (this.state.news[0].headline || "Article") + " - ";
                 }
               }
 
@@ -48,8 +53,11 @@ class App extends Component {
         </Helmet>
 
         <header>
-          <h1 title="The most honest news source">
-            <a href={window.location.origin}>
+          <h1>
+            <a
+              href={window.location.origin}
+              title="The most honest news source"
+            >
               <img
                 src="/image/title.png"
                 alt="Trustworthy Times"
@@ -71,17 +79,17 @@ class App extends Component {
             }
 
             // Home page
-            if (PATH.join("") === "") {
-              return <Articles state={this.state} />;
+            if (this.state.PATH.join("") === "") {
+              return (
+                <Articles state={{ news: shuffleArray(this.state.news) }} />
+              );
             }
 
             // Specific article page
-            if (PATH[0] === "news") {
-              if (this.state.news[PATH[1]]) {
+            if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
+              if (this.state.news[0]) {
                 return (
-                  <ContentArticle
-                    state={{ article: this.state.news[PATH[1]] }}
-                  />
+                  <ContentArticle state={{ article: this.state.news[0] }} />
                 );
               }
             }

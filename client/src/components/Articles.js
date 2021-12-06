@@ -10,16 +10,14 @@ class Articles extends Component {
   render() {
     return (
       <ul className="Articles">
-        {Object.values(this.props.state.news).map((article, index) => {
+        {this.props.state.news.map(article => {
           if (article.hide) {
             return "";
           }
 
-          var id = Object.keys(this.props.state.news)[index];
-
           return (
-            <li key={id}>
-              <a href={window.location.origin + "/news/" + id}>
+            <li key={article.id}>
+              <a href={window.location.origin + "/news/" + article.id}>
                 <div className="img-wrap">
                   <img
                     src={article.image}

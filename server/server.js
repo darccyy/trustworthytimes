@@ -1,5 +1,6 @@
 const bodyParser = require("body-parser");
 const express = require("express");
+const fs = require("fs");
 const path = require("path");
 const app = express();
 
@@ -11,8 +12,20 @@ app.use(staticFiles);
 
 const router = express.Router();
 
+// All news articles
 router.get("/api/news", (req, res) => {
   res.sendFile(path.join(__dirname, "../news.json"));
+});
+
+// Single news article
+router.get("/api/news-single", (req, res) => {
+  var news = JSON.parse(fs.readFileSync(path.join(__dirname, "../news.json")));
+  for (var i in news) {
+    if (news[i].id === req.query.id) {
+      res.json(news[i]);
+    }
+  }
+  res.json(null);
 });
 
 app.use(router);
