@@ -8,6 +8,10 @@ Visit: [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
 <img src="https://trustworthytimes.herokuapp.com/image/logo.png" style="margin: -70px 0" alt="Logo: Megaphone & Handshake" />
 
+# Contributing
+
+Uhh.. This is unknown. Figure it out. sorry
+
 # Todo
 
 - [ ] Remove heroku-postbuild??
