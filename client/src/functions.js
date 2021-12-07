@@ -94,13 +94,22 @@ function formatArticle(array) {
               if (!header.split("#").join("")) {
                 header = header.length;
 
-                string = `<h${header + 1}>  ${string.slice(
-                  header + 1,
-                )}</h${header + 1}>`;
+                string = `<h${header + 1}>  ${string.slice(header + 1)}</h${
+                  header + 1
+                }>`;
               }
             } else if (string.startsWith("-")) {
               string = `<li key=${j}>${string.slice(2)}</li>`;
+            } else if (parseInt(string.split(".")[0]) == string.split(".")[0]) {
+              string = `<li key=${j} class="number"><b>${
+                string.split(".")[0]
+              }.</b>${string.split(".").slice(1).join(".")}</li>`;
             }
+            /* 
+            number=${parseInt(
+                string.split("-")[0],
+              )}
+               */
 
             if (string === "") {
               string = "<br>";
