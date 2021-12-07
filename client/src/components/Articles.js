@@ -18,12 +18,14 @@ class Articles extends Component {
           return (
             <li key={article.id}>
               <a href={window.location.origin + "/news/" + article.id}>
-                <div className="img-wrap">
-                  <img
-                    src={article.image}
-                    alt={article.alt || "Headline image"}
-                    className="unloaded"
-                  />
+                <div className="img-contain">
+                  <div className="img-wrap">
+                    <img
+                      src={article.image}
+                      alt={article.alt || "Headline image"}
+                      className="unloaded"
+                    />
+                  </div>
                 </div>
 
                 <div className="text-wrap">
