@@ -46,6 +46,7 @@ npm run start
 
 ## Completed
 
+- [x] Add watermark to top right
 - [x] API Error handling
 - [x] Remove heroku-postbuild??
 - [x] Add proper mobile support

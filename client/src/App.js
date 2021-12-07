@@ -102,6 +102,14 @@ class App extends Component {
           })()}
         </main>
 
+        <div className="watermark">
+          <img
+            src="/image/logo-short.png"
+            alt={"Logo: Megaphone & Handshake"}
+            className="watermark unloaded"
+          />
+        </div>
+
         <footer>
           <details>
             <summary>DISCLAIMER</summary>
