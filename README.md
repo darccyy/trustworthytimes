@@ -39,6 +39,7 @@ npm run start
 
 # Todo
 
+- [ ] Add comment
 - [ ] Add articles
 - [ ] Add skeleton loading
 - [ ] Add issue templates

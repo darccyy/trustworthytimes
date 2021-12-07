@@ -6,9 +6,23 @@ import { loadImages } from "../functions.js";
 class Slideshow extends Component {
   async componentDidMount() {
     loadImages();
+    this.changeSlide("right");
   }
 
-  changeSlide(direction) {
+  changeSlide(direction, component) {
+    if (!component) {
+      component = this;
+    }
+
+    clearTimeout(component.slide_changer);
+    component.slide_changer = setTimeout(
+      () => {
+        component.changeSlide("right", component);
+      },
+      5000,
+      { component },
+    );
+
     $("#slideshow-list").attr("class", "");
 
     if (this.props.state.news.length < 2) {
@@ -56,6 +70,7 @@ class Slideshow extends Component {
                     <img
                       src={article.image}
                       alt={article.alt || "Headline image"}
+                      title={article.alt || "Headline image"}
                       className="main unloaded"
                     />
 

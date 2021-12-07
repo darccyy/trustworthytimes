@@ -40,6 +40,7 @@ class ContentArticle extends Component {
             <img
               src={article.image}
               alt={article.alt || "Headline image"}
+              title={article.alt || "Headline image"}
               className="unloaded"
             />
           </div>
