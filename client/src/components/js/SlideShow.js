@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 import "../css/SlideShow.min.css";
@@ -70,7 +71,7 @@ export default (class SlideShow extends Component {
 
               return (
                 <li key={article.id}>
-                  <a href={window.location.origin + "/news/" + article.id}>
+                  <Link to={"/news/" + article.id}>
                     <img
                       src={article.image}
                       alt={article.alt || "Headline image"}
@@ -92,7 +93,7 @@ export default (class SlideShow extends Component {
                         {article.subtitle || "This is a news article"}
                       </h2>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               );
             })}

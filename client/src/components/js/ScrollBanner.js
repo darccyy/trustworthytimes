@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 import "../css/ScrollBanner.min.css";
@@ -39,7 +40,7 @@ export default (class ScrollBanner extends Component {
 
               return (
                 <div className="item" key={article.id}>
-                  <a href={window.location.origin + "/news/" + article.id}>
+                  <Link to={"/news/" + article.id} reloadDocument>
                     <div className="img-wrap">
                       <img
                         src={article.image}
@@ -54,7 +55,7 @@ export default (class ScrollBanner extends Component {
                         {article.headline || "[No headline]"}
                       </h1>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               );
             })}

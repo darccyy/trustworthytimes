@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import "../css/ArticleList.min.css";
 
@@ -19,7 +20,7 @@ export default (class ArticleList extends Component {
 
           return (
             <li key={article.id}>
-              <a href={window.location.origin + "/news/" + article.id}>
+              <Link to={"/news/" + article.id}>
                 <div className="img-contain">
                   <div className="img-wrap">
                     <img
@@ -39,7 +40,7 @@ export default (class ArticleList extends Component {
                     {article.subtitle || "This is a news article"}
                   </h2>
                 </div>
-              </a>
+              </Link>
             </li>
           );
         })}

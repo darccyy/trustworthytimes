@@ -39,7 +39,6 @@ npm run start
 
 # Todo
 
-- [ ] Convert `<a>` to `<Link>`
 - [ ] Fix readme
 - [ ] Add comments
 - [ ] Add articles
@@ -49,6 +48,8 @@ npm run start
 
 ## Completed
 
+- [x] Start scroll banner earlier
+- [x] Convert `<a>` to `<Link>`
 - [x] Add router
 - [x] Refactor component css
 - [x] Change slideshow buttons
