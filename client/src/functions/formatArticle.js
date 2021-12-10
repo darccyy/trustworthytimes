@@ -1,21 +1,7 @@
 import React from "react";
-import $ from "jquery";
-
-// Preload image (Maybe not working?)
-function loadImages() {
-  $(".unloaded").each((i, e) => {
-    $(e).on("load", () => {
-      $(e).removeClass("unloaded");
-    });
-    $(e).on("error", () => {
-      $(e).removeClass("unloaded");
-      $(e).addClass("error");
-    });
-  });
-}
 
 // Format article array into component with styles
-function formatArticle(array) {
+export default function formatArticle(array) {
   if (!array || array.constructor !== Array || array.length < 1) {
     return "This is a news article";
   }
@@ -129,16 +115,3 @@ function formatArticle(array) {
     );
   });
 }
-
-// Shuffle object (For article list)
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var x = array[i];
-    array[i] = array[j];
-    array[j] = x;
-  }
-  return array;
-}
-
-export { loadImages, formatArticle, shuffleArray };

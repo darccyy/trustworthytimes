@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import $ from "jquery";
 
-import { loadImages } from "../functions.js";
+import "../css/SlideShow.min.css";
 
-class Slideshow extends Component {
+import loadImages from "../../functions/loadImages.js";
+
+export default (class SlideShow extends Component {
   async componentDidMount() {
     loadImages();
     this.changeSlide("right");
@@ -23,14 +25,14 @@ class Slideshow extends Component {
       { component },
     );
 
-    $("#Slideshow-list").attr("class", "");
+    $("#SlideShow-list").attr("class", "");
 
     if (this.props.state.news.length < 2) {
       return;
     }
 
     setTimeout(() => {
-      var children = Object.values($("#Slideshow-list").children()).slice(
+      var children = Object.values($("#SlideShow-list").children()).slice(
         0,
         -2,
       );
@@ -45,20 +47,22 @@ class Slideshow extends Component {
         }
       }
 
-      $("#Slideshow-list").html(
+      $("#SlideShow-list").html(
         children.map(i => {
-          return i.outerHTML;
+          if (i) {
+            return i.outerHTML;
+          }
         }),
       );
-      $("#Slideshow-list").addClass(direction);
+      $("#SlideShow-list").addClass(direction);
     }, 1);
   }
 
   render() {
     return (
-      <div className="Slideshow">
+      <div className="SlideShow">
         <div className="wrap">
-          <ul id="Slideshow-list">
+          <ul id="SlideShow-list">
             {this.props.state.news.map(article => {
               if (article.hide) {
                 return "";
@@ -119,6 +123,4 @@ class Slideshow extends Component {
       </div>
     );
   }
-}
-
-export default Slideshow;
+});

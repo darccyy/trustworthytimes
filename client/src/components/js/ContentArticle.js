@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
-import { loadImages, formatArticle } from "../functions.js";
+import "../css/ContentArticle.min.css";
 
-class ContentArticle extends Component {
+import loadImages from "../../functions/loadImages.js";
+import formatArticle from "../../functions/formatArticle.js";
+
+export default (class ContentArticle extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -50,6 +53,4 @@ class ContentArticle extends Component {
       </div>
     );
   }
-}
-
-export default ContentArticle;
+});

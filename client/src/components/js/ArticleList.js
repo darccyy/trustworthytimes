@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 
-import { loadImages } from "../functions.js";
+import "../css/ArticleList.min.css";
 
-class Articles extends Component {
+import loadImages from "../../functions/loadImages.js";
+
+export default (class ArticleList extends Component {
   async componentDidMount() {
     loadImages();
   }
 
   render() {
     return (
-      <ul className="Articles">
+      <ul className="ArticleList">
         {this.props.state.news.map(article => {
           if (article.hide) {
             return "";
@@ -44,6 +46,4 @@ class Articles extends Component {
       </ul>
     );
   }
-}
-
-export default Articles;
+});

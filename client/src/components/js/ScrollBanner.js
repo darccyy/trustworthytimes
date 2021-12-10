@@ -1,19 +1,37 @@
 import React, { Component } from "react";
 import $ from "jquery";
 
-import { loadImages } from "../functions.js";
+import "../css/ScrollBanner.min.css";
 
-class SlideBanner extends Component {
+import loadImages from "../../functions/loadImages.js";
+
+export default (class ScrollBanner extends Component {
   async componentDidMount() {
     loadImages();
-    resizeSlideBanner();
+    this.resize();
+
+    window.addEventListener("resize", this.resize);
+  }
+
+  resize() {
+    var width = $("#ScrollBanner-wrap").width();
+    $("#ScrollBanner-move")
+      .children()
+      .each((i, e) => {
+        width += $(e).width() + 15;
+      });
+    $("#ScrollBanner-move").width(Math.max(width, 0) + "px");
+    $("#ScrollBanner-move").css(
+      "animation-duration",
+      Math.max(width * 0.007, 0) + "s",
+    );
   }
 
   render() {
     return (
-      <div className="SlideBanner">
-        <div className="wrap" id="SlideBanner-wrap">
-          <div className="move" id="SlideBanner-move">
+      <div className="ScrollBanner">
+        <div className="wrap" id="ScrollBanner-wrap">
+          <div className="move" id="ScrollBanner-move">
             {this.props.state.news.map(article => {
               if (article.hide) {
                 return "";
@@ -45,24 +63,4 @@ class SlideBanner extends Component {
       </div>
     );
   }
-}
-
-window.onresize = function () {
-  resizeSlideBanner();
-};
-
-function resizeSlideBanner() {
-  var width = $("#SlideBanner-wrap").width();
-  $("#SlideBanner-move")
-    .children()
-    .each((i, e) => {
-      width += $(e).width() + 15;
-    });
-  $("#SlideBanner-move").width(Math.max(width, 0) + "px");
-  $("#SlideBanner-move").css(
-    "animation-duration",
-    Math.max(width * 0.007, 0) + "s",
-  );
-}
-
-export default SlideBanner;
+});

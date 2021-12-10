@@ -39,9 +39,9 @@ npm run start
 
 # Todo
 
+- [ ] Convert `<a>` to `<Link>`
 - [ ] Fix readme
-- [ ] Add comment
-- [ ] Refactor component css
+- [ ] Add comments
 - [ ] Add articles
 - [ ] Add skeleton loading
 - [ ] Add issue templates
@@ -49,6 +49,8 @@ npm run start
 
 ## Completed
 
+- [x] Add router
+- [x] Refactor component css
 - [x] Change slideshow buttons
 - [x] Add sliding banner
 - [x] Add watermark to top right
