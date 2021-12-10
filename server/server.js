@@ -18,7 +18,7 @@ router.get("/api/news", (req, res) => {
 });
 
 // Single news article
-router.get("/api/news-single", (req, res) => {
+router.get("/api/article", (req, res) => {
   var news = JSON.parse(fs.readFileSync(path.join(__dirname, "../news.json")));
   for (var i in news) {
     if (news[i].id === req.query.id) {

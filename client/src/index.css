@@ -36,6 +36,76 @@ main {
     padding: 10px clamp(0px, 1vw, 20px) 0 clamp(0px, 1vw, 20px);
   }
 }
+main .SlideBanner {
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #0c0e10;
+  overflow: hidden;
+}
+main .SlideBanner:hover .wrap .move {
+  animation-play-state: paused;
+}
+main .SlideBanner .wrap {
+  height: 100%;
+  transform: translate(100%, 0);
+}
+main .SlideBanner .wrap .move {
+  display: flex;
+  height: 100%;
+  animation: SlideBanner linear 10s infinite;
+}
+@keyframes SlideBanner {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+main .SlideBanner .wrap .move .item {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+main .SlideBanner .wrap .move .item:hover h1 {
+  text-decoration: underline;
+}
+main .SlideBanner .wrap .move .item a {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding-right: 15px;
+}
+main .SlideBanner .wrap .move .item a .img-wrap {
+  display: flex;
+  float: left;
+  width: 30px;
+  height: 100%;
+  margin-right: 15px;
+}
+main .SlideBanner .wrap .move .item a .img-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  object-fit: cover;
+  color: white;
+  font-size: 10px;
+}
+main .SlideBanner .wrap .move .item a .text-wrap {
+  display: inline-flex;
+  padding: 0;
+  height: 100%;
+}
+main .SlideBanner .wrap .move .item a .text-wrap h1 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: auto;
+  font-size: clamp(12px, 3vw, 17px);
+  font-weight: 400;
+  color: white;
+}
 main .Slideshow {
   position: relative;
   z-index: 100;
@@ -59,18 +129,18 @@ main .Slideshow .wrap ul {
   transform: translate(-100%, 0);
 }
 main .Slideshow .wrap ul.left, main .Slideshow .wrap ul.right {
-  animation: moveSlide-left;
+  animation: Slideshow-left;
   animation-timing-function: ease-in-out;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
 main .Slideshow .wrap ul.right {
-  animation: moveSlide-right;
+  animation: Slideshow-right;
   animation-timing-function: ease-in-out;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
 }
-@keyframes moveSlide-left {
+@keyframes Slideshow-left {
   from {
     transform: translate(-200%, 0);
   }
@@ -78,7 +148,7 @@ main .Slideshow .wrap ul.right {
     transform: translate(-100%, 0);
   }
 }
-@keyframes moveSlide-right {
+@keyframes Slideshow-right {
   from {
     transform: translate(0%, 0);
   }
@@ -129,6 +199,9 @@ main .Slideshow .wrap ul li a .text-wrap {
 main .Slideshow .wrap ul li a .text-wrap:hover {
   background-color: #000000B0;
 }
+main .Slideshow .wrap ul li a .text-wrap:hover h1 {
+  text-decoration: underline;
+}
 main .Slideshow .wrap ul li a .text-wrap h1 {
   margin: 10px;
   margin-bottom: 0;
@@ -141,28 +214,30 @@ main .Slideshow .wrap ul li a .text-wrap h2 {
   font-weight: 500;
   color: #AAA;
 }
-main .Slideshow .wrap .nav-button {
+main .Slideshow .wrap .nav-buttons {
   position: absolute;
-  top: calc(50% - calc(clamp(5px, 7vw, 50px) / 2));
-  width: clamp(5px, 7vw, 50px);
-  height: clamp(5px, 7vw, 50px);
+  top: calc(clamp(20px, 6vw, 35px) * 0.2);
+  left: calc(clamp(20px, 6vw, 35px) * 0.2);
+}
+main .Slideshow .wrap .nav-buttons .nav-button {
+  width: clamp(20px, 6vw, 35px);
+  height: clamp(20px, 6vw, 35px);
   border: none;
   border-radius: 2px;
-  font-size: clamp(5px, 4vw, 30px);
+  font-size: clamp(10px, 4vw, 25px);
   background-color: #0006;
   color: #FFFA;
   cursor: pointer;
 }
-main .Slideshow .wrap .nav-button:hover {
+main .Slideshow .wrap .nav-buttons .nav-button:hover {
   background-color: #0007;
 }
-main .Slideshow .wrap .nav-button.left {
-  left: 0;
-  padding: calc(clamp(5px, 7vw, 50px) * 0.1) calc(clamp(5px, 7vw, 50px) * 0.1) 0 0;
+main .Slideshow .wrap .nav-buttons .nav-button.left {
+  padding: calc(clamp(20px, 6vw, 35px) * 0.1) calc(clamp(20px, 6vw, 35px) * 0.1) 0 0;
 }
-main .Slideshow .wrap .nav-button.right {
-  right: 0;
-  padding: calc(clamp(5px, 7vw, 50px) * 0.1) 0 0 calc(clamp(5px, 7vw, 50px) * 0.1);
+main .Slideshow .wrap .nav-buttons .nav-button.right {
+  margin-left: calc(clamp(20px, 6vw, 35px) * 0.2);
+  padding: calc(clamp(20px, 6vw, 35px) * 0.1) 0 0 calc(clamp(20px, 6vw, 35px) * 0.1);
 }
 main .Articles {
   margin-top: 0;

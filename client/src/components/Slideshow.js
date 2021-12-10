@@ -23,14 +23,14 @@ class Slideshow extends Component {
       { component },
     );
 
-    $("#slideshow-list").attr("class", "");
+    $("#Slideshow-list").attr("class", "");
 
     if (this.props.state.news.length < 2) {
       return;
     }
 
     setTimeout(() => {
-      var children = Object.values($("#slideshow-list").children()).slice(
+      var children = Object.values($("#Slideshow-list").children()).slice(
         0,
         -2,
       );
@@ -45,12 +45,12 @@ class Slideshow extends Component {
         }
       }
 
-      $("#slideshow-list").html(
+      $("#Slideshow-list").html(
         children.map(i => {
           return i.outerHTML;
         }),
       );
-      $("#slideshow-list").addClass(direction);
+      $("#Slideshow-list").addClass(direction);
     }, 1);
   }
 
@@ -58,7 +58,7 @@ class Slideshow extends Component {
     return (
       <div className="Slideshow">
         <div className="wrap">
-          <ul id="slideshow-list">
+          <ul id="Slideshow-list">
             {this.props.state.news.map(article => {
               if (article.hide) {
                 return "";
@@ -97,7 +97,7 @@ class Slideshow extends Component {
           {(() => {
             if (this.props.state.news?.length > 1) {
               return (
-                <div>
+                <div className="nav-buttons">
                   <button
                     className="nav-button left"
                     onClick={() => this.changeSlide("left")}

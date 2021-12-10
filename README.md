@@ -39,7 +39,9 @@ npm run start
 
 # Todo
 
+- [ ] Fix readme
 - [ ] Add comment
+- [ ] Refactor component css
 - [ ] Add articles
 - [ ] Add skeleton loading
 - [ ] Add issue templates
@@ -47,6 +49,8 @@ npm run start
 
 ## Completed
 
+- [x] Change slideshow buttons
+- [x] Add sliding banner
 - [x] Add watermark to top right
 - [x] API Error handling
 - [x] Remove heroku-postbuild??

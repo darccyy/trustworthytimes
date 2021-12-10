@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import Articles from "./components/Articles.js";
+import SlideBanner from "./components/SlideBanner.js";
 import Slideshow from "./components/Slideshow.js";
 import ContentArticle from "./components/ContentArticle.js";
 import FourOFour from "./components/FourOFour.js";
@@ -13,14 +14,14 @@ class App extends Component {
 
   async componentDidMount() {
     if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
-      fetch(`/api/news-single?id=${this.state.PATH[1]}`)
+      fetch(`/api/article?id=${this.state.PATH[1]}`)
         .then(res => res.json())
-        .then(news => this.setState({ news: [news] }));
-    } else {
-      fetch("/api/news")
-        .then(res => res.json())
-        .then(news => this.setState({ news }));
+        .then(article => this.setState({ article }));
     }
+
+    fetch("/api/news")
+      .then(res => res.json())
+      .then(news => this.setState({ news }));
 
     loadImages();
   }
@@ -83,6 +84,9 @@ class App extends Component {
             if (this.state.PATH.join("") === "") {
               return (
                 <div>
+                  <SlideBanner
+                    state={{ news: shuffleArray(this.state.news) }}
+                  />
                   <Slideshow state={{ news: shuffleArray(this.state.news) }} />
                   <Articles state={{ news: shuffleArray(this.state.news) }} />
                 </div>
@@ -91,9 +95,14 @@ class App extends Component {
 
             // Specific article page
             if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
-              if (this.state.news[0]) {
+              if (this.state.article) {
                 return (
-                  <ContentArticle state={{ article: this.state.news[0] }} />
+                  <div>
+                    <SlideBanner
+                      state={{ news: shuffleArray(this.state.news) }}
+                    />
+                    <ContentArticle state={{ article: this.state.article }} />
+                  </div>
                 );
               }
             }

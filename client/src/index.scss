@@ -41,6 +41,94 @@ main {
 
   }
 
+  .SlideBanner {
+    $height: 30px;
+    height: $height;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: #0c0e10;
+    overflow: hidden;
+
+    &:hover {
+      .wrap .move {
+        animation-play-state: paused;
+      }
+    }
+
+    .wrap {
+      height: 100%;
+      transform: translate(100%, 0);
+
+      .move {
+        display: flex;
+        height: 100%;
+        animation: SlideBanner linear 10s infinite;
+
+        @keyframes SlideBanner {
+          0% {
+            transform: translate(0%, 0);
+          }
+
+          100% {
+            transform: translate(-100%, 0);
+          }
+        }
+
+        .item {
+          flex-shrink: 0;
+          box-sizing: border-box;
+          height: 100%;
+
+          &:hover {
+            h1 {
+              text-decoration: underline;
+            }
+          }
+
+          a {
+            display: inline-block;
+            height: 100%;
+            margin: 0;
+            padding-right: 15px;
+
+            .img-wrap {
+              display: flex;
+              float: left;
+              width: $height;
+              height: 100%;
+              margin-right: 15px;
+
+              img {
+                min-width: 100%;
+                min-height: 100%;
+                margin: auto;
+                object-fit: cover;
+                color: white;
+                font-size: 10px;
+              }
+            }
+
+            .text-wrap {
+              display: inline-flex;
+              padding: 0;
+              height: 100%;
+
+              h1 {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0;
+                margin: auto;
+                font-size: clamp(12px, 3vw, 17px);
+                font-weight: 400;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .Slideshow {
     position: relative;
     z-index: 100;
@@ -65,20 +153,20 @@ main {
 
         &.left,
         &.right {
-          animation: moveSlide-left;
+          animation: Slideshow-left;
           animation-timing-function: ease-in-out;
           animation-duration: 0.7s;
           animation-iteration-count: 1;
         }
 
         &.right {
-          animation: moveSlide-right;
+          animation: Slideshow-right;
           animation-timing-function: ease-in-out;
           animation-duration: 0.7s;
           animation-iteration-count: 1;
         }
 
-        @keyframes moveSlide-left {
+        @keyframes Slideshow-left {
           from {
             transform: translate(-200%, 0);
           }
@@ -88,7 +176,7 @@ main {
           }
         }
 
-        @keyframes moveSlide-right {
+        @keyframes Slideshow-right {
           from {
             transform: translate(0%, 0);
           }
@@ -142,6 +230,10 @@ main {
 
               &:hover {
                 background-color: #000000B0;
+
+                h1 {
+                  text-decoration: underline;
+                }
               }
 
               h1 {
@@ -162,33 +254,37 @@ main {
         }
       }
 
-      .nav-button {
+      .nav-buttons {
         position: absolute;
-        $size: clamp(5px, 7vw, 50px);
-        top: calc(50% - calc(#{$size} / 2));
-        width: $size;
-        height: $size;
-        border: none;
-        border-radius: 2px;
-        font-size: clamp(5px, 4vw, 30px);
-        background-color: #0006;
-        color: #FFFA;
-        cursor: pointer;
+        $size: clamp(20px, 6vw, 35px);
+        $margin: calc(#{$size} * 0.2);
+        top: $margin;
+        left: $margin;
 
-        &:hover {
-          background-color: #0007;
-        }
+        .nav-button {
+          width: $size;
+          height: $size;
+          border: none;
+          border-radius: 2px;
+          font-size: clamp(10px, 4vw, 25px);
+          background-color: #0006;
+          color: #FFFA;
+          cursor: pointer;
 
-        $padding: calc(#{$size} * 0.1);
+          &:hover {
+            background-color: #0007;
+          }
 
-        &.left {
-          left: 0;
-          padding: $padding $padding 0 0;
-        }
+          $padding: calc(#{$size} * 0.1);
 
-        &.right {
-          right: 0;
-          padding: $padding 0 0 $padding;
+          &.left {
+            padding: $padding $padding 0 0;
+          }
+
+          &.right {
+            margin-left: $margin;
+            padding: $padding 0 0 $padding;
+          }
         }
       }
     }
