@@ -28,7 +28,7 @@ export default (class SlideShow extends Component {
 
     $("#SlideShow-list").attr("class", "");
 
-    if (this.props.state.news.length < 2) {
+    if (!this.props.state.news || this.props.state.news?.length < 2) {
       return;
     }
 
@@ -38,7 +38,7 @@ export default (class SlideShow extends Component {
         -2,
       );
 
-      if (this.props.state.news.length === 2) {
+      if (this.props.state.news?.length === 2) {
         children = [children[1], children[0], children[1]];
       } else {
         if (direction === "left") {
@@ -55,7 +55,7 @@ export default (class SlideShow extends Component {
           }
         }),
       );
-      $("#SlideShow-list").addClass(direction);
+      $("#SlideShow-list").attr("class", direction);
     }, 1);
   }
 
@@ -64,39 +64,50 @@ export default (class SlideShow extends Component {
       <div className="SlideShow">
         <div className="wrap">
           <ul id="SlideShow-list">
-            {this.props.state.news.map(article => {
-              if (article.hide) {
-                return "";
-              }
+            {(this.props.state.news || [{ skeleton: true }]).map(
+              (article, index) => {
+                if (article.hide) {
+                  return "";
+                }
 
-              return (
-                <li key={article.id}>
-                  <Link to={"/news/" + article.id}>
-                    <img
-                      src={article.image}
-                      alt={article.alt || "Headline image"}
-                      title={article.alt || "Headline image"}
-                      className="main unloaded"
-                    />
+                return (
+                  <li
+                    key={index}
+                    className={article.skeleton ? "skeleton" : ""}
+                  >
+                    <Link
+                      to={!this.props.state.news ? "." : "/news/" + article.id}
+                    >
+                      <img
+                        src={article.image}
+                        alt={article.alt || "Headline image"}
+                        title={article.alt || "Headline image"}
+                        className="main unloaded"
+                      />
 
-                    <img
-                      src="/image/logo-short.png"
-                      alt={"Logo: Megaphone & Handshake"}
-                      className="watermark unloaded"
-                    />
+                      <img
+                        src="/image/logo-short.png"
+                        alt={"Logo: Megaphone & Handshake"}
+                        className="watermark unloaded"
+                      />
 
-                    <div className="text-wrap">
-                      <h1 className="headline">
-                        {article.headline || "[No headline]"}
-                      </h1>
-                      <h2 className="subtitle">
-                        {article.subtitle || "This is a news article"}
-                      </h2>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
+                      <div className="text-wrap">
+                        <h1 className="headline">
+                          <span>
+                            {article.headline || "Important News Headline"}
+                          </span>
+                        </h1>
+                        <h2 className="subtitle">
+                          <span>
+                            {article.subtitle || "Subtitle of the Article"}
+                          </span>
+                        </h2>
+                      </div>
+                    </Link>
+                  </li>
+                );
+              },
+            )}
           </ul>
 
           {(() => {

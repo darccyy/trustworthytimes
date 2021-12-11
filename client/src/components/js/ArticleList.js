@@ -13,37 +13,45 @@ export default (class ArticleList extends Component {
   render() {
     return (
       <ul className="ArticleList">
-        {this.props.state.news.map(article => {
-          if (article.hide) {
-            return "";
-          }
+        {(this.props.state.news || Array(10).fill({ skeleton: true })).map(
+          (article, index) => {
+            if (article.hide) {
+              return "";
+            }
 
-          return (
-            <li key={article.id}>
-              <Link to={"/news/" + article.id}>
-                <div className="img-contain">
-                  <div className="img-wrap">
-                    <img
-                      src={article.image}
-                      alt={article.alt || "Headline image"}
-                      title={article.alt || "Headline image"}
-                      className="unloaded"
-                    />
+            return (
+              <li key={index} className={article.skeleton ? "skeleton" : ""}>
+                <Link
+                  to={!this.props.state.news ? "." : "/news/" + article.id}
+                >
+                  <div className="img-contain">
+                    <div className="img-wrap">
+                      <img
+                        src={article.image}
+                        alt={article.alt || "Headline image"}
+                        title={article.alt || "Headline image"}
+                        className="unloaded"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div className="text-wrap">
-                  <h1 className="headline">
-                    {article.headline || "[No headline]"}
-                  </h1>
-                  <h2 className="subtitle">
-                    {article.subtitle || "This is a news article"}
-                  </h2>
-                </div>
-              </Link>
-            </li>
-          );
-        })}
+                  <div className="text-wrap">
+                    <h1 className="headline">
+                      <span>
+                        {article.headline || "Important News Headline"}
+                      </span>
+                    </h1>
+                    <h2 className="subtitle">
+                      <span>
+                        {article.subtitle || "Subtitle of the Article"}
+                      </span>
+                    </h2>
+                  </div>
+                </Link>
+              </li>
+            );
+          },
+        )}
       </ul>
     );
   }

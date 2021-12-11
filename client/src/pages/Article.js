@@ -10,7 +10,11 @@ import loadImages from "../functions/loadImages";
 import shuffleArray from "../functions/shuffleArticles";
 
 class Article extends Component {
-  state = { news: null, PATH: window.location.pathname.split("/").slice(1) };
+  state = {
+    article: null,
+    news: null,
+    PATH: window.location.pathname.split("/").slice(1),
+  };
 
   async componentDidMount() {
     fetch(`/api/article?id=${this.state.PATH[1]}`)
@@ -51,27 +55,22 @@ class Article extends Component {
         </Helmet>
 
         {(() => {
-          // Before news loads
-          if (this.state.news === null) {
-            return (
-              <h2 className="loading">
-                <span className="loading-spinner">&#x21bb;</span> Loading...
-              </h2>
-            );
-          }
-
           // Specific article page
           if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
-            if (this.state.article) {
-              return (
-                <div>
-                  <ScrollBanner
-                    state={{ news: shuffleArray(this.state.news) }}
-                  />
-                  <ContentArticle state={{ article: this.state.article }} />
-                </div>
-              );
-            }
+            return (
+              <div>
+                <ScrollBanner
+                  state={{
+                    news: this.state.news && shuffleArray(this.state.news),
+                  }}
+                />
+                <ContentArticle
+                  state={{
+                    article: this.state.article,
+                  }}
+                />
+              </div>
+            );
           }
 
           // 404 Page

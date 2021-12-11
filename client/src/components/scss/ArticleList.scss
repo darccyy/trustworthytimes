@@ -10,6 +10,32 @@
       margin-bottom: 10px;
     }
 
+    &.skeleton {
+
+      * {
+        user-select: none;
+      }
+
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        color: #0000;
+      }
+
+      .img-wrap,
+      .headline,
+      .subtitle {
+        border-radius: 10px;
+        background-color: #0c0e10;
+        color: #0000 !important;
+      }
+
+      .subtitle {
+        border-radius: 7px;
+      }
+    }
+
     a {
       display: flex;
       text-decoration: none;
@@ -98,6 +124,7 @@
         }
 
         .subtitle {
+          display: inline;
           margin: 2px 0;
           font-size: clamp(15px, 4vw, 23px);
           font-weight: 500;

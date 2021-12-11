@@ -1,55 +1,130 @@
 .ContentArticle {
   color: white;
 
+  &.skeleton {
+
+    * {
+      user-select: none;
+    }
+
+    .topics {
+      h2 {
+        margin-bottom: 2px;
+
+        &:before {
+          content: "" !important;
+          margin: 0 !important;
+        }
+
+        span {
+          display: inline-block !important;
+          border-radius: 5px;
+          background-color: #0f1113;
+          color: #0000 !important;
+
+          &::before {
+            content: none !important;
+          }
+        }
+      }
+    }
+
+    .headline,
+    .img-wrap {
+      border-radius: 10px !important;
+      background-color: #0c0e10;
+      color: #0000 !important;
+    }
+
+    .stats {
+      h2 {
+        margin-bottom: 2px;
+
+        span {
+          border-radius: 5px;
+          background-color: #0f1113;
+          color: #0000 !important;
+          margin-right: 2px;
+        }
+      }
+    }
+
+
+    .img-wrap {
+      width: 400px;
+      height: 300px;
+      background-color: #0f1113;
+    }
+
+    .body {
+      span {
+        background-color: #0c0e10;
+        color: #0000 !important;
+        border-radius: 5px;
+        line-height: 180%;
+      }
+    }
+  }
+
   .topics {
     margin: 5px 0;
-    font-size: clamp(8px, 4vw, 15px);
     color: #888;
+    margin: 0;
 
-    span:not(:first-of-type) {
-      margin-left: 10px;
+    h2 {
+      display: inline;
+      font-size: clamp(8px, 4vw, 15px);
+      margin: 0;
 
-      &::before {
-        content: "/";
-        margin-right: 10px;
-        color: #444;
-      }
+      &:not(:first-of-type) {
+        margin-left: 10px;
 
-      @media (max-width: 400px) {
-        display: block;
+        &::before {
+          content: "/";
+          margin-right: 10px;
+          color: #444;
+        }
 
-        &:not(:first-of-type) {
-          margin-left: 0px;
+        @media (max-width: 400px) {
+          display: block;
+
+          &:not(:first-of-type) {
+            margin-left: 0px;
+          }
         }
       }
     }
   }
 
   .headline {
+    display: inline-block;
     margin: 10px 0;
     font-size: clamp(20px, 10vw, 40px);
   }
 
   .stats {
-    font-size: clamp(10px, 5vw, 17px);
-    font-weight: 500;
+    margin-bottom: 10px;
     color: #AAA;
 
-    span {
-      &:not(:first-of-type) {
-        margin-left: 10px;
-      }
+    h2 {
+      display: block;
+      margin: 0;
+      font-size: clamp(10px, 5vw, 17px);
 
-      @media (max-width: 500px) {
-        display: block;
+      @media (min-width: 500px) {
+        display: inline;
 
         &:not(:first-of-type) {
-          margin-left: 0px;
+          span {
+            margin-left: 15px;
+          }
         }
       }
 
-      i {
-        margin-right: 5px;
+      span {
+        i {
+          margin-right: 5px;
+        }
       }
     }
   }

@@ -43,6 +43,26 @@
           }
         }
 
+        &.skeleton {
+          * {
+            user-select: none;
+          }
+
+          img {
+            color: #0000 !important;
+          }
+
+          .headline {
+            text-decoration: none !important;
+
+            span {
+              border-radius: 10px;
+              background-color: #101214;
+              color: #0000 !important;
+            }
+          }
+        }
+
         a {
           display: inline-block;
           height: 100%;
@@ -71,7 +91,7 @@
             padding: 0;
             height: 100%;
 
-            h1 {
+            .headline {
               display: inline-block;
               vertical-align: middle;
               padding: 0;

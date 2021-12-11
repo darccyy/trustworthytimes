@@ -3,7 +3,13 @@ import React from "react";
 // Format article array into component with styles
 export default function formatArticle(array) {
   if (!array || array.constructor !== Array || array.length < 1) {
-    return "This is a news article";
+    array = [
+      "This is a news article.",
+      "Blah blah blah.",
+      "This either hasn't loaded yet, or something has gone wrong.",
+      "Reload the page if this continues.",
+      "Or report an issue on GitHub.",
+    ];
   }
 
   var formats = { i: "/", b: "*", u: "_", s: "~", code: "`" };
@@ -91,11 +97,6 @@ export default function formatArticle(array) {
                 string.split(".")[0]
               }.</b>${string.split(".").slice(1).join(".")}</li>`;
             }
-            /* 
-            number=${parseInt(
-                string.split("-")[0],
-              )}
-               */
 
             if (string === "") {
               string = "<br>";

@@ -39,15 +39,17 @@ npm run start
 
 # Todo
 
+- [ ] Fix header sizing
 - [ ] Fix readme
 - [ ] Add comments
 - [ ] Add articles
-- [ ] Add skeleton loading
 - [ ] Add issue templates
 - [ ] Make look better
 
 ## Completed
 
+- [x] Add skeleton loading
+- [x] Fix key names
 - [x] Start scroll banner earlier
 - [x] Convert `<a>` to `<Link>`
 - [x] Add router

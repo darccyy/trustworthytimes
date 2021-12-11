@@ -25,21 +25,24 @@ class Home extends Component {
     return (
       <div id="Home">
         {(() => {
-          // Before news loads
-          if (this.state.news === null) {
-            return (
-              <h2 className="loading">
-                <span className="loading-spinner">&#x21bb;</span> Loading...
-              </h2>
-            );
-          }
-
           // Home page
           return (
             <div>
-              <ScrollBanner state={{ news: shuffleArray(this.state.news) }} />
-              <SlideShow state={{ news: shuffleArray(this.state.news) }} />
-              <ArticleList state={{ news: shuffleArray(this.state.news) }} />
+              <ScrollBanner
+                state={{
+                  news: this.state.news && shuffleArray(this.state.news),
+                }}
+              />
+              <SlideShow
+                state={{
+                  news: this.state.news && shuffleArray(this.state.news),
+                }}
+              />
+              <ArticleList
+                state={{
+                  news: this.state.news && shuffleArray(this.state.news),
+                }}
+              />
             </div>
           );
         })()}
