@@ -58,7 +58,7 @@ class Article extends Component {
           // Specific article page
           if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
             return (
-              <div>
+              <>
                 <ScrollBanner
                   state={{
                     news: this.state.news && shuffleArray(this.state.news),
@@ -69,7 +69,7 @@ class Article extends Component {
                     article: this.state.article,
                   }}
                 />
-              </div>
+              </>
             );
           }
 

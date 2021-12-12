@@ -56,7 +56,7 @@ export default (class SlideShow extends Component {
         }),
       );
       $("#SlideShow-list").attr("class", direction);
-    }, 1);
+    }, 10);
   }
 
   render() {

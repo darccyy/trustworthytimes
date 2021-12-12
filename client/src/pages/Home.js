@@ -27,7 +27,7 @@ class Home extends Component {
         {(() => {
           // Home page
           return (
-            <div>
+            <>
               <ScrollBanner
                 state={{
                   news: this.state.news && shuffleArray(this.state.news),
@@ -43,7 +43,7 @@ class Home extends Component {
                   news: this.state.news && shuffleArray(this.state.news),
                 }}
               />
-            </div>
+            </>
           );
         })()}
       </div>
