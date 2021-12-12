@@ -24,6 +24,10 @@ class Home extends Component {
   render() {
     return (
       <div id="Home">
+        <Helmet>
+          <title>Trustworthy Times</title>
+        </Helmet>
+
         {(() => {
           // Home page
           return (

@@ -11,8 +11,8 @@ import shuffleArray from "../functions/shuffleArticles";
 
 class Article extends Component {
   state = {
-    article: null,
-    news: null,
+    article: false,
+    news: false,
     PATH: window.location.pathname.split("/").slice(1),
   };
 
@@ -34,15 +34,11 @@ class Article extends Component {
         <Helmet>
           <title>
             {(() => {
-              if (this.state.PATH.join("") === "") {
-                return "";
-              }
+              if (this.state.PATH[1]) {
+                if (this.state.article === false) {
+                  return "Loading - ";
+                }
 
-              if (this.state.article === null) {
-                return "Loading - ";
-              }
-
-              if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
                 if (this.state.article) {
                   return (this.state.article.headline || "Article") + " - ";
                 }
@@ -54,23 +50,24 @@ class Article extends Component {
           </title>
         </Helmet>
 
+        <ScrollBanner
+          state={{
+            news: this.state.news && shuffleArray(this.state.news),
+          }}
+        />
+
         {(() => {
           // Specific article page
-          if (this.state.PATH[0] === "news" && this.state.PATH[1]) {
-            return (
-              <>
-                <ScrollBanner
-                  state={{
-                    news: this.state.news && shuffleArray(this.state.news),
-                  }}
-                />
+          if (this.state.PATH[1]) {
+            if (this.state.article || this.state.article === false) {
+              return (
                 <ContentArticle
                   state={{
                     article: this.state.article,
                   }}
                 />
-              </>
-            );
+              );
+            }
           }
 
           // 404 Page

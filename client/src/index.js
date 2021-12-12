@@ -20,6 +20,10 @@ export default function App() {
         <Route path="/news" element={<Layout />}>
           <Route path="*" element={<Article />} />
         </Route>
+
+        <Route path="*" element={<Layout />}>
+          <Route path="*" element={<Error404 />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
