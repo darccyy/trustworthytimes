@@ -41,6 +41,7 @@ npm run start
 
 - [ ] Fix other links
 - [ ] Add contact, ect pages
+- [ ] Add proper 404 page
 - [ ] Add titles to other pages
 - [ ] Add vertical slideshow
 - [ ] Fix readme
