@@ -40,6 +40,8 @@ npm run start
 # Todo
 
 - [ ] Fix other links
+- [ ] Add contact, ect pages
+- [ ] Add titles to other pages
 - [ ] Add vertical slideshow
 - [ ] Fix readme
 - [ ] Add comments
