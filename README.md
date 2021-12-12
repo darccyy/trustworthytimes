@@ -39,6 +39,7 @@ npm run start
 
 # Todo
 
+- [ ] Fix 404 Page for unknown articles
 - [ ] Add vertical slideshow
 - [ ] Fix readme
 - [ ] Add comments
@@ -48,6 +49,7 @@ npm run start
 
 ## Completed
 
+- [x] Add individual files for articles
 - [x] Fix slideshow animation
 - [x] Fix header sizing
 - [x] Add skeleton loading
