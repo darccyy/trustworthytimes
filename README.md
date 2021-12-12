@@ -39,7 +39,7 @@ npm run start
 
 # Todo
 
-- [ ] Fix header sizing
+- [ ] Fix slideshow animation
 - [ ] Fix readme
 - [ ] Add comments
 - [ ] Add articles
@@ -48,6 +48,7 @@ npm run start
 
 ## Completed
 
+- [x] Fix header sizing
 - [x] Add skeleton loading
 - [x] Fix key names
 - [x] Start scroll banner earlier

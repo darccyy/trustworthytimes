@@ -6,14 +6,10 @@ function Layout() {
   return (
     <>
       <header>
-        <Link to="/">
-          <h1 title="The most honest news source">
-            <img
-              src="/image/title.png"
-              alt="Trustworthy Times"
-              className="unloaded"
-            />
-          </h1>
+        <Link to="/" title="The most honest news source">
+          <span className="the">the</span>
+          <span className="trustworthy">Trustworthy</span>
+          <span className="times">Times</span>
         </Link>
       </header>
 
