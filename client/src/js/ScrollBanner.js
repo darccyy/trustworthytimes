@@ -33,7 +33,7 @@ export default (class ScrollBanner extends Component {
       <div className="ScrollBanner">
         <div className="wrap" id="ScrollBanner-wrap">
           <div className="move" id="ScrollBanner-move">
-            {(this.props.state.news || Array(10).fill({ skeleton: true })).map(
+            {(this.props.news || Array(10).fill({ skeleton: true })).map(
               (article, index) => {
                 if (article.hide) {
                   return "";

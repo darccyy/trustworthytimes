@@ -5,6 +5,7 @@ import "../css/App.min.css";
 
 import ScrollBanner from "../js/ScrollBanner";
 import ContentArticle from "../js/ContentArticle";
+import Error404 from "../pages/Error404";
 
 import loadImages from "../functions/loadImages";
 import shuffleArray from "../functions/shuffleArticles";
@@ -50,36 +51,18 @@ class Article extends Component {
           </title>
         </Helmet>
 
-        <ScrollBanner
-          state={{
-            news: this.state.news && shuffleArray(this.state.news),
-          }}
-        />
+        <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
 
         {(() => {
           // Specific article page
           if (this.state.PATH[1]) {
             if (this.state.article || this.state.article === false) {
-              return (
-                <ContentArticle
-                  state={{
-                    article: this.state.article,
-                  }}
-                />
-              );
+              return <ContentArticle article={this.state.article} />;
             }
           }
 
           // 404 Page (For article)
-          return (
-            <div className="Error404">
-              <h1>
-                404 - Unknown News Article
-                <i className="fa fa-bullhorn" />
-                <i className="fa fa-handshake-o" />
-              </h1>
-            </div>
-          );
+          return <Error404 isArticle={true} />;
         })()}
       </div>
     );

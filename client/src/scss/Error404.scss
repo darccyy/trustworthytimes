@@ -1,0 +1,11 @@
+.Error404 {
+  color: white;
+
+  a {
+    color: white;
+
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+}

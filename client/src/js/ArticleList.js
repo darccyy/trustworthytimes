@@ -13,7 +13,7 @@ export default (class ArticleList extends Component {
   render() {
     return (
       <ul className="ArticleList">
-        {(this.props.state.news || Array(10).fill({ skeleton: true })).map(
+        {(this.props.news || Array(10).fill({ skeleton: true })).map(
           (article, index) => {
             if (article.hide) {
               return "";
@@ -22,7 +22,7 @@ export default (class ArticleList extends Component {
             return (
               <li key={index} className={article.skeleton ? "skeleton" : ""}>
                 <Link
-                  to={!this.props.state.news ? "." : "/news/" + article.id}
+                  to={!this.props.news ? "." : "/news/" + article.id}
                 >
                   <div className="img-contain">
                     <div className="img-wrap">

@@ -29,19 +29,13 @@ class Home extends Component {
         </Helmet>
 
         <ScrollBanner
-          state={{
-            news: this.state.news && shuffleArray(this.state.news),
-          }}
+          news={this.state.news && shuffleArray(this.state.news)}
         />
         <SlideShow
-          state={{
-            news: this.state.news && shuffleArray(this.state.news),
-          }}
+          news={this.state.news && shuffleArray(this.state.news)}
         />
         <ArticleList
-          state={{
-            news: this.state.news && shuffleArray(this.state.news),
-          }}
+          news={this.state.news && shuffleArray(this.state.news)}
         />
       </div>
     );

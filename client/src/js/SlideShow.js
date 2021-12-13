@@ -28,7 +28,7 @@ export default (class SlideShow extends Component {
 
     $("#SlideShow-list").attr("class", "");
 
-    if (!this.props.state.news || this.props.state.news?.length < 2) {
+    if (!this.props.news || this.props.news?.length < 2) {
       return;
     }
 
@@ -38,7 +38,7 @@ export default (class SlideShow extends Component {
         -2,
       );
 
-      if (this.props.state.news?.length === 2) {
+      if (this.props.news?.length === 2) {
         children = [children[1], children[0], children[1]];
       } else {
         if (direction === "left") {
@@ -64,7 +64,7 @@ export default (class SlideShow extends Component {
       <div className="SlideShow">
         <div className="wrap">
           <ul id="SlideShow-list">
-            {(this.props.state.news || [{ skeleton: true }]).map(
+            {(this.props.news || [{ skeleton: true }]).map(
               (article, index) => {
                 if (article.hide) {
                   return "";
@@ -76,7 +76,7 @@ export default (class SlideShow extends Component {
                     className={article.skeleton ? "skeleton" : ""}
                   >
                     <Link
-                      to={!this.props.state.news ? "." : "/news/" + article.id}
+                      to={!this.props.news ? "." : "/news/" + article.id}
                     >
                       <img
                         src={article.image}
@@ -111,7 +111,7 @@ export default (class SlideShow extends Component {
           </ul>
 
           {(() => {
-            if (this.props.state.news?.length > 1) {
+            if (this.props.news?.length > 1) {
               return (
                 <div className="nav-buttons">
                   <button

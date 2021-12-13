@@ -91,7 +91,6 @@ Simplified file tree:
 
 # Todo
 
-- [ ] Add proper 404 page
 - [ ] Make disclaimer better
 - [ ] Add vertical slideshow
 - [ ] Add comments
@@ -102,6 +101,7 @@ Simplified file tree:
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add proper 404 page
 - [x] Populate contact page
 - [x] Add issue templates
 - [x] Fix readme
