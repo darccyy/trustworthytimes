@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import "../css/ContentArticle.min.css";
 
-import loadImages from "../../functions/loadImages.js";
-import formatArticle from "../../functions/formatArticle.js";
+import loadImages from "../functions/loadImages.js";
+import formatArticle from "../functions/formatArticle.js";
 
 export default (class ContentArticle extends Component {
   async componentDidMount() {

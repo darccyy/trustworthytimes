@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Helmet from "react-helmet";
 
-import "../components/css/Contact.min.css";
+import "../css/Contact.min.css";
 
 import loadImages from "../functions/loadImages";
 

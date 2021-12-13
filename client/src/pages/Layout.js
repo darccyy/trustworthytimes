@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-import "../components/css/App.min.css";
+import "../css/App.min.css";
 
 class Layout extends Component {
   render() {

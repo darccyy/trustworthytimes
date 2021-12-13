@@ -1,11 +1,11 @@
 import { Component } from "react";
 import Helmet from "react-helmet";
 
-import "../components/css/App.min.css";
+import "../css/App.min.css";
 
-import ArticleList from "../components/js/ArticleList";
-import ScrollBanner from "../components/js/ScrollBanner";
-import SlideShow from "../components/js/SlideShow";
+import ArticleList from "../js/ArticleList";
+import ScrollBanner from "../js/ScrollBanner";
+import SlideShow from "../js/SlideShow";
 
 import loadImages from "../functions/loadImages";
 import shuffleArray from "../functions/shuffleArticles";

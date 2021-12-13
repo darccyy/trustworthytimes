@@ -4,7 +4,7 @@ import $ from "jquery";
 
 import "../css/ScrollBanner.min.css";
 
-import loadImages from "../../functions/loadImages.js";
+import loadImages from "../functions/loadImages.js";
 
 export default (class ScrollBanner extends Component {
   async componentDidMount() {

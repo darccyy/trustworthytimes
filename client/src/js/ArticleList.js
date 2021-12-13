@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../css/ArticleList.min.css";
 
-import loadImages from "../../functions/loadImages.js";
+import loadImages from "../functions/loadImages.js";
 
 export default (class ArticleList extends Component {
   async componentDidMount() {
