@@ -1,7 +1,7 @@
 ---
 name: General Bug
 about: Report any bugs, glitches or oversights with The Trustworthy Times website
-title: "bug"
+title: "Bug"
 labels: "bug"
 ---
 

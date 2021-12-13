@@ -1,5 +1,17 @@
 .Contact {
+
   h1 {
     color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      h2 {
+        text-decoration: underline;
+      }
+    }
   }
 }

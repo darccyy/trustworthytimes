@@ -6,6 +6,8 @@ The most honest news source. Just kidding it is satire.
 
 [Contact Page (Not setup yet...)](https://trustworthytimes.herokuapp.com/contact)
 
+[Report an Issue](https://github.com/darccyy/trustworthytimes/issues/new/choose)
+
 <img src="https://trustworthytimes.herokuapp.com/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
 
 # Contributing
@@ -89,7 +91,6 @@ Simplified file tree:
 
 # Todo
 
-- [ ] Populate contact page
 - [ ] Add proper 404 page
 - [ ] Make disclaimer better
 - [ ] Add vertical slideshow
@@ -101,6 +102,7 @@ Simplified file tree:
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Populate contact page
 - [x] Add issue templates
 - [x] Fix readme
 - [x] Add titles to other pages
