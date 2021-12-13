@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Helmet from "react-helmet";
 
 import "../components/css/App.min.css";
@@ -30,7 +30,7 @@ class Article extends Component {
 
   render() {
     return (
-      <div id="Article">
+      <div className="Article">
         <Helmet>
           <title>
             {(() => {
@@ -70,7 +70,7 @@ class Article extends Component {
             }
           }
 
-          // 404 Page
+          // 404 Page (For article)
           return (
             <div className="Error404">
               <h1>

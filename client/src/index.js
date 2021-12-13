@@ -6,22 +6,23 @@ import Layout from "./pages/Layout";
 import Error404 from "./pages/Error404";
 import Home from "./pages/Home";
 import Article from "./pages/Article";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="" element={<Layout />}>
           <Route index element={<Home />} />
 
-          <Route path="*" element={<Error404 />} />
-        </Route>
+          <Route path="/news">
+            <Route index element={<Error404 />} />
 
-        <Route path="/news" element={<Layout />}>
-          <Route path="*" element={<Article />} />
-        </Route>
+            <Route path="*" element={<Article />} />
+          </Route>
 
-        <Route path="*" element={<Layout />}>
+          <Route path="contact" element={<Contact />} />
+
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>

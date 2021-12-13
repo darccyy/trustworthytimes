@@ -39,10 +39,9 @@ npm run start
 
 # Todo
 
-- [ ] Fix other links
-- [ ] Add contact, ect pages
+- [ ] Populate contact page
 - [ ] Add proper 404 page
-- [ ] Add titles to other pages
+- [ ] Make disclaimer better
 - [ ] Add vertical slideshow
 - [ ] Fix readme
 - [ ] Add comments
@@ -52,6 +51,8 @@ npm run start
 
 ## Completed
 
+- [x] Add titles to other pages
+- [x] Fix other links
 - [x] Fix 404 Page for unknown articles
 - [x] Add individual files for articles
 - [x] Fix slideshow animation

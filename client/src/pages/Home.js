@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Helmet from "react-helmet";
 
 import "../components/css/App.min.css";
@@ -23,33 +23,26 @@ class Home extends Component {
 
   render() {
     return (
-      <div id="Home">
+      <div className="Home">
         <Helmet>
           <title>Trustworthy Times</title>
         </Helmet>
 
-        {(() => {
-          // Home page
-          return (
-            <>
-              <ScrollBanner
-                state={{
-                  news: this.state.news && shuffleArray(this.state.news),
-                }}
-              />
-              <SlideShow
-                state={{
-                  news: this.state.news && shuffleArray(this.state.news),
-                }}
-              />
-              <ArticleList
-                state={{
-                  news: this.state.news && shuffleArray(this.state.news),
-                }}
-              />
-            </>
-          );
-        })()}
+        <ScrollBanner
+          state={{
+            news: this.state.news && shuffleArray(this.state.news),
+          }}
+        />
+        <SlideShow
+          state={{
+            news: this.state.news && shuffleArray(this.state.news),
+          }}
+        />
+        <ArticleList
+          state={{
+            news: this.state.news && shuffleArray(this.state.news),
+          }}
+        />
       </div>
     );
   }
