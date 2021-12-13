@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 import "../css/Disclaimer.min.css";
 
@@ -10,7 +11,7 @@ class Disclaimer extends Component {
       <footer className="Disclaimer">
         <details>
           {/* Button to open / close */}
-          <summary>
+          <summary id="disclaimer-summary">
             <span>Disclaimer</span>
           </summary>
 
@@ -31,7 +32,12 @@ class Disclaimer extends Component {
               Any resemblance to real persons, dead or alive, or other real-life
               entities, past or present, is purely coincidental.
               <br />
-              <Link to="/contact">Contact Page</Link>
+              <Link
+                to="/contact"
+                onClick={() => $("#disclaimer-summary").click()}
+              >
+                Contact Page
+              </Link>
             </p>
           </div>
         </details>

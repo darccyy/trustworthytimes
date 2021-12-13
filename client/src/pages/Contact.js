@@ -43,6 +43,14 @@ class Contact extends Component {
 
         <hr />
 
+        <a href="https://pexels.com/" target="_blank">
+          <h2>Images from Pexels.com</h2>
+
+          <p>Royalty Free</p>
+        </a>
+
+        <hr />
+
         <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
       </div>
     );

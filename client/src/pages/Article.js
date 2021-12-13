@@ -42,15 +42,13 @@ class Article extends Component {
         {/* Change title */}
         <Helmet>
           <title>
-            {(() => {W
-              if (this.state.PATH[1]) {
-                if (this.state.article === false) {
-                  return "Loading - ";
-                }
+            {(() => {
+              if (this.state.article === false) {
+                return "Loading - ";
+              }
 
-                if (this.state.article) {
-                  return (this.state.article.headline || "Article") + " - ";
-                }
+              if (this.state.article) {
+                return (this.state.article.headline || "Article") + " - ";
               }
 
               return "404 - ";

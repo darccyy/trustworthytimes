@@ -1,5 +1,4 @@
 import { Component } from "react";
-import Helmet from "react-helmet";
 
 import "../css/App.min.css";
 

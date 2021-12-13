@@ -17,7 +17,7 @@ app.use(staticFiles);
 const router = express.Router();
 
 // Read all news articles
-const news = (() => {
+function loadNews() {
   var array = [];
   var files = fs.readdirSync(path.join(__dirname, "../news"));
   for (var i in files) {
@@ -86,8 +86,10 @@ const news = (() => {
     array.push(file);
   }
 
-  return array;
-})();
+  news = array || [];
+}
+var news = [];
+loadNews();
 
 // All news articles
 router.get("/api/news", (req, res) => {
@@ -102,6 +104,13 @@ router.get("/api/article", (req, res) => {
     }
   }
   res.json(null);
+});
+
+// Reload news
+router.get("/api/reload", (req, res) => {
+  loadNews();
+  console.log("News reloaded from API");
+  res.sendStatus(200);
 });
 
 // Use router
