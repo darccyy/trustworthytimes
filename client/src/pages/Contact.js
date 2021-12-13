@@ -40,7 +40,7 @@ class Contact extends Component {
 
         <hr />
 
-        <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
+        {/* <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" /> */}
       </div>
     );
   }

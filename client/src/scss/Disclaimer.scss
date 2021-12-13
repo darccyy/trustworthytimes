@@ -1,0 +1,63 @@
+.Disclaimer {
+  z-index: 900;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  color: white;
+
+  details {
+    position: relative;
+
+    &[open] {
+      @media (max-width: 500px) {
+        div {
+          margin-bottom: 20px;
+        }
+      }
+
+      summary span {
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    summary {
+      list-style: none;
+
+      span {
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        padding: clamp(3px, 0.5vw, 5px);
+        font-size: clamp(10px, 2vw, 15px);
+        text-align: right;
+        border-radius: 5px;
+        background-color: black;
+        opacity: 0.2;
+        user-select: none;
+        cursor: pointer;
+        z-index: 910;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    div {
+      position: relative;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #3c233c;
+
+      p {
+        display: inline;
+        line-height: 130%;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
