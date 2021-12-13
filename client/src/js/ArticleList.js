@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../css/ArticleList.min.css";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
 export default (class ArticleList extends Component {
@@ -11,10 +12,12 @@ export default (class ArticleList extends Component {
   }
 
   render() {
+    // List of articles in home page
     return (
       <ul className="ArticleList">
         {(this.props.news || Array(10).fill({ skeleton: true })).map(
           (article, index) => {
+            // Hidden article
             if (article.hide) {
               return "";
             }
@@ -24,6 +27,7 @@ export default (class ArticleList extends Component {
                 <Link
                   to={!this.props.news ? "." : "/news/" + article.id}
                 >
+                  {/* Image above or left */}
                   <div className="img-contain">
                     <div className="img-wrap">
                       <img
@@ -35,6 +39,7 @@ export default (class ArticleList extends Component {
                     </div>
                   </div>
 
+                  {/* Headline and subtitle */}
                   <div className="text-wrap">
                     <h1 className="headline">
                       <span>

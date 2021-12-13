@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 
 import "../css/Error404.min.css";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
 class Error404 extends Component {
@@ -12,12 +13,15 @@ class Error404 extends Component {
   }
 
   render() {
+    // 404 page
     return (
       <div className="Error404">
+        {/* Change title */}
         <Helmet>
           <title>404 - Trustworthy Times</title>
         </Helmet>
 
+        {/* Header - Different for /news/* */}
         <h1>
           Error: 404 -{" "}
           {this.props.isArticle
@@ -33,6 +37,7 @@ class Error404 extends Component {
           not sure what you mean by '<i>{location.href}</i>'
         </p>
 
+        {/* Links */}
         <Link to="/">
           <h2>Take me back</h2>
         </Link>
@@ -41,6 +46,7 @@ class Error404 extends Component {
           <h2>Contact Page</h2>
         </Link>
 
+        {/* Image underneath */}
         <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
       </div>
     );

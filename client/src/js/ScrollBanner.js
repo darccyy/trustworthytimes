@@ -4,6 +4,7 @@ import $ from "jquery";
 
 import "../css/ScrollBanner.min.css";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
 export default (class ScrollBanner extends Component {
@@ -14,6 +15,7 @@ export default (class ScrollBanner extends Component {
     window.addEventListener("resize", this.resize);
   }
 
+  // Set css animation to match width of page
   resize() {
     var width = $("#ScrollBanner-wrap").width();
     $("#ScrollBanner-move")
@@ -29,22 +31,28 @@ export default (class ScrollBanner extends Component {
   }
 
   render() {
+    // Scrolling banner on home and article pages
     return (
       <div className="ScrollBanner">
+        {/* Wrapper */}
         <div className="wrap" id="ScrollBanner-wrap">
+          {/* Part that moves */}
           <div className="move" id="ScrollBanner-move">
             {(this.props.news || Array(10).fill({ skeleton: true })).map(
               (article, index) => {
+                // Hidden article
                 if (article.hide) {
                   return "";
                 }
 
+                // Article item
                 return (
                   <div
                     className={"item" + (article.skeleton ? " skeleton" : "")}
                     key={index}
                   >
                     <Link to={"/news/" + article.id} reloadDocument>
+                      {/* Image to left */}
                       <div className="img-wrap">
                         <img
                           src={article.image}
@@ -54,6 +62,7 @@ export default (class ScrollBanner extends Component {
                         />
                       </div>
 
+                      {/* Headline only */}
                       <div className="text-wrap">
                         <h1 className="headline">
                           <span>

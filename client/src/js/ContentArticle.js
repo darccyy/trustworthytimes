@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 import "../css/ContentArticle.min.css";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
+// Format article body in markdown-esque style with html
 import formatArticle from "../functions/formatArticle.js";
 
 export default (class ContentArticle extends Component {
@@ -13,8 +15,10 @@ export default (class ContentArticle extends Component {
   render() {
     const article = this.props.article || { skeleton: true };
 
+    // Specific article in /news/*
     return (
       <div className={"ContentArticle" + (article.skeleton ? " skeleton" : "")}>
+        {/* Topic with breadcrumbs */}
         <div className="topics">
           {(article.topic || ["Home", "News", "Other"]).map((topic, index) => {
             return (
@@ -25,10 +29,12 @@ export default (class ContentArticle extends Component {
           })}
         </div>
 
+        {/* Big headline */}
         <h1 className="headline">
           {article.headline || "Important News Headline"}
         </h1>
 
+        {/* Author, Time, and Final Topic */}
         <div className="stats">
           <h2 className="author">
             <span>
@@ -50,6 +56,7 @@ export default (class ContentArticle extends Component {
           </h2>
         </div>
 
+        {/* Image above or right */}
         <div className="img-contain">
           <div className="img-wrap">
             <img
@@ -61,6 +68,7 @@ export default (class ContentArticle extends Component {
           </div>
         </div>
 
+        {/* Formatted body */}
         <section className="body">{formatArticle(article.body)}</section>
       </div>
     );

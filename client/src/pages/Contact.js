@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import "../css/Contact.min.css";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
 class Contact extends Component {
@@ -11,8 +12,10 @@ class Contact extends Component {
   }
 
   render() {
+    // Contact page
     return (
       <div className="Contact">
+        {/* Change title */}
         <Helmet>
           <title>Contact - Trustworthy Times</title>
         </Helmet>
@@ -40,7 +43,7 @@ class Contact extends Component {
 
         <hr />
 
-        {/* <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" /> */}
+        <img src="/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
       </div>
     );
   }

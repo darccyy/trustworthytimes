@@ -3,14 +3,18 @@ import Helmet from "react-helmet";
 
 import "../css/App.min.css";
 
+// Components
 import ScrollBanner from "../js/ScrollBanner";
 import ContentArticle from "../js/ContentArticle";
 import Error404 from "../pages/Error404";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
+// Shuffle news articles
 import shuffleArray from "../functions/shuffleArticles";
 
 class Article extends Component {
+  // Set default state
   state = {
     article: false,
     news: false,
@@ -18,10 +22,12 @@ class Article extends Component {
   };
 
   async componentDidMount() {
+    // Fetch single article
     fetch(`/api/article?id=${this.state.PATH[1]}`)
       .then(res => res.json())
       .then(article => this.setState({ article }));
 
+    // Fetch all news
     fetch("/api/news")
       .then(res => res.json())
       .then(news => this.setState({ news }));
@@ -30,11 +36,13 @@ class Article extends Component {
   }
 
   render() {
+    // Specific article page
     return (
       <div className="Article">
+        {/* Change title */}
         <Helmet>
           <title>
-            {(() => {
+            {(() => {W
               if (this.state.PATH[1]) {
                 if (this.state.article === false) {
                   return "Loading - ";
@@ -51,10 +59,11 @@ class Article extends Component {
           </title>
         </Helmet>
 
+        {/* Scrolling banner */}
         <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
 
         {(() => {
-          // Specific article page
+          // Article
           if (this.state.PATH[1]) {
             if (this.state.article || this.state.article === false) {
               return <ContentArticle article={this.state.article} />;

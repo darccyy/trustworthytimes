@@ -3,17 +3,21 @@ import Helmet from "react-helmet";
 
 import "../css/App.min.css";
 
-import ArticleList from "../js/ArticleList";
+// Components
 import ScrollBanner from "../js/ScrollBanner";
 import SlideShow from "../js/SlideShow";
+import ArticleList from "../js/ArticleList";
 
+// Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
+// Shuffle news articles
 import shuffleArray from "../functions/shuffleArticles";
 
 class Home extends Component {
   state = { news: null };
 
   async componentDidMount() {
+    // Fetch all news
     fetch("/api/news")
       .then(res => res.json())
       .then(news => this.setState({ news }));
@@ -22,12 +26,12 @@ class Home extends Component {
   }
 
   render() {
+    // Home page
     return (
       <div className="Home">
-        <Helmet>
-          <title>Trustworthy Times</title>
-        </Helmet>
+        {/* Default title - Don't change */}
 
+        {/* Components */}
         <ScrollBanner
           news={this.state.news && shuffleArray(this.state.news)}
         />

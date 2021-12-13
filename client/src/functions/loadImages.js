@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-// Preload image (Maybe not working?)
+// Add classes for unloaded / broken images
 export default function loadImages() {
   $(".unloaded").each((i, e) => {
     $(e).on("load", () => {

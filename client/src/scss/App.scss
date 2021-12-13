@@ -67,18 +67,6 @@ main {
   }
 }
 
-.loading {
-  color: white;
-
-  .loading-spinner {
-    display: inline-block;
-    animation: spin;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-}
-
 .watermark {
   position: absolute;
   top: 10px;

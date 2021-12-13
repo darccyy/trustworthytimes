@@ -5,9 +5,11 @@ import "../css/Disclaimer.min.css";
 
 class Disclaimer extends Component {
   render() {
+    // Disclaimer footer on every page
     return (
       <footer className="Disclaimer">
         <details>
+          {/* Button to open / close */}
           <summary>
             <span>Disclaimer</span>
           </summary>
