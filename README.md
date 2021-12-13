@@ -64,27 +64,27 @@ Simplified file tree:
 
 ```py
 ./ # Root folder (trustworthytimes)
-├── client/ # All client files
-│   ├── public/ # Static files (Not including font)
-│   │   ├── index.html # Main html, Nothing in here
-│   │   └── image/... # Images, obviously
-│   └── src/ # Dynamic React files
-│       ├── index.js # Main React file
-│       ├── font/... # Font
-│       ├── functions/... # Small functions for js files
-│       ├── pages/ # Basically the urls
-│       │   ├── ... # Home, Article, ect.
-│       │   └── Layout.js # Main file for layout: Header, Footer, ect.
-│       ├── js/ # React js files for components
-│       │   └── ... # Scrolling Banner, Article List, ect.
-│       ├── scss/ # Styles in scss
-│       │   ├── ... # Corresponding to js folder
-│       │   └── App.scss # For main styles
-│       └── css/ # Compiled from scss
 ├── server/ # All server files
 │   └── server.js # Main server file
-└── news/ # News articles here
-    └── ... # Markdown file with article
+├── news/ # News articles here
+│   └── ... # Markdown file with article
+└── client/ # All client files
+    ├── public/ # Static files (Not including font)
+    │   ├── index.html # Main html, Nothing in here
+    │   └── image/... # Images, obviously
+    └── src/ # Dynamic React files
+        ├── index.js # Main React file
+        ├── font/... # Font
+        ├── functions/... # Small functions for js files
+        ├── pages/ # Basically the urls
+        │   ├── ... # Home, Article, ect.
+        │   └── Layout.js # Main file for layout: Header, Footer, ect.
+        ├── js/ # React js files for components
+        │   └── ... # Scrolling Banner, Article List, ect.
+        ├── scss/ # Styles in scss
+        │   ├── ... # Corresponding to js folder
+        │   └── App.scss # For main styles
+        └── css/ # Compiled from scss
 ```
 
 # Todo
@@ -95,13 +95,13 @@ Simplified file tree:
 - [ ] Add vertical slideshow
 - [ ] Add comments
 - [ ] Add articles
-- [ ] Add issue templates
 - [ ] Make look better
 
 <details>
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add issue templates
 - [x] Fix readme
 - [x] Add titles to other pages
 - [x] Fix other links
