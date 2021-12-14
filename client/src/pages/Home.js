@@ -5,8 +5,6 @@ import "../css/App.min.css";
 // Components
 import ScrollBanner from "../js/ScrollBanner";
 import Slides from "../js/Slides";
-import SlideShow from "../js/SlideShow";
-import VerticalSlide from "../js/VerticalSlide";
 import ArticleList from "../js/ArticleList";
 
 // Add classes for unloaded / broken images

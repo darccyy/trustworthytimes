@@ -113,10 +113,7 @@ export default function formatArticle(array) {
               }.</b>${string.split(".").slice(1).join(".")}</li>`;
             }
 
-            // Linebreak on empty line
-            if (string === "") {
-              string = "<br>";
-            }
+            // Linebreak
             string = string.replaceAll("\n", "<br>");
 
             // Inner html for line

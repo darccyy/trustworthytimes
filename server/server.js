@@ -90,6 +90,10 @@ function loadNews() {
 }
 var news = [];
 loadNews();
+fs.writeFileSync(
+  path.join(__dirname, "../temp/news_output.json"),
+  JSON.stringify(news, null, 2),
+);
 
 // All news articles
 router.get("/api/news", (req, res) => {

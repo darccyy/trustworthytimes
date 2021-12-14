@@ -15,7 +15,7 @@ export default (class VerticalSlide extends Component {
   }
 
   // Move to next slide
-  changeSlide(direction, component) {
+  changeSlide(direction, component, isAuto) {
     if (!component) {
       component = this;
     }
@@ -24,11 +24,16 @@ export default (class VerticalSlide extends Component {
     clearTimeout(component.slide_changer);
     component.slide_changer = setTimeout(
       () => {
-        component.changeSlide("down", component);
+        component.changeSlide("down", component, true);
       },
       2000,
       { component },
     );
+
+    // Only reset time (not move) if hovering
+    if (isAuto && $(".VerticalSlide").is(":hover")) {
+      return;
+    }
 
     // Remove animation class
     $("#VerticalSlide-list").attr("class", "");

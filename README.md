@@ -89,8 +89,17 @@ Simplified file tree:
         └── css/ # Compiled from scss
 ```
 
+## Adding / Editing Articles
+
+Open the `./news` folder.
+To edit an article, edit the file.
+To create a new article, copy `./news/template.md` and rename it to the new article id, then fill out the points.
+
+To put it onto the server, create a pull request (idk just search it up), and include a description of what has been changed.
+
 # Todo
 
+- [ ] Stop vertical slideshow timer in content article!
 - [ ] Add articles
 - [ ] Make look better
 

@@ -51,11 +51,11 @@
       transform: translate(0, calc(-200% / 3));
 
       &.up {
-        animation: SlideShow-up ease-in-out 0.7s 1;
+        animation: SlideShow-up ease-in-out 0.5s 1;
       }
 
       &.down {
-        animation: SlideShow-down ease-in-out 0.7s 1;
+        animation: SlideShow-down ease-in-out 0.5s 1;
       }
 
       @keyframes SlideShow-up {
