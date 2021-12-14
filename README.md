@@ -4,7 +4,7 @@ The most honest news source. Just kidding it is satire.
 
 [The Trustworthy Times](https://trustworthytimes.herokuapp.com)
 
-[Contact Page (Not setup yet...)](https://trustworthytimes.herokuapp.com/contact)
+[Contact Page](https://trustworthytimes.herokuapp.com/contact)
 
 [Report an Issue](https://github.com/darccyy/trustworthytimes/issues/new/choose)
 
