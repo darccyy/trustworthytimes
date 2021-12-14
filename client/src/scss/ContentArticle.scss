@@ -153,6 +153,10 @@
         &.unloaded {
           width: 200px;
         }
+
+        &:hover {
+          scale: 0.99;
+        }
       }
     }
   }

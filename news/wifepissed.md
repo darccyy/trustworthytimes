@@ -1,4 +1,4 @@
-# Guiomar Hammond Says Wife Is 'PISSED' At Whoever Leaked Her Texts
+# Guiomar Hammond Says Wife Is 'PISSED' At Leaked Texts
 
 ## Wife of Senator Pissed at Someone
 

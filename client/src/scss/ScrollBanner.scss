@@ -38,8 +38,13 @@
         height: 100%;
 
         &:hover {
-          h1 {
+          img {
+            scale: 1.2;
+          }
+
+          .headline {
             text-decoration: underline;
+            color: white !important;
           }
         }
 
@@ -94,12 +99,12 @@
 
             .headline {
               display: inline-block;
-              vertical-align: middle;
               padding: 0;
               margin: auto;
               font-size: clamp(12px, 3vw, 17px);
+              vertical-align: middle;
               font-weight: 400;
-              color: white;
+              color: #EEE;
             }
           }
         }

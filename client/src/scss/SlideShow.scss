@@ -5,11 +5,16 @@
   .wrap {
     position: relative;
     width: clamp(100px, 600px, 100%);
-    margin-bottom: 10px;
     aspect-ratio: 5/3;
     border-radius: 3px;
     background-color: #313334;
     overflow: hidden;
+
+    @media (max-width: 901px) {
+      margin: auto;
+    }
+
+    margin-bottom: 10px;
 
     ul {
       position: relative;
@@ -165,6 +170,7 @@
         cursor: pointer;
 
         &:hover {
+          scale: 1.1;
           background-color: #0007;
         }
 

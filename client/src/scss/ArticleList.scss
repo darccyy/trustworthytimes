@@ -47,6 +47,10 @@
       }
 
       &:hover {
+        img {
+          scale: 0.92;
+        }
+
         .headline {
           text-decoration: underline;
         }

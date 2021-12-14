@@ -4,7 +4,9 @@ import "../css/App.min.css";
 
 // Components
 import ScrollBanner from "../js/ScrollBanner";
+import Slides from "../js/Slides";
 import SlideShow from "../js/SlideShow";
+import VerticalSlide from "../js/VerticalSlide";
 import ArticleList from "../js/ArticleList";
 
 // Add classes for unloaded / broken images
@@ -31,15 +33,13 @@ class Home extends Component {
         {/* Default title - Don't change */}
 
         {/* Components */}
-        <ScrollBanner
-          news={this.state.news && shuffleArray(this.state.news)}
-        />
-        <SlideShow
-          news={this.state.news && shuffleArray(this.state.news)}
-        />
-        <ArticleList
-          news={this.state.news && shuffleArray(this.state.news)}
-        />
+        <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
+        <main>
+          <Slides news={this.state.news} />
+          <ArticleList
+            news={this.state.news && shuffleArray(this.state.news)}
+          />
+        </main>
       </div>
     );
   }

@@ -10,6 +10,7 @@ import loadImages from "../functions/loadImages.js";
 export default (class SlideShow extends Component {
   async componentDidMount() {
     loadImages();
+    clearTimeout(this.slide_changer);
     this.changeSlide("right");
   }
 
