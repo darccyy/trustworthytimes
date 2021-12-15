@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "concurrently": "^6.4.0",
-    "jquery": "^3.6.0",
-    "react-helmet": "^6.1.0"
+    "jquery": "^3.6.0"
   },
   "scripts": {
     "build": "npm run install && cd client && npm run build",
