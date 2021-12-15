@@ -31,7 +31,7 @@ export default (class VerticalSlide extends Component {
     );
 
     // Only reset time (not move) if hovering
-    if (isAuto && $(".VerticalSlide").is(":hover")) {
+    if (isAuto && $(".VerticalSlide")[0] && $(".VerticalSlide").is(":hover")) {
       return;
     }
 

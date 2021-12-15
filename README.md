@@ -99,13 +99,13 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Stop vertical slideshow timer in content article!
 - [ ] Make look better
 
 <details>
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Stop vertical slideshow timer in content article
 - [x] Add articles
 - [x] Add vertical slideshow
 - [x] Add comments
