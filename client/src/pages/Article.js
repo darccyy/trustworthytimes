@@ -15,17 +15,22 @@ import shuffleArray from "../functions/shuffleArticles";
 
 class Article extends Component {
   // Set default state
+  // state = {
+  //   article: false,
+  //   news: false,
+  //   PATH: window.location.pathname.split("/").slice(1),
+  // };
   state = {
-    article: false,
+    article: this.props.article,
     news: false,
     PATH: window.location.pathname.split("/").slice(1),
   };
 
   async componentDidMount() {
     // Fetch single article
-    fetch(`/api/article?id=${this.state.PATH[1]}`)
-      .then(res => res.json())
-      .then(article => this.setState({ article }));
+    // fetch(`/api/article?id=${this.state.PATH[1]}`)
+    //   .then(res => res.json())
+    //   .then(article => this.setState({ article }));
 
     // Fetch all news
     fetch("/api/news")

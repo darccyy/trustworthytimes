@@ -9,7 +9,7 @@ import Article from "./pages/Article";
 import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
 
-export default function App() {
+export default function App(props) {
   // Router
   return (
     <BrowserRouter>
@@ -23,7 +23,7 @@ export default function App() {
             {/* No article specified */}
             <Route index element={<Error404 />} />
 
-            <Route path="*" element={<Article />} />
+            <Route path="*" element={<Article article={props.article} />} />
           </Route>
 
           {/* Contact page */}
@@ -37,4 +37,9 @@ export default function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+console.log(window.location.pathname.split("/")[2]);
+fetch(`/api/article?id=${window.location.pathname.split("/")[2] || ""}`)
+  .then(res => res.json())
+  .then(article => {
+    ReactDOM.render(<App article={article} />, document.getElementById("root"));
+  });
