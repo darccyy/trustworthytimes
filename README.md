@@ -99,8 +99,8 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Fix meta tags
 - [ ] Make look better
+- [ ] Fix meta tags
 
 <details>
 

@@ -1,0 +1,14 @@
+{
+  "short_name": "Trustworthy Times",
+  "name": "The Trustworthy Times - The most honest news",
+  "icons": [
+    {
+      "src": "./image/icon.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#5e325e",
+  "background_color": "#131516"
+}
