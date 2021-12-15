@@ -46,6 +46,12 @@ class Article extends Component {
       <div className="Article">
         {/* Change title */}
         <Helmet>
+          <meta
+            name="description"
+            content={this.state.article.subtitle || "Unknown"}
+          />
+          <meta name="theme-color" content="#0000FF" />
+
           <title>
             {(() => {
               if (this.state.article === false) {
