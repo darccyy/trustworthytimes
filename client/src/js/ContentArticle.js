@@ -7,6 +7,7 @@ import loadImages from "../functions/loadImages.js";
 // Format article body in markdown-esque style with html
 import formatArticle from "../functions/formatArticle.js";
 
+// Specific article in /news/*
 export default (class ContentArticle extends Component {
   async componentDidMount() {
     loadImages();
@@ -15,7 +16,6 @@ export default (class ContentArticle extends Component {
   render() {
     const article = this.props.article || { skeleton: true };
 
-    // Specific article in /news/*
     return (
       <div className={"ContentArticle" + (article.skeleton ? " skeleton" : "")}>
         {/* Topic with breadcrumbs */}

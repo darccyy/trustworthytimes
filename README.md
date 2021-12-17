@@ -99,8 +99,9 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Fix hidden articles loading in article buttons, ect
 - [ ] Add skeleton loading for vertical slideshow
-- [ ] Add arrow buttons to next article
+- [ ] Add variables to scss
 - [ ] Add 'Exclusive' article list for unlisted articles
 - [ ] Make look better
 - [ ] Fix meta tags
@@ -109,6 +110,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add arrow buttons to next article
 - [x] Add other browser support
 - [x] Stop vertical slideshow timer in content article
 - [x] Add articles

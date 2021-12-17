@@ -7,6 +7,7 @@ import "../css/SlideShow.min.css";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
+// Slideshow in home page
 export default (class SlideShow extends Component {
   async componentDidMount() {
     loadImages();
@@ -70,13 +71,12 @@ export default (class SlideShow extends Component {
   }
 
   render() {
-    // Slideshow in home page
     return (
       <div className="SlideShow">
         {/* Wrapper */}
         <div className="wrap">
           <ul id="SlideShow-list">
-            {(this.props.news || [{skeleton: true}]).map((article, index) => {
+            {(this.props.news || [{ skeleton: true }]).map((article, index) => {
               // Hidden article
               if (article.hide) {
                 return "";

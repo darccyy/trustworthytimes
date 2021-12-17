@@ -7,6 +7,7 @@ import "../css/ScrollBanner.min.css";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
+// Scrolling banner on home and article pages
 export default (class ScrollBanner extends Component {
   async componentDidMount() {
     loadImages();
@@ -31,7 +32,6 @@ export default (class ScrollBanner extends Component {
   }
 
   render() {
-    // Scrolling banner on home and article pages
     return (
       <div className="ScrollBanner">
         {/* Wrapper */}

@@ -1,0 +1,79 @@
+.ArticleButtons {
+  $size: clamp(80px, 25vw, 180px);
+  $start: 15px;
+  $border: 3px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  right: 0;
+  height: $size;
+  pointer-events: none;
+
+  a {
+    position: absolute;
+    display: block;
+    width: calc(#{$size} - #{$border});
+    height: calc(100% - #{$border} * 2);
+    border: $border solid #754975;
+    transition: ease-in-out 0.2s;
+    pointer-events: initial;
+    background-color: #341f34;
+    box-shadow: 0 0 0 #0000;
+    text-decoration: none;
+    filter: brightness(0.3);
+
+    &.left {
+      left: 0;
+      border-left: none;
+      transform: translate(calc(#{$start} + #{$border} - #{$size}));
+
+      &:hover {
+        box-shadow: 10px 20px 0 #0008;
+      }
+    }
+
+    &.right {
+      right: 0;
+      border-right: none;
+      transform: translate(calc(#{$size} - #{$start} - #{$border}));
+
+      &:hover {
+        box-shadow: -10px 20px 0 #0008;
+      }
+
+      img.unloaded {
+        margin-left: $start;
+      }
+    }
+
+    &:hover {
+      transform: translate(0);
+      transition-duration: 0.3s;
+      filter: none;
+    }
+
+    img {
+      width: calc(#{$size} - #{$border});
+      height: 100%;
+      display: block;
+      word-wrap: break-word;
+      font-size: 110%;
+      background-color: #341f34;
+      color: white;
+
+      &.unloaded {
+        width: calc(#{$size} - #{$border} - #{$start});
+
+        &::before {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

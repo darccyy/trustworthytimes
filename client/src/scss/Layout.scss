@@ -59,12 +59,11 @@ header {
 
 main {
   position: relative;
-  $side: 20px;
+  $side: clamp(1px, 1vw, 15px);
   padding: 10px $side 0 $side;
 
-  @media (max-width: 950px) {
-    $side: clamp(0px, 1vw, 20px);
-    padding: 10px $side 0 $side;
+  @media (max-width: 500px) {
+    padding: 10px 0 0 0;
   }
 }
 
@@ -85,8 +84,8 @@ main {
 
 blockquote {
   padding: 10px;
-  border-left: 10px solid #2a353b;
-  background-color: #1d2224;
+  border-left: 10px solid #553B58;
+  background-color: #25262B;
 }
 
 code {

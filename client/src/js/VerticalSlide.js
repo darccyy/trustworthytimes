@@ -7,6 +7,7 @@ import "../css/VerticalSlide.min.css";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
+// Vertical Slideshow in home page
 export default (class VerticalSlide extends Component {
   async componentDidMount() {
     loadImages();
@@ -75,7 +76,6 @@ export default (class VerticalSlide extends Component {
   }
 
   render() {
-    // Vertical Slideshow in home page
     return (
       <div className="VerticalSlide">
         {/* Navigation button up */}

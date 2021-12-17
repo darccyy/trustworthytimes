@@ -4,9 +4,9 @@ import $ from "jquery";
 
 import "../css/Disclaimer.min.css";
 
+// Disclaimer footer on every page
 class Disclaimer extends Component {
   render() {
-    // Disclaimer footer on every page
     return (
       <footer className="Disclaimer">
         <details>

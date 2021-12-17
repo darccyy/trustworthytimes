@@ -6,13 +6,13 @@ import "../css/ArticleList.min.css";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";
 
+// List of articles in home page
 export default (class ArticleList extends Component {
   async componentDidMount() {
     loadImages();
   }
 
   render() {
-    // List of articles in home page
     return (
       <ul className="ArticleList">
         {(this.props.news || Array(10).fill({ skeleton: true })).map(
@@ -24,9 +24,7 @@ export default (class ArticleList extends Component {
 
             return (
               <li key={index} className={article.skeleton ? "skeleton" : ""}>
-                <Link
-                  to={!this.props.news ? "." : "/news/" + article.id}
-                >
+                <Link to={!this.props.news ? "." : "/news/" + article.id}>
                   {/* Image above or left */}
                   <div className="img-contain">
                     <div className="img-wrap">

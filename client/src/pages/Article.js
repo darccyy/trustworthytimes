@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 // Components
 import ScrollBanner from "../js/ScrollBanner";
 import ContentArticle from "../js/ContentArticle";
+import ArticleButtons from "../js/ArticleButtons";
 import Error404 from "../pages/Error404";
 
 // Add classes for unloaded / broken images
@@ -58,17 +59,23 @@ class Article extends Component {
         {/* Scrolling banner */}
         <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
 
-        {(() => {
-          // Article
-          if (this.state.PATH[1]) {
-            if (this.state.article || this.state.article === false) {
-              return <ContentArticle article={this.state.article} />;
+        <main>
+          {(() => {
+            // Article
+            if (this.state.PATH[1]) {
+              if (this.state.article || this.state.article === false) {
+                return <ContentArticle article={this.state.article} />;
+              }
             }
-          }
 
-          // 404 Page (For article)
-          return <Error404 isArticle={true} />;
-        })()}
+            // 404 Page (For article)
+            return <Error404 isArticle={true} />;
+          })()}
+        </main>
+
+        <ArticleButtons
+          news={this.state.news && shuffleArray(this.state.news).slice(0, 2)}
+        />
       </div>
     );
   }
