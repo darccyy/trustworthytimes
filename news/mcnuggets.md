@@ -6,7 +6,7 @@
 
 `https://images.pexels.com/photos/4021931/pexels-photo-4021931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
 
-> Beans McGee
+> Djungelskog
 
 > 11:59 PM
 

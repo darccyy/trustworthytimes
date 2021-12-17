@@ -6,7 +6,7 @@
 
 `https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
 
-> Djungelskog
+> Beans McGee
 
 > Right NOW!
 

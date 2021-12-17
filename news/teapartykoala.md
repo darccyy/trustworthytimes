@@ -1,6 +1,6 @@
 # Man Found Having Tea Party With Koala Again
 
-## Subtitle
+## Ridiculous
 
 ### Tea Party, without Koala???
 
