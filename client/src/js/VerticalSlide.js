@@ -40,7 +40,7 @@ export default (class VerticalSlide extends Component {
     $("#VerticalSlide-list").attr("class", "");
 
     // Dont move if less than 2 articles
-    if (!this.props.news || this.props.news?.length < 2) {
+    if (!this.props.news || this.props.news?.length < 3) {
       return;
     }
 
@@ -87,38 +87,43 @@ export default (class VerticalSlide extends Component {
         </button>
 
         <div className="contain">
-          <ul id="VerticalSlide-list">
-            {(this.props.news || [{ skeleton: true }]).map((article, index) => {
-              // Hidden article
-              if (article.hide) {
-                return "";
-              }
+          <ul id="VerticalSlide-list" className={"skeleton"}>
+            {(this.props.news || Array(5).fill({ skeleton: true })).map(
+              (article, index) => {
+                // Hidden article
+                if (article.hide) {
+                  return "";
+                }
 
-              return (
-                <li key={index} className={article.skeleton ? "skeleton" : ""}>
-                  <Link to={!this.props.news ? "." : "/news/" + article.id}>
-                    {/* Image above text */}
-                    <div className="img-wrap">
-                      <img
-                        src={article.image}
-                        alt={article.alt || "Headline image"}
-                        title={article.alt || "Headline image"}
-                        className="unloaded"
-                      />
-                    </div>
+                return (
+                  <li
+                    key={index}
+                    className={article.skeleton ? "skeleton" : ""}
+                  >
+                    <Link to={!this.props.news ? "." : "/news/" + article.id}>
+                      {/* Image above text */}
+                      <div className="img-wrap">
+                        <img
+                          src={article.image}
+                          alt={article.alt || "Headline image"}
+                          title={article.alt || "Headline image"}
+                          className="unloaded"
+                        />
+                      </div>
 
-                    {/* Headline bottom */}
-                    <div className="text-wrap">
-                      <h1 className="headline">
-                        <span>
-                          {article.headline || "Important News Headline"}
-                        </span>
-                      </h1>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
+                      {/* Headline bottom */}
+                      <div className="text-wrap">
+                        <h1 className="headline">
+                          <span>
+                            {article.headline || "Important News Headline"}
+                          </span>
+                        </h1>
+                      </div>
+                    </Link>
+                  </li>
+                );
+              },
+            )}
           </ul>
         </div>
 
