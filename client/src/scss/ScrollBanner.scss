@@ -39,7 +39,7 @@
 
         &:hover {
           img {
-            scale: 1.2;
+            transform: scale(1.2);
           }
 
           .headline {
@@ -73,6 +73,7 @@
           height: 100%;
           margin: 0;
           padding-right: 15px;
+          text-decoration: none;
 
           .img-wrap {
             display: flex;

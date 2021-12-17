@@ -99,6 +99,8 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Add skeleton loading for vertical slideshow
+- [ ] Add arrow buttons to next article
 - [ ] Add 'Exclusive' article list for unlisted articles
 - [ ] Make look better
 - [ ] Fix meta tags
@@ -107,6 +109,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add other browser support
 - [x] Stop vertical slideshow timer in content article
 - [x] Add articles
 - [x] Add vertical slideshow

@@ -27,7 +27,8 @@ class Layout extends Component {
         <div className="watermark">
           <img
             src="/image/logo-short.png"
-            alt={"Logo: Megaphone & Handshake"}
+            alt="Logo: Megaphone & Handshake"
+            title="Bruh Moment"
             className="watermark unloaded"
           />
         </div>

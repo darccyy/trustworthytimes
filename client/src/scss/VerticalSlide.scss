@@ -9,7 +9,7 @@
   border-bottom: none;
   background-color: #0a0c0e;
   overflow: hidden;
-  z-index: 1100;
+  z-index: 500;
 
   .nav-button {
     position: absolute;
@@ -89,7 +89,7 @@
 
         &:hover {
           img {
-            scale: 0.95;
+            transform: scale(0.95);
           }
 
           .headline {
@@ -98,6 +98,8 @@
         }
 
         a {
+          width: 100%;
+
           .img-wrap {
             display: flex;
             width: 100%;

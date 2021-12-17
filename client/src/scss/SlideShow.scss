@@ -96,6 +96,16 @@
           }
         }
 
+        &:hover {
+          .text-wrap {
+            background-color: #000B;
+
+            .headline {
+              text-decoration: underline;
+            }
+          }
+        }
+
         a {
           display: flex;
           color: white;
@@ -124,14 +134,6 @@
 
             @media (max-width: 600px) {
               bottom: 0;
-            }
-
-            &:hover {
-              background-color: #000000B0;
-
-              .headline {
-                text-decoration: underline;
-              }
             }
 
             .headline {
@@ -170,7 +172,7 @@
         cursor: pointer;
 
         &:hover {
-          scale: 1.1;
+          transform: scale(1.1);
           background-color: #0007;
         }
 
