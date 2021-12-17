@@ -1,8 +1,6 @@
 import { Component } from "react";
 import Helmet from "react-helmet";
 
-import "../css/App.min.css";
-
 // Components
 import ScrollBanner from "../js/ScrollBanner";
 import ContentArticle from "../js/ContentArticle";

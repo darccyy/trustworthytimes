@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Outlet, Link } from "react-router-dom";
 
-import "../css/App.min.css";
+import "../css/Layout.min.css";
 
 // Disclaimer on every page
 import Disclaimer from "../js/Disclaimer";

@@ -1,7 +1,5 @@
 import { Component } from "react";
 
-import "../css/App.min.css";
-
 // Components
 import ScrollBanner from "../js/ScrollBanner";
 import Slides from "../js/Slides";
