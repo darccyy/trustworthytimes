@@ -14,9 +14,9 @@ class Slides extends Component {
     // SlideShow & VerticalSlide together
     return (
       <div className="Slides">
-        <SlideShow news={this.props.news && shuffleArray(this.props.news)} />
+        <SlideShow news={this.props.news && shuffleArray(this.props.news).slice(0, 12)} />
         <VerticalSlide
-          news={this.props.news && shuffleArray(this.props.news)}
+          news={this.props.news && shuffleArray(this.props.news).slice(0, 8)}
         />
       </div>
     );

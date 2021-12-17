@@ -8,7 +8,7 @@
 
 > Kotcheru Kinglson
 
-> 8:00PM
+> Typing this in real time
 
 - Gaming
 - MLG Moments
