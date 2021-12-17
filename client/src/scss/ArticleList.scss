@@ -39,7 +39,7 @@
     a {
       display: flex;
       text-decoration: none;
-      cursor: default;
+      cursor: pointer;
 
       @media (max-width: 950px) {
         display: inline;
@@ -61,7 +61,6 @@
         position: relative;
         float: left;
         display: flex;
-        cursor: pointer;
         height: 100px;
 
         @media (max-width: 950px) {
@@ -125,7 +124,6 @@
         .headline {
           margin: 5px 0;
           font-size: clamp(20px, 6vw, 30px);
-          cursor: pointer;
         }
 
         .subtitle {
@@ -134,7 +132,6 @@
           font-size: clamp(15px, 4vw, 23px);
           font-weight: 500;
           color: #A0A0A0;
-          cursor: pointer;
         }
       }
     }

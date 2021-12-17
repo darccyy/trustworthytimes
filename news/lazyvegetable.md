@@ -1,3 +1,5 @@
+# Hidden
+
 # The Lazy Man's Guide To VEGETABLE
 
 ## Ever wanted to Vegetable, but too LAZY?

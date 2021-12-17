@@ -99,6 +99,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Add 'Exclusive' article list for unlisted articles
 - [ ] Make look better
 - [ ] Fix meta tags
 
