@@ -99,7 +99,8 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Fix hidden articles loading in article buttons, ect
+- [ ] Fix margin for markdown styling
+- [ ] Add reload button for logo
 - [ ] Add variables to scss
 - [ ] Add 'Exclusive' article list for unlisted articles
 - [ ] Make look better
@@ -109,6 +110,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Fix hidden articles loading in article buttons, ect
 - [x] Add skeleton loading for vertical slideshow
 - [x] Add arrow buttons to next article
 - [x] Add other browser support

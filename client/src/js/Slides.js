@@ -6,8 +6,8 @@ import "../css/Slides.min.css";
 import SlideShow from "../js/SlideShow";
 import VerticalSlide from "../js/VerticalSlide";
 
-// Shuffle news articles
-import shuffleArray from "../functions/shuffleArticles";
+// Shuffle, sort, and slice news articles
+import listArticles from "../functions/listArticles";
 
 // SlideShow & VerticalSlide together
 class Slides extends Component {
@@ -15,10 +15,10 @@ class Slides extends Component {
     return (
       <div className="Slides">
         <SlideShow
-          news={this.props.news && shuffleArray(this.props.news).slice(0, 12)}
+          news={listArticles(this.props.news, 12)}
         />
         <VerticalSlide
-          news={this.props.news && shuffleArray(this.props.news).slice(0, 8)}
+          news={listArticles(this.props.news, 8)}
         />
       </div>
     );

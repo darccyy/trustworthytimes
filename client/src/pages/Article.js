@@ -10,7 +10,7 @@ import Error404 from "../pages/Error404";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 // Shuffle news articles
-import shuffleArray from "../functions/shuffleArticles";
+import listArticles from "../functions/listArticles";
 
 class Article extends Component {
   // Set default state
@@ -57,7 +57,7 @@ class Article extends Component {
         </Helmet>
 
         {/* Scrolling banner */}
-        <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
+        <ScrollBanner news={listArticles(this.state.news)} />
 
         <main>
           {(() => {
@@ -73,9 +73,7 @@ class Article extends Component {
           })()}
         </main>
 
-        <ArticleButtons
-          news={this.state.news && shuffleArray(this.state.news).slice(0, 2)}
-        />
+        <ArticleButtons news={listArticles(this.state.news, 2)} />
       </div>
     );
   }

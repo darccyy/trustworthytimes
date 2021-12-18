@@ -7,8 +7,8 @@ import ArticleList from "../js/ArticleList";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
-// Shuffle news articles
-import shuffleArray from "../functions/shuffleArticles";
+// Shuffle, sort, and slice news articles
+import listArticles from "../functions/listArticles";
 
 class Home extends Component {
   state = { news: null };
@@ -29,12 +29,10 @@ class Home extends Component {
         {/* Default title - Don't change */}
 
         {/* Components */}
-        <ScrollBanner news={this.state.news && shuffleArray(this.state.news)} />
+        <ScrollBanner news={listArticles(this.state.news)} />
         <main>
           <Slides news={this.state.news} />
-          <ArticleList
-            news={this.state.news && shuffleArray(this.state.news)}
-          />
+          <ArticleList news={listArticles(this.state.news)} />
         </main>
       </div>
     );
