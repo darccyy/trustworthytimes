@@ -99,6 +99,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Add print format
 - [ ] Fix margin for markdown styling
 - [ ] Add variables to scss
 - [ ] Add 'Exclusive' article list for unlisted articles
