@@ -3,6 +3,8 @@ import { Outlet, Link } from "react-router-dom";
 
 import "../css/Layout.min.css";
 
+// Watermark on every page
+import Watermark from "../js/Watermark";
 // Disclaimer on every page
 import Disclaimer from "../js/Disclaimer";
 
@@ -24,14 +26,7 @@ class Layout extends Component {
         <Outlet />
 
         {/* Watermark in top right */}
-        <div className="watermark">
-          <img
-            src="/image/logo-short.png"
-            alt="Logo: Megaphone & Handshake"
-            title="Bruh Moment"
-            className="watermark unloaded"
-          />
-        </div>
+        <Watermark />
 
         {/* Disclaimer in bottom right */}
         <Disclaimer />

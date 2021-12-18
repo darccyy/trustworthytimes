@@ -1,0 +1,1 @@
+.Watermark{position:absolute;top:10px;right:10px}@media (max-width:450px){.Watermark{display:none}}.Watermark img{width:80px;opacity:.2;transition:all 50ms ease-in-out}.Watermark img:active{transform:scale(.9);opacity:.3;cursor:crosshair}
