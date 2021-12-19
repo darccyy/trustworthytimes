@@ -27,7 +27,7 @@
       height: 100%;
       margin: 0;
       padding-left: 0;
-      transform: translate(-100%, 0);
+      transform: translateX(-100%);
 
       &.left {
         animation: SlideShow-left ease-in-out 0.7s 1;
@@ -39,21 +39,21 @@
 
       @keyframes SlideShow-left {
         from {
-          transform: translate(-200%, 0);
+          transform: translateX(-200%);
         }
 
         to {
-          transform: translate(-100%, 0);
+          transform: translateX(-100%);
         }
       }
 
       @keyframes SlideShow-right {
         from {
-          transform: translate(0%, 0);
+          transform: translateX(0%);
         }
 
         to {
-          transform: translate(-100%, 0);
+          transform: translateX(-100%);
         }
       }
 
@@ -117,6 +117,7 @@
 
           img.main {
             width: 100%;
+            object-fit: cover;
           }
 
           img.watermark {

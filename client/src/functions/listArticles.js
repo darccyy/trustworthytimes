@@ -26,6 +26,10 @@ export default function listArticles(articles, length, options) {
       }
     }
 
+    if (["template", "example"].includes(articles[i].id)) {
+      continue;
+    }
+
     array.push(articles[i]);
   }
 
@@ -39,7 +43,7 @@ export default function listArticles(articles, length, options) {
   }
 
   if (!length && length !== 0) {
-    return array
+    return array;
   }
 
   return array.slice(0, length);

@@ -13,7 +13,7 @@
 
   position: fixed;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   height: $size;
@@ -35,7 +35,7 @@
     &.left {
       left: 0;
       border-left: none;
-      transform: translate(calc(#{$start} + #{$border} - #{$size}));
+      transform: translateX(calc(#{$start} + #{$border} - #{$size}));
 
       &:hover {
         box-shadow: 10px 20px 0 #0008;
@@ -45,7 +45,7 @@
     &.right {
       right: 0;
       border-right: none;
-      transform: translate(calc(#{$size} - #{$start} - #{$border}));
+      transform: translateX(calc(#{$size} - #{$start} - #{$border}));
 
       &:hover {
         box-shadow: -10px 20px 0 #0008;
@@ -57,7 +57,7 @@
     }
 
     &:hover {
-      transform: translate(0);
+      transform: translateX(0);
       transition-duration: 0.3s;
       filter: none;
     }

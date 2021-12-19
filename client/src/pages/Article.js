@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import ScrollBanner from "../js/ScrollBanner";
 import ContentArticle from "../js/ContentArticle";
 import ArticleButtons from "../js/ArticleButtons";
+import Exclusive from "../js/Exclusive";
 import Error404 from "../pages/Error404";
 
 // Add classes for unloaded / broken images
@@ -64,7 +65,16 @@ class Article extends Component {
             // Article
             if (this.state.PATH[1]) {
               if (this.state.article || this.state.article === false) {
-                return <ContentArticle article={this.state.article} />;
+                return (
+                  <>
+                    <ContentArticle article={this.state.article} />
+                    <Exclusive
+                      news={listArticles(this.state.news, 1, {
+                        hidden: true,
+                      })}
+                    />
+                  </>
+                );
               }
             }
 

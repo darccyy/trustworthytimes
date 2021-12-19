@@ -18,7 +18,7 @@
 
   .wrap {
     height: 100%;
-    transform: translate(100%, 0);
+    transform: translateX(100%);
 
     .move {
       display: flex;
@@ -28,11 +28,11 @@
 
       @keyframes ScrollBanner {
         0% {
-          transform: translate(0%, 0);
+          transform: translateX(0%);
         }
 
         100% {
-          transform: translate(-100%, 0);
+          transform: translateX(-100%);
         }
       }
 

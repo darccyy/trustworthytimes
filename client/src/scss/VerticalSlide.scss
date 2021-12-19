@@ -52,7 +52,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      transform: translate(0, calc(-200% / 3));
+      transform: translateY(calc(-200% / 3));
 
       &.up {
         animation: SlideShow-up ease-in-out 0.5s 1;
@@ -64,21 +64,21 @@
 
       @keyframes SlideShow-up {
         from {
-          transform: translate(0, calc(-400% / 3));
+          transform: translateY(calc(-400% / 3));
         }
 
         to {
-          transform: translate(0, calc(-200% / 3));
+          transform: translateY(calc(-200% / 3));
         }
       }
 
       @keyframes SlideShow-down {
         from {
-          transform: translate(0, 0%);
+          transform: translateY(0%);
         }
 
         to {
-          transform: translate(0, calc(-200% / 3));
+          transform: translateY(calc(-200% / 3));
         }
       }
 

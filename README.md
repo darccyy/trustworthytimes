@@ -99,8 +99,9 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Add different image resolution loading
 - [ ] Add variables to scss
-- [ ] Add 'Exclusive' article list for unlisted articles
+- [ ] Clean scss
 - [ ] Make look better
 - [ ] Fix meta tags
 
@@ -108,6 +109,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add 'Exclusive' article list for unlisted articles
 - [x] Overhaul markdown styling
 - [x] Fix margin for markdown styling
 - [x] Add print format
