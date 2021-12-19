@@ -11,6 +11,10 @@
   overflow: hidden;
   z-index: 500;
 
+  @media print {
+    display: none;
+  }
+
   .nav-button {
     position: absolute;
     width: 100%;

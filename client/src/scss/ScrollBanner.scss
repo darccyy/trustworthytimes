@@ -6,6 +6,10 @@
   background-color: #0c0e10;
   overflow: hidden;
 
+  @media print {
+    display: none;
+  }
+
   &:hover {
     .wrap .move {
       animation-play-state: paused;

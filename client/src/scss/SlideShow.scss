@@ -2,6 +2,10 @@
   position: relative;
   z-index: 100;
 
+  @media print {
+    display: none;
+  }
+
   .wrap {
     position: relative;
     width: clamp(100px, 600px, 100%);

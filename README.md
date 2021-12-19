@@ -99,7 +99,6 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Add print format
 - [ ] Fix margin for markdown styling
 - [ ] Add variables to scss
 - [ ] Add 'Exclusive' article list for unlisted articles
@@ -110,6 +109,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add print format
 - [x] Add reload button for logo
 - [x] Fix hidden articles loading in article buttons, ect
 - [x] Add skeleton loading for vertical slideshow
