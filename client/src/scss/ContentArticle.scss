@@ -165,43 +165,54 @@
 
   .body {
     margin-top: 10px;
-    line-height: 160%;
+    line-height: 170%;
     font-size: clamp(10px, 5vw, 16px);
 
-    a {
-      color: white;
-    }
-
-    li {
-      margin-bottom: 0;
-      margin-left: 30px;
-      padding-left: 10px;
-
-      &:first-of-type {
-        margin-top: 10px;
+    div {
+      &:empty {
+        display: block;
+        height: 20px;
       }
 
-      &.number {
-        list-style: none;
-        margin-left: 0;
+      a {
+        color: white;
 
-        b {
-          margin-right: 10px;
+        &:not(:hover) {
+          text-decoration: none;
         }
       }
-    }
 
-    blockquote {
-      display: inline-block;
-      margin-right: 0;
-      margin-left: clamp(0px, 4vw, 40px);
-    }
+      li {
+        margin-bottom: 0;
+        margin-left: 30px;
+        padding-left: 10px;
 
-    h1,
-    h2,
-    h3,
-    h4 {
-      margin: 10px 0px;
+        &:first-of-type {
+          margin-top: 10px;
+        }
+
+        &.number {
+          list-style: none;
+          margin-left: 0;
+
+          b {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      blockquote {
+        display: inline-block;
+        margin-right: 0;
+        margin-left: clamp(0px, 4vw, 40px);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 10px 0px;
+      }
     }
   }
 }

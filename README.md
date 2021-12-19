@@ -108,6 +108,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Overhaul markdown styling
 - [x] Fix margin for markdown styling
 - [x] Add print format
 - [x] Add reload button for logo
