@@ -38,6 +38,11 @@
       background-color: #845784;
       color: white;
     }
+
+    &:disabled {
+      background-color: #593759;
+      color: #FFF2;
+    }
   }
 
   .contain {
@@ -45,6 +50,44 @@
     top: 30px;
     width: 100%;
     height: 450px;
+
+    &.children-3 {
+      transform: translateY(calc(200% / 3));
+    }
+
+    &.children-4 {
+      ul {
+        transform: translateY(calc(-100% / 3));
+
+        &.up {
+          animation: SlideShow-up-4 ease-in-out 0.25s 1 !important;
+        }
+
+        &.down {
+          animation: SlideShow-down-4 ease-in-out 0.25s 1 !important;
+        }
+
+        @keyframes SlideShow-up-4 {
+          from {
+            transform: translateY(calc(-200% / 3));
+          }
+
+          to {
+            transform: translateY(calc(-100% / 3));
+          }
+        }
+
+        @keyframes SlideShow-down-4 {
+          from {
+            transform: translateY(0%);
+          }
+
+          to {
+            transform: translateY(calc(-100% / 3));
+          }
+        }
+      }
+    }
 
     ul {
       display: flex;

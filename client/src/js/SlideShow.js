@@ -84,14 +84,19 @@ export default (class SlideShow extends Component {
 
               return (
                 <li key={index} className={article.skeleton ? "skeleton" : ""}>
-                  <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
+                  <Link
+                    to={!this.props.news ? "." : "/news/" + article.id}
+                    reloadDocument
+                  >
                     {/* Image behind text */}
-                    <img
-                      src={article.image}
-                      alt={article.alt || "Headline image"}
-                      title={article.alt || "Headline image"}
-                      className="main unloaded"
-                    />
+                    <div className="img-wrap">
+                      <img
+                        src={article.image}
+                        alt={article.alt || "Headline image"}
+                        title={article.alt || "Headline image"}
+                        className="unloaded"
+                      />
+                    </div>
 
                     {/* Watermark in top right */}
                     <img

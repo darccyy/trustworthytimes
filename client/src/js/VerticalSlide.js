@@ -40,7 +40,7 @@ export default (class VerticalSlide extends Component {
     $("#VerticalSlide-list").attr("class", "");
 
     // Dont move if less than 2 articles
-    if (!this.props.news || this.props.news?.length < 3) {
+    if (!this.props.news || this.props.news?.length <= 3) {
       return;
     }
 
@@ -52,13 +52,17 @@ export default (class VerticalSlide extends Component {
       );
 
       // Move last article to front or vice versa, depending on direction
-      if (this.props.news?.length === 2) {
+      if (this.props.news.length === 2) {
         children = [children[1], children[0], children[1]];
       } else {
+        var amount = this.props.news.length <= 4 ? 1 : 2;
         if (direction === "up") {
-          children = [...children.slice(-2), ...children.slice(0, -2)];
+          children = [
+            ...children.slice(-amount),
+            ...children.slice(0, -amount),
+          ];
         } else {
-          children = [...children.slice(2), ...children.slice(0, 2)];
+          children = [...children.slice(amount), ...children.slice(0, amount)];
         }
       }
 
@@ -82,11 +86,21 @@ export default (class VerticalSlide extends Component {
         <button
           className="nav-button up"
           onClick={() => this.changeSlide("up")}
+          disabled={this.props.news?.length <= 3}
         >
           <i className="fa fa-chevron-up"></i>
         </button>
 
-        <div className="contain">
+        <div
+          className={
+            "contain" +
+            (this.props.news?.length <= 3
+              ? " children-3"
+              : this.props.news?.length <= 4
+              ? " children-4"
+              : "")
+          }
+        >
           <ul id="VerticalSlide-list" className={"skeleton"}>
             {(this.props.news || Array(5).fill({ skeleton: true })).map(
               (article, index) => {
@@ -100,7 +114,10 @@ export default (class VerticalSlide extends Component {
                     key={index}
                     className={article.skeleton ? "skeleton" : ""}
                   >
-                    <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
+                    <Link
+                      to={!this.props.news ? "." : "/news/" + article.id}
+                      reloadDocument
+                    >
                       {/* Image above text */}
                       <div className="img-wrap">
                         <img
@@ -131,6 +148,7 @@ export default (class VerticalSlide extends Component {
         <button
           className="nav-button down"
           onClick={() => this.changeSlide("down")}
+          disabled={this.props.news?.length <= 3}
         >
           <i className="fa fa-chevron-down"></i>
         </button>

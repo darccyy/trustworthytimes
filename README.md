@@ -1,14 +1,14 @@
-<img src="https://trustworthytimes.herokuapp.com/image/title.png" alt="The Trustworthy Times" />
+<img src="https://trustworthytimes.com.au/image/title.png" alt="The Trustworthy Times" />
 
 The most honest news source. Just kidding it is satire.
 
-[The Trustworthy Times](https://trustworthytimes.herokuapp.com)
+[The Trustworthy Times](https://trustworthytimes.com.au)
 
-[Contact Page](https://trustworthytimes.herokuapp.com/contact)
+[Contact Page](https://trustworthytimes.com.au/contact)
 
 [Report an Issue](https://github.com/darccyy/trustworthytimes/issues/new/choose)
 
-<img src="https://trustworthytimes.herokuapp.com/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
+<img src="https://trustworthytimes.com.au/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
 
 # Contributing
 
@@ -111,6 +111,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Fix slideshows
 - [x] Fix link loading
 - [x] Add 'Exclusive' article list for unlisted articles
 - [x] Overhaul markdown styling
