@@ -100,15 +100,18 @@ To put it onto the server, create a pull request (idk just search it up), and in
 # Todo
 
 - [ ] Add different image resolution loading
+- [ ] Fix skeleton loading
+- [ ] Download all images
 - [ ] Add variables to scss
 - [ ] Clean scss
 - [ ] Make look better
-- [ ] Fix meta tags
+- [ ] Move to server side rendering
 
 <details>
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Fix link loading
 - [x] Add 'Exclusive' article list for unlisted articles
 - [x] Overhaul markdown styling
 - [x] Fix margin for markdown styling

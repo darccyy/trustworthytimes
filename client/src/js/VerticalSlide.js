@@ -100,7 +100,7 @@ export default (class VerticalSlide extends Component {
                     key={index}
                     className={article.skeleton ? "skeleton" : ""}
                   >
-                    <Link to={!this.props.news ? "." : "/news/" + article.id}>
+                    <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
                       {/* Image above text */}
                       <div className="img-wrap">
                         <img

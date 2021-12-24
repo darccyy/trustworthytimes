@@ -35,6 +35,7 @@ class Disclaimer extends Component {
               <Link
                 to="/contact"
                 onClick={() => $("#disclaimer-summary").click()}
+                reloadDocument
               >
                 Contact Page
               </Link>

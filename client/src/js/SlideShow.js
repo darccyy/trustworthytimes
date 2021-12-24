@@ -84,7 +84,7 @@ export default (class SlideShow extends Component {
 
               return (
                 <li key={index} className={article.skeleton ? "skeleton" : ""}>
-                  <Link to={!this.props.news ? "." : "/news/" + article.id}>
+                  <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
                     {/* Image behind text */}
                     <img
                       src={article.image}

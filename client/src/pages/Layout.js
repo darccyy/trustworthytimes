@@ -15,7 +15,7 @@ class Layout extends Component {
       <>
         {/* Header text */}
         <header>
-          <Link to="/" title="The most honest news source">
+          <Link to="/" title="The most honest news source" reloadDocument>
             <span className="the">the</span>
             <span className="trustworthy">Trustworthy</span>
             <span className="times">Times</span>

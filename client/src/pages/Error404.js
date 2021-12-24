@@ -38,11 +38,11 @@ class Error404 extends Component {
         </p>
 
         {/* Links */}
-        <Link to="/">
+        <Link to="/" reloadDocument>
           <h2>Take me back</h2>
         </Link>
 
-        <Link to="/contact">
+        <Link to="/contact" reloadDocument>
           <h2>Contact Page</h2>
         </Link>
 
