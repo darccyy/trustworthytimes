@@ -114,14 +114,15 @@ export default function formatArticle(array) {
       return <div key={index} />;
     }
 
-    // Inner html for line
+    // Inner html for line - span for inline background colour
     return (
-      <div
-        key={index}
-        dangerouslySetInnerHTML={{
-          __html: string,
-        }}
-      />
+      <div key={index}>
+        <span
+          dangerouslySetInnerHTML={{
+            __html: string,
+          }}
+        />
+      </div>
     );
   });
 }
