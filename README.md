@@ -99,7 +99,6 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Make article buttons go previous / next article
 - [ ] Add different image resolution loading
 - [ ] Fix skeleton loading
 - [ ] Download all images
@@ -112,6 +111,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Make article buttons go previous / next article
 - [x] Fix slideshows
 - [x] Fix link loading
 - [x] Add 'Exclusive' article list for unlisted articles

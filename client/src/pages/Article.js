@@ -83,7 +83,11 @@ class Article extends Component {
           })()}
         </main>
 
-        <ArticleButtons news={listArticles(this.state.news, 2)} />
+        <ArticleButtons
+          news={listArticles(this.state.news, 2, {
+            siblings: this.state.PATH[1] || null,
+          })}
+        />
       </div>
     );
   }
