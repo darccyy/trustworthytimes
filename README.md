@@ -1,14 +1,14 @@
-<img src="https://trustworthytimes.com.au/image/title.png" alt="The Trustworthy Times" />
+<img src="http://trustworthytimes.com.au/image/title.png" alt="The Trustworthy Times" />
 
 The most honest news source. Just kidding it is satire.
 
-[The Trustworthy Times](https://trustworthytimes.com.au)
+[The Trustworthy Times](http://trustworthytimes.com.au)
 
-[Contact Page](https://trustworthytimes.com.au/contact)
+[Contact Page](http://trustworthytimes.com.au/contact)
 
 [Report an Issue](https://github.com/darccyy/trustworthytimes/issues/new/choose)
 
-<img src="https://trustworthytimes.com.au/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
+<img src="http://trustworthytimes.com.au/image/logo-short.png" alt="Logo: Megaphone & Handshake" />
 
 # Contributing
 
