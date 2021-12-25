@@ -65,6 +65,7 @@
     img {
       width: calc(#{$size} - #{$border});
       height: 100%;
+      object-fit: cover;
       display: block;
       word-wrap: break-word;
       font-size: 110%;

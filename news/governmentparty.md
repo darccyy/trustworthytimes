@@ -34,4 +34,4 @@ On the other hand, this rumour could be created by Big Anarchy to make Big Contr
 Who can know? In a day of such things, such as /Technology/, /Innovation/, and /Governmental Collapse/, there is no way in telling what is the right thing (And, in turn, what is the wrong thing, based on what happens to be the right thing)
 
 
-I'm Martha Belmonte from <http://trustworthytimes.com.au>*[The Trustworthy Times]*, and this is News.
+I'm Martha Belmonte from <https://trustworthytimes.herokuapp.com>*[The Trustworthy Times]*, and this is News.

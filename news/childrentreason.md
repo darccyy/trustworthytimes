@@ -19,7 +19,7 @@
 Extremist gamer group '/Pog Racists/' has made a public statement claiming that children are 'scum' and deserve to be 'hung for treason'.
 
 
-We here at <http://trustworthytimes.com.au>[The Trustworthy Times] do not condone aggression towards children, but if we did, we would not be doing it like this.
+We here at <https://trustworthytimes.herokuapp.com>[The Trustworthy Times] do not condone aggression towards children, but if we did, we would not be doing it like this.
 First off, children do not understand the concept of treason, as they are but little babies with no knowledge of such an act.
 
 
