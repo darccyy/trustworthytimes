@@ -30,7 +30,7 @@ class Home extends Component {
 
         {/* Components */}
         <ScrollBanner news={listArticles(this.state.news)} />
-        <main>
+        <main id="main">
           <Slides news={this.state.news} />
           <ArticleList news={listArticles(this.state.news)} />
         </main>

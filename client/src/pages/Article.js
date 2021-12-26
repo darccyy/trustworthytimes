@@ -60,7 +60,7 @@ class Article extends Component {
         {/* Scrolling banner */}
         <ScrollBanner news={listArticles(this.state.news)} />
 
-        <main>
+        <main id="main">
           {(() => {
             // Article
             if (this.state.PATH[1]) {

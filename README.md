@@ -99,6 +99,8 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Add tab support
+- [ ] Add aria
 - [ ] Fix article list on narrow screen
 - [ ] Add different image resolution loading
 - [ ] Fix skeleton loading - content article not obfuscating

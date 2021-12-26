@@ -8,6 +8,19 @@ import "../css/Watermark.min.css";
 class Watermark extends Component {
   state = { lastReload: Date.now() - 2000 }; // Initialize rate limit
 
+  // Reload news then reload page, or rate limit
+  click(component) {
+    if (Date.now() > component.state.lastReload + 10000) {
+      component.state.lastReload = Date.now();
+      console.log("Reloading news...");
+      fetch("/api/reload?please=true").then(() => {
+        location.reload();
+      });
+    } else {
+      console.warn("Rate limit");
+    }
+  }
+
   componentDidMount() {
     loadImages();
   }
@@ -21,16 +34,7 @@ class Watermark extends Component {
           title="Bruh Moment"
           className="watermark unloaded"
           onClick={() => {
-            // Reload news then reload page, or rate limit
-            if (Date.now() > this.state.lastReload + 10000) {
-              this.state.lastReload = Date.now();
-              console.log("Reloading news...");
-              fetch("/api/reload?please=true").then(() => {
-                location.reload();
-              });
-            } else {
-              console.warn("Rate limit");
-            }
+            this.click(this);
           }}
         />
       </div>
