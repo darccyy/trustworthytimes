@@ -98,6 +98,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
+- [ ] Remove alt text in skeleton loading
 - [ ] Add different image resolution loading
 - [ ] Proofread articles - fix case
 - [ ] Fix readme
@@ -109,7 +110,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <details>
 
-<summary><h2 style="display:inline"> Completed </h2></summary>
+<summary> <b>Completed</b> </summary>
 
 - [x] Add scss support without css compilation
 - [x] Fix article list on narrow screen
