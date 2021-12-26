@@ -85,6 +85,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 - [ ] Clean scss
 - [ ] Make look better
 - [ ] Move to server side rendering
+- [ ] Switch to `npm ci`
 
 <details>
 
