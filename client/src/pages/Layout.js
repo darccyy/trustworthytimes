@@ -3,11 +3,9 @@ import { Outlet, Link } from "react-router-dom";
 
 import "../css/Layout.min.css";
 
-// Skip to content button
-import SkipToContent from "../js/SkipToContent";
-// Watermark on every page
+// Components on every page
+import Header from "../js/Header";
 import Watermark from "../js/Watermark";
-// Disclaimer on every page
 import Disclaimer from "../js/Disclaimer";
 
 class Layout extends Component {
@@ -15,17 +13,8 @@ class Layout extends Component {
     // Basic layout for all pages
     return (
       <>
-        <header>
-          {/* Skip to main content */}
-          <SkipToContent />
-
-          {/* Fancy header text */}
-          <Link to="/" title="The most honest news source" reloadDocument>
-            <span className="the">the</span>
-            <span className="trustworthy">Trustworthy</span>
-            <span className="times">Times</span>
-          </Link>
-        </header>
+        {/* Header in top */}
+        <Header />
 
         {/* This is where the rest of the page goes - In index.js */}
         <Outlet />
