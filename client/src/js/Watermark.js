@@ -2,7 +2,7 @@ import { Component } from "react";
 
 import loadImages from "../functions/loadImages";
 
-import "../css/Watermark.min.css";
+import "../scss/Watermark.scss";
 
 // Watermark in top right
 class Watermark extends Component {

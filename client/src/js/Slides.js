@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import "../css/Slides.min.css";
+import "../scss/Slides.scss";
 
 // Components
 import SlideShow from "../js/SlideShow";

@@ -1,7 +1,7 @@
 import {Component} from "react";
 import {Link} from "react-router-dom";
 
-import "../css/Header.min.css";
+import "../scss/Header.scss";
 
 // Skip to content button
 import SkipToContent from "../js/SkipToContent";

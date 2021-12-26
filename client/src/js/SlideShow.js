@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
-import "../css/SlideShow.min.css";
+import "../scss/SlideShow.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";

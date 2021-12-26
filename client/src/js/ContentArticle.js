@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../css/ContentArticle.min.css";
+import "../scss/ContentArticle.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";

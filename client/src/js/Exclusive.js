@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
-import "../css/Exclusive.min.css";
+import "../scss/Exclusive.scss";
 
 class Exclusive extends Component {
   componentDidMount() {

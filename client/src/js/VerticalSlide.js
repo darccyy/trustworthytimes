@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
-import "../css/VerticalSlide.min.css";
+import "../scss/VerticalSlide.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";

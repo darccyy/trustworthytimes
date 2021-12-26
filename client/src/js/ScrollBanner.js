@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
-import "../css/ScrollBanner.min.css";
+import "../scss/ScrollBanner.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";

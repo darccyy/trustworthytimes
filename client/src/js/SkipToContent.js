@@ -1,7 +1,7 @@
 import {Component} from "react";
 import $ from "jquery";
 
-import "../css/SkipToContent.min.css";
+import "../scss/SkipToContent.scss";
 
 // Skip to content with tab
 class SkipToContent extends Component {

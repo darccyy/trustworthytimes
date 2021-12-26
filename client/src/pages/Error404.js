@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import Helmet from "react-helmet";
 
-import "../css/Error404.min.css";
+import "../scss/Error404.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";

@@ -146,7 +146,7 @@
 
     .img-wrap {
       display: block;
-      max-width: min(100%, 500px);
+      max-width: Min(100%, 500px);
       margin: auto;
       border-radius: 3px;
 
@@ -183,6 +183,11 @@
 
         &:not(:hover) {
           text-decoration: none;
+        }
+
+        &:focus-visible {
+          border-radius: 5px;
+          outline: 1px solid white;
         }
       }
 

@@ -83,10 +83,9 @@ Simplified file tree:
         │   └── Layout.js # Main file for layout: Header, Footer, ect.
         ├── js/ # React js files for components
         │   └── ... # Scrolling Banner, Article List, ect.
-        ├── scss/ # Styles in scss
-        │   ├── ... # Corresponding to js folder
-        │   └── App.scss # For main styles
-        └── css/ # Compiled from scss
+        └── scss/ # Styles in scss
+            ├── ... # Corresponding to js folder
+            └── App.scss # For main styles
 ```
 
 ## Adding / Editing Articles
@@ -101,6 +100,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 - [ ] Add different image resolution loading
 - [ ] Proofread articles - fix case
+- [ ] Fix readme
 - [ ] Download all images
 - [ ] Add variables to scss
 - [ ] Clean scss
@@ -111,6 +111,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add scss support without css compilation
 - [x] Fix article list on narrow screen
 - [x] Add tab support
 - [x] Fix skeleton loading - content article not obfuscating

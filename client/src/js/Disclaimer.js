@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
-import "../css/Disclaimer.min.css";
+import "../scss/Disclaimer.scss";
 
 // Disclaimer footer on every page
 class Disclaimer extends Component {

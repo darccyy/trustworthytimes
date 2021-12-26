@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import "../css/ArticleList.min.css";
+import "../scss/ArticleList.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages.js";

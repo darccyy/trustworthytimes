@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Helmet from "react-helmet";
 
-import "../css/Contact.min.css";
+import "../scss/Contact.scss";
 
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
