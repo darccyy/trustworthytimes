@@ -1,4 +1,8 @@
 .Slides {
+  @media print {
+    display: none;
+  }
+  
   @media (max-width: 1200px) {
     margin-bottom: 10px;
 
