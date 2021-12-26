@@ -8,6 +8,10 @@
   background-color: #313334;
   overflow: hidden;
 
+  @media print {
+    display: none;
+  }
+
   a {
     &:hover {
       .headline {
