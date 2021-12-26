@@ -6,11 +6,9 @@ import "../css/ArticleButtons.min.css";
 // Add classes for unloaded / broken images
 import "../functions/loadImages";
 
-// Buttons to go to next article
+// Buttons to go to next / previous article
 class ArticleButtons extends Component {
   render() {
-    var news = this.props.news || [{}, {}];
-
     return (
       <div className="ArticleButtons">
         {(this.props.news || [{}, {}]).map((article, index) => {

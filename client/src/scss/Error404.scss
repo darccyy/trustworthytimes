@@ -7,6 +7,14 @@
     &:not(:hover) {
       text-decoration: none;
     }
+
+    &:focus-visible {
+      outline: none;
+
+      h2 {
+        text-decoration: underline;
+      }
+    }
   }
 
   img {

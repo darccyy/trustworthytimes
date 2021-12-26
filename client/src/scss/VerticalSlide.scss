@@ -43,6 +43,12 @@
       background-color: #593759;
       color: #FFF2;
     }
+
+    &:focus-visible {
+      border: 2px solid white;
+      border-radius: 3px;
+      outline: none;
+    }
   }
 
   .contain {

@@ -58,7 +58,7 @@ class Article extends Component {
         </Helmet>
 
         {/* Scrolling banner */}
-        <ScrollBanner news={listArticles(this.state.news)} />
+        <ScrollBanner news={listArticles(this.state.news, 10)} />
 
         <main id="main">
           {(() => {
@@ -67,7 +67,17 @@ class Article extends Component {
               if (this.state.article || this.state.article === false) {
                 return (
                   <>
+                    {/* Article with content */}
                     <ContentArticle article={this.state.article} />
+
+                    {/* Buttons for next / previous article */}
+                    <ArticleButtons
+                      news={listArticles(this.state.news, 2, {
+                        siblings: this.state.PATH[1] || null,
+                      })}
+                    />
+
+                    {/* Exclusive article at bottom */}
                     <Exclusive
                       news={listArticles(this.state.news, 1, {
                         hidden: true,
@@ -82,12 +92,6 @@ class Article extends Component {
             return <Error404 isArticle={true} />;
           })()}
         </main>
-
-        <ArticleButtons
-          news={listArticles(this.state.news, 2, {
-            siblings: this.state.PATH[1] || null,
-          })}
-        />
       </div>
     );
   }

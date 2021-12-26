@@ -14,6 +14,15 @@
         text-decoration: underline;
       }
     }
+
+    &:focus-visible {
+      border-radius: 5px;
+      outline: 2px solid white;
+
+      h2 {
+        text-decoration: underline;
+      }
+    }
   }
 
   hr {

@@ -117,6 +117,7 @@ export default (class VerticalSlide extends Component {
                     <Link
                       to={!this.props.news ? "." : "/news/" + article.id}
                       reloadDocument
+                      tabIndex={-1}
                     >
                       {/* Image above text */}
                       <div className="img-wrap">

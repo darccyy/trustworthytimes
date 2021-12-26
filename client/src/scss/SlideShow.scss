@@ -191,6 +191,11 @@
           background-color: #0007;
         }
 
+        &:focus-visible {
+          outline: 2px solid white;
+          background-color: #000A;
+        }
+
         $padding: calc(#{$size} * 0.1);
 
         &.left {

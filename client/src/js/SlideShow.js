@@ -87,6 +87,7 @@ export default (class SlideShow extends Component {
                   <Link
                     to={!this.props.news ? "." : "/news/" + article.id}
                     reloadDocument
+                    tabIndex={-1}
                   >
                     {/* Image behind text */}
                     <div className="img-wrap">

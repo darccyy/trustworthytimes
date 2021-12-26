@@ -99,7 +99,6 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 # Todo
 
-- [ ] Add tab support
 - [ ] Add aria
 - [ ] Fix article list on narrow screen
 - [ ] Add different image resolution loading
@@ -115,6 +114,7 @@ To put it onto the server, create a pull request (idk just search it up), and in
 
 <summary><h2 style="display:inline"> Completed </h2></summary>
 
+- [x] Add tab support
 - [x] Make article buttons go previous / next article
 - [x] Fix slideshows
 - [x] Fix link loading

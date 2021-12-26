@@ -29,7 +29,7 @@ class Home extends Component {
         {/* Default title - Don't change */}
 
         {/* Components */}
-        <ScrollBanner news={listArticles(this.state.news)} />
+        <ScrollBanner news={listArticles(this.state.news, 10)} />
         <main id="main">
           <Slides news={this.state.news} />
           <ArticleList news={listArticles(this.state.news)} />

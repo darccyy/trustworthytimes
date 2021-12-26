@@ -51,6 +51,18 @@
         }
       }
 
+      &:focus-visible {
+        outline: none;
+
+        .img-contain {
+          outline: 2px solid white;
+        }
+
+        .headline {
+          text-decoration: underline;
+        }
+      }
+
       .img-contain {
         position: relative;
         float: left;

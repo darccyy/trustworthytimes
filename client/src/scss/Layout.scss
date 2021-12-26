@@ -26,7 +26,6 @@ header {
   max-height: 100px;
   margin-bottom: 10px;
   padding-left: clamp(0.1px, 0.8vw, 20px);
-  // background-color: red;
 
   &:focus-within {
     .trustworthy {
@@ -45,6 +44,12 @@ header {
     text-decoration: none;
 
     &:focus {
+      outline: none;
+
+      span {
+        text-decoration: underline;
+      }
+      
       .trustworthy {
         visibility: visible;
       }
