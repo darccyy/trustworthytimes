@@ -32,6 +32,10 @@
     text-decoration: none;
     filter: brightness(0.3);
 
+    &:focus-within {
+      outline: 2px solid white;
+    }
+
     &.left {
       left: 0;
       border-left: none;

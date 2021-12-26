@@ -1,18 +1,27 @@
 .Exclusive {
+  $border: 3px;
+
   position: relative;
-  width: clamp(100px, 100%, 400px);
+  width: clamp(100px, calc(100% - #{$border} * 2), 400px);
   aspect-ratio: 1/1;
   margin: auto;
   margin-top: 60px;
-  border: 3px solid #754975;
+  border: $border solid #754975;
   background-color: #313334;
   overflow: hidden;
+
+  &:focus-within {
+    outline: 2px solid white;
+  }
 
   @media print {
     display: none;
   }
 
   a {
+    display: block;
+    padding-top: 110%;
+
     &:hover {
       .headline {
         text-decoration: underline;
@@ -20,8 +29,6 @@
     }
 
     &:focus-visible {
-      outline: 2px solid white;
-
       .headline {
         text-decoration: underline;
       }
@@ -31,6 +38,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      transform: translateY(-110%);
       object-fit: cover;
       color: white;
       background-color: #313334;

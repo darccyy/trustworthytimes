@@ -88,6 +88,10 @@
           text-decoration: none;
 
           &:focus-visible {
+            border: 2px solid white;
+            height: calc(100% - 4px);
+            overflow: hidden;
+
             .headline {
               text-decoration: underline;
             }
