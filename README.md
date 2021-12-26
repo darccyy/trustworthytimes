@@ -12,34 +12,7 @@ The most honest news source. Just kidding it is satire.
 
 # Contributing
 
-## Installation
-
-```powershell
-# Clone repository into ./trustworthytimes folder
-git clone https://github.com/darccyy/trustworthytimes.git
-
-# Install dependencies
-npm run install
-```
-
-## Development
-
-```powershell
-# Start development server
-npm run start:dev
-```
-
-Save file to update server
-
-## Production
-
-```powershell
-# Build production
-npm run build
-
-# Start production server
-npm run start
-```
+Build off [React Express Template](https://github.com/darccyy/react-express-template#react-express-template), refer to this document for contribution instructions
 
 ## Modules & Frameworks
 
@@ -52,6 +25,7 @@ Build with:
 - Server
 - - NodeJS
 - - Express
+- - (NextJS in future..?)
 - Hosting
 - - GitHub
 - - Heroku
@@ -68,21 +42,27 @@ Simplified file tree:
 ./ # Root folder (trustworthytimes)
 ├── server/ # All server files
 │   └── server.js # Main server file
+│
 ├── news/ # News articles here
 │   └── ... # Markdown file with article
+│
 └── client/ # All client files
     ├── public/ # Static files (Not including font)
     │   ├── index.html # Main html, Nothing in here
     │   └── image/... # Images, obviously
+    │
     └── src/ # Dynamic React files
         ├── index.js # Main React file
         ├── font/... # Font
         ├── functions/... # Small functions for js files
+        │
         ├── pages/ # Basically the urls
         │   ├── ... # Home, Article, ect.
         │   └── Layout.js # Main file for layout: Header, Footer, ect.
+        │
         ├── js/ # React js files for components
         │   └── ... # Scrolling Banner, Article List, ect.
+        │
         └── scss/ # Styles in scss
             ├── ... # Corresponding to js folder
             └── App.scss # For main styles
@@ -93,8 +73,6 @@ Simplified file tree:
 Open the `./news` folder.
 To edit an article, edit the file.
 To create a new article, copy `./news/template.md` and rename it to the new article id, then fill out the points.
-
-To put it onto the server, create a pull request (idk just search it up), and include a description of what has been changed.
 
 # Todo
 
