@@ -76,21 +76,19 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 
 # Todo
 
+- [ ] Proofread articles - fix case
 - [ ] Remove alt text in skeleton loading
 - [ ] Add different image resolution loading
-- [ ] Proofread articles - fix case
 - [ ] Fix readme
-- [ ] Download all images
 - [ ] Add variables to scss
 - [ ] Clean scss
-- [ ] Make look better
 - [ ] Move to server side rendering
-- [ ] Switch to `npm ci`
 
 <details>
 
 <summary> <b>Completed</b> </summary>
 
+- [x] Switch to `npm ci`
 - [x] Add scss support without css compilation
 - [x] Fix article list on narrow screen
 - [x] Add tab support
