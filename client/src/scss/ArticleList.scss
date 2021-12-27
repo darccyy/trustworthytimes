@@ -17,10 +17,13 @@
       }
 
 
-      img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        color: #0000;
+      .img-wrap {
+        transform: none !important;
+
+        img {
+          color: #0000 !important;
+          transform: none !important;
+        }
       }
 
       .img-wrap,

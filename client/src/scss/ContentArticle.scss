@@ -83,7 +83,7 @@
       &:not(:first-of-type) {
         margin-left: 10px;
 
-        &::before {
+        &:not(.labs)::before {
           content: "/";
           margin-right: 10px;
           color: #754975;
@@ -96,6 +96,11 @@
             margin-left: 0px;
           }
         }
+      }
+
+      &.labs {
+        margin-left: 10px;
+        color: #ce4c59;
       }
     }
   }

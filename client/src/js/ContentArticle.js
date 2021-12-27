@@ -15,6 +15,7 @@ export default (class ContentArticle extends Component {
 
   render() {
     const article = this.props.article || { skeleton: true };
+    console.log(article);
 
     return (
       <div className={"ContentArticle" + (article.skeleton ? " skeleton" : "")}>
@@ -27,6 +28,15 @@ export default (class ContentArticle extends Component {
               </h2>
             );
           })}
+
+          {!article.labs ? (
+            <></>
+          ) : (
+            <h2 className="labs">
+                <i className="fa fa-flask"></i>
+                Trustworthy Labs
+            </h2>
+          )}
         </div>
 
         {/* Big headline */}

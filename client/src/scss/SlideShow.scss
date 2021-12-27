@@ -76,8 +76,10 @@
             user-select: none;
           }
 
-          img.main {
-            color: #0000;
+          .img-wrap {
+            img {
+              color: #0000;
+            }
           }
 
           .headline,
