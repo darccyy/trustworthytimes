@@ -7,39 +7,22 @@ export default function listArticles(articles, length, options) {
   // Set options
   options = {
     shuffle: true,
-    hidden: false,
-    shown: true,
     exclusive: false,
     ...options,
   };
-  if (!options.hidden && !options.shown && !options.exclusive) {
-    return [];
-  }
 
   // Sort articles
   var array = [];
   for (var i in articles) {
-    if (!articles[i]) {
-      continue;
-    }
-
     // Sort by options
     if (
-      (!options.hidden && articles[i].hidden) ||
-      (!options.shown &&
-        !articles[i].hidden &&
-        (!options.exclusive || !articles[i].exclusive)) ||
-      (!options.exclusive && !articles[i].exclusive)
+      articles[i] &&
+      !articles[i].hidden &&
+      (!articles[i].exclusive || options.exclusive) &&
+      (articles[i].exclusive || !options.exclusive)
     ) {
-      continue;
+      array.push(articles[i]);
     }
-
-    // Special articles
-    if (["template", "example"].includes(articles[i].id)) {
-      continue;
-    }
-
-    array.push(articles[i]);
   }
 
   // Previous, next articles
