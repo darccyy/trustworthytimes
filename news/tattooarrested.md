@@ -2,9 +2,7 @@
 
 ## Sure is a lot of arrests.
 
-### Tatto that reads 'DEAD', Possibly Satanic.
-
-`https://images.pexels.com/photos/772850/pexels-photo-772850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/772850/pexels-photo-772850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Tattoo that reads 'DEAD', Possibly Satanic.
 
 > Man the Dan Man
 

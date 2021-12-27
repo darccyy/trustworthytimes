@@ -19,12 +19,12 @@ export default function listArticles(articles, length, options) {
 
     // Sort by options
     if (!options.hidden) {
-      if (articles[i].hide) {
+      if (articles[i].hidden) {
         continue;
       }
     }
     if (!options.shown) {
-      if (!articles[i].hide) {
+      if (!articles[i].hidden) {
         continue;
       }
     }

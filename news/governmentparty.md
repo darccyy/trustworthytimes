@@ -2,9 +2,7 @@
 
 ## Organization of World Leaders stopped due to ruckus
 
-### Government Building (Closed)
-
-`https://images.pexels.com/photos/290562/pexels-photo-290562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260`
+`https://images.pexels.com/photos/290562/pexels-photo-290562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260` Government Building (Closed)
 
 > Martha Belmonte
 

@@ -1,12 +1,10 @@
-# Hidden
+- hidden
 
 # 3 Ways To Be More INSANE With The Help Of Your Dog
 
 ## Do you want to be much less sane? Ok.
 
-### Dog and Soon-to-be Insane Person
-
-`https://images.pexels.com/photos/8489327/pexels-photo-8489327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/8489327/pexels-photo-8489327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Dog and Soon-to-be Insane Person
 
 > Jesus H. Christ (No relation)
 

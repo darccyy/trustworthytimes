@@ -2,9 +2,7 @@
 
 ## Joker (from Joker (2019)) is now President of Czechoslovakia
 
-### Joker from Joker (2019)
-
-`https://images.pexels.com/photos/2970497/pexels-photo-2970497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/2970497/pexels-photo-2970497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Joker from Joker (2019)
 
 > Frekk Dina
 

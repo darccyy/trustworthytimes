@@ -1,10 +1,10 @@
+- labs
+
 # Cat vs HOT KNIFE Challenge
 
 ## Gone Wrong! At 3AM! We kissed???
 
-### A knife slicing meat of cat
-
-`https://images.pexels.com/photos/8477347/pexels-photo-8477347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/8477347/pexels-photo-8477347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` A knife slicing meat of cat
 
 > Beans McGee
 
@@ -27,4 +27,4 @@ Here are the results, again presented by Standard Robert:
 
 > The results, are, that the cat wins! No match for The Cat!
 
-Remember to Like and Subscribe 👍
+Remember to Like and Subscribe 👍 to Trustworthy Labs content

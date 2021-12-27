@@ -2,9 +2,7 @@
 
 ## This is freaking everyone out. What the.
 
-### INSANE Person
-
-`https://images.pexels.com/photos/3760044/pexels-photo-3760044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/3760044/pexels-photo-3760044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` INSANE Person
 
 > Clemens Wout
 

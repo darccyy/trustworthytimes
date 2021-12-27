@@ -2,9 +2,7 @@
 
 ## This charming individual has BOUGHT the castle of royalty in BRITAIN!
 
-### Building that resembles Buckingham Palace
-
-`https://images.pexels.com/photos/3960662/pexels-photo-3960662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/3960662/pexels-photo-3960662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Building that resembles Buckingham Palace
 
 > Sir Reginald Fancybottom Esq.
 
@@ -16,7 +14,9 @@
 
 ---
 
-BuckingHam Palace, AKA ^*^*^*^*ingHam Palace, is the home of the Queen of Bri{color:#AAA}[t]ain and her many friends. As a national symbol of Big Castle, it is of course off the property market, for the most part, but local man known as Lawrence Hylda purchased this big house for just under $103. But how did he do it, you ask. We asked him in this exclusive interview
+BuckingHam Palace, AKA ^_^_^*^*ingHam Palace, is the home of the Queen of Bri{color:#FFF8}[t]ain and her many friends.
+As a national symbol of Big Castle, it is of course off the property market, for the most part, but local man known as Lawrence Hylda purchased this big house for just under $103.
+But how did he do it, you ask. We asked him in this exclusive interview:
 
 # Trustworthy Times Journalist Sir Reginald Fancybottom Esq.
 
@@ -56,7 +56,7 @@ BuckingHam Palace, AKA ^*^*^*^*ingHam Palace, is the home of the Queen of Bri{co
 
 # Hylda
 
-> Exaclty
+> {text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #F00A}[Exaclty]
 
 # Fancybottom
 

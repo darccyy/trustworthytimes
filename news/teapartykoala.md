@@ -2,9 +2,7 @@
 
 ## Ridiculous
 
-### Tea Party, without Koala???
-
-`https://images.pexels.com/photos/33275/tea-party-tea-black-and-white-teapot.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/33275/tea-party-tea-black-and-white-teapot.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Tea Party, without Koala???
 
 > Piero Arrison
 

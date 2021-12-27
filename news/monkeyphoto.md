@@ -2,9 +2,7 @@
 
 ## An image circulating the web was recently fact-checked as FALSE!
 
-### Totally 'Real' photo of monkey / tomato hybrid
-
-`https://freshtrust.github.io/images/monke-tomato.png`
+`https://freshtrust.github.io/images/monke-tomato.png` Totally 'Real' photo of monkey / tomato hybrid
 
 > u/XLarge_'s Nemesis
 

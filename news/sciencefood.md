@@ -2,9 +2,7 @@
 
 ## Scientist Doctor says this. It is true trust me.
 
-### Robot arm getting pointed at (Rude)
-
-`https://images.pexels.com/photos/9028872/pexels-photo-9028872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260`
+`https://images.pexels.com/photos/9028872/pexels-photo-9028872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260` Robot arm getting pointed at (Rude)
 
 > Dr Willy Nuttle
 

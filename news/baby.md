@@ -2,9 +2,7 @@
 
 ## Click to read the full story. 😏
 
-### Stupid Dumb BABY
-
-`https://images.pexels.com/photos/161709/newborn-baby-feet-basket-161709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+`https://images.pexels.com/photos/161709/newborn-baby-feet-basket-161709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1` Stupid Dumb BABY
 
 > Disgruntled Parent
 

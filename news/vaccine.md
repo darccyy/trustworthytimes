@@ -1,12 +1,10 @@
-# Hidden
+- hidden
 
 # Scientists suggest VACCINE contains CHEMICALS
 
 ## Vaccines are containing CHEMICALS! 👽
 
-### So-called 'Doctor' making a 'Vaccine' with 'CHEMICALS'
-
-`https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` So-called 'Doctor' making a 'Vaccine' with 'CHEMICALS'
 
 > Mr Mind Awakened
 

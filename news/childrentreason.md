@@ -2,9 +2,7 @@
 
 ## Extremist Gamer Group Claims Children are 'Scum'
 
-### Distraught
-
-`https://images.pexels.com/photos/3799830/pexels-photo-3799830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/3799830/pexels-photo-3799830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Distraught
 
 > Zephyrinus Acquafredda
 

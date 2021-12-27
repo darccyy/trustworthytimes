@@ -2,9 +2,7 @@
 
 ## Swedish scientists find cure for the Piss Sickness. It is just...
 
-### A nice glass of... Wait a second.
-
-`https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` A nice glass of... Wait a second.
 
 > Champion Olympian Chris Klug
 

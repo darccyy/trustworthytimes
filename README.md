@@ -77,6 +77,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 # Todo
 
 - [ ] Proofread articles - fix case
+- [ ] Add Trustworthy Labs icon
 - [ ] Remove alt text in skeleton loading
 - [ ] Add different image resolution loading
 - [ ] Fix readme

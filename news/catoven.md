@@ -1,10 +1,10 @@
+- labs
+
 # How Many CATS Can One Fit In An OVEN?
 
 ## We ask this everyday... but now we FIND OUT!
 
-### Person putting a cat in the oven
-
-`https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Person putting a cat in the oven
 
 > Beans McGee
 
@@ -25,3 +25,7 @@ This was said by the Chief Experiment Scientist Delora Mlakar here at Trustworth
 > You would not believe the results!
 
 And here is the results: /We forgor💀/
+
+# More from Trustworthy Labs
+
+- </news/catknife>[Cat vs HOT KNIFE Challenge]

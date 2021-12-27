@@ -2,9 +2,7 @@
 
 ## This is NOT OK!
 
-### A Healthy Meal
-
-`https://images.pexels.com/photos/4021931/pexels-photo-4021931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/4021931/pexels-photo-4021931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` A Healthy Meal
 
 > Djungelskog
 

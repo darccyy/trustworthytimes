@@ -2,9 +2,7 @@
 
 ## Volunteer Says He Was 'Forced to' Assault Old People
 
-### Mean Firefighter Mocking the Elderly
-
-`https://images.pexels.com/photos/70573/fireman-firefighter-rubble-9-11-70573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/70573/fireman-firefighter-rubble-9-11-70573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Mean Firefighter Mocking the Elderly
 
 > Shams al-Din Vinogradov
 

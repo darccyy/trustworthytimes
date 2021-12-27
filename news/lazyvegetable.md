@@ -1,12 +1,10 @@
-# Hidden
+- hidden
 
 # The Lazy Man's Guide To VEGETABLE
 
 ## Ever wanted to Vegetable, but too LAZY?
 
-### vegetable...
-
-`https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`
+`https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500` vegetable...
 
 > Lazy Man
 

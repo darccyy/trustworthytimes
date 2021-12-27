@@ -2,9 +2,7 @@
 
 ## Wife of Senator Pissed at Someone
 
-### Senate (Devoid of Life Forms)
-
-`https://images.pexels.com/photos/10209717/pexels-photo-10209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`
+`https://images.pexels.com/photos/10209717/pexels-photo-10209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940` Senate (Devoid of Life Forms)
 
 > Tianquauhpop Kai-Kuei
 
