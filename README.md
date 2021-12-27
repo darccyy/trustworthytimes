@@ -76,7 +76,8 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 
 # Todo
 
-- [ ] Proofread articles - fix case
+- [ ] Proofread articles
+- [ ] Scrolling banner not working
 - [ ] Add different image resolution loading
 - [ ] Fix readme
 - [ ] Add variables to scss

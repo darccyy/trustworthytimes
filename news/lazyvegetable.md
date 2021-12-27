@@ -1,4 +1,4 @@
-- hidden
+- exclusive
 
 # The Lazy Man's Guide To VEGETABLE
 

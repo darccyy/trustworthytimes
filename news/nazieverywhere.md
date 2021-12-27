@@ -1,4 +1,4 @@
-- hidden
+- exclusive
 
 # OMG! NAZIS EVERYWHERE
 

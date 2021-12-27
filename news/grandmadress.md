@@ -1,4 +1,4 @@
-# Grandma Encourages You to Consider Dressing Normal
+# Grandma Encourages You to CONSIDER Dressing Normal
 
 ## 'You are a disgrace.'
 

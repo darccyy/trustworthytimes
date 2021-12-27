@@ -80,7 +80,8 @@ class Article extends Component {
                     {/* Exclusive article at bottom */}
                     <Exclusive
                       news={listArticles(this.state.news, 1, {
-                        hidden: true,
+                        exclusive: true,
+                        shown: false,
                       })}
                     />
                   </>

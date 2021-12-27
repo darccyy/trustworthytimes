@@ -1,4 +1,4 @@
-# Government Shutdown After Party
+# Government SHUTDOWN After Party
 
 ## Organization of World Leaders stopped due to ruckus
 

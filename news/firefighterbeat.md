@@ -1,4 +1,4 @@
-# Firefighter Admits He Brutally Beat Elderly
+# Firefighter ADMITS He Brutally Beat Elderly
 
 ## Volunteer Says He Was 'Forced to' Assault Old People
 

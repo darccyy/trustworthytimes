@@ -7,7 +7,7 @@
   margin: auto;
   margin-top: 60px;
   border: $border solid #754975;
-  background-color: #313334;
+  background-color: #181a1b;
   overflow: hidden;
 
   &:focus-within {
@@ -16,6 +16,30 @@
 
   @media print {
     display: none;
+  }
+
+  &.skeleton {
+    img {
+      transform: none !important;
+      color: #0000;
+    }
+
+    .headline,
+    .subtitle {
+      text-decoration: none !important;
+
+      span {
+        border-radius: 15px;
+        background-color: #151717;
+        color: #0000;
+      }
+    }
+
+    .subtitle {
+      span {
+        border-radius: 10px;
+      }
+    }
   }
 
   a {
@@ -40,8 +64,8 @@
       height: 100%;
       transform: translateY(-110%);
       object-fit: cover;
+      background-color: #181a1b;
       color: white;
-      background-color: #313334;
 
       &.unloaded {
         margin-top: 60px;

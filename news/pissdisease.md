@@ -1,4 +1,4 @@
-# Cure for Piss Disease found!
+# Cure for Piss Disease FOUND!
 
 ## Swedish scientists find cure for the Piss Sickness. It is just...
 

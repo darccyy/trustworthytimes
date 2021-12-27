@@ -1,4 +1,4 @@
-- hidden
+- exclusive
 
 # 3 Ways To Be More INSANE With The Help Of Your Dog
 

@@ -1,4 +1,4 @@
-# Man Found Having Tea Party With Koala Again
+# Man Found Having TEA Party With KOALA Again
 
 ## Ridiculous
 

@@ -12,7 +12,7 @@ class Exclusive extends Component {
   }
 
   render() {
-    var article = this.props.news?.[0] || { skeleton: true };
+    var article = this.props.news?.[0] || {skeleton: true};
 
     return (
       <div className={"Exclusive" + (article.skeleton ? " skeleton" : "")}>

@@ -1,4 +1,4 @@
-# Former FDA Scientist Explains Why Joker Is In Office
+# Former FDA Scientist Explains Why JOKER Is In Office
 
 ## Joker (from Joker (2019)) is now President of Czechoslovakia
 

@@ -1,4 +1,4 @@
-# Everyone Is Doing 6 McNuggets for 99p
+# EVERYONE Is Doing 6 McNuggets for 99p
 
 ## This is NOT OK!
 

@@ -15,7 +15,6 @@ export default (class ContentArticle extends Component {
 
   render() {
     const article = this.props.article || { skeleton: true };
-    console.log(article);
 
     return (
       <div className={"ContentArticle" + (article.skeleton ? " skeleton" : "")}>

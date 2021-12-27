@@ -1,4 +1,4 @@
-# Children Should Be "Hung for Treason"
+# CHILDREN Should Be "Hung for Treason"
 
 ## Extremist Gamer Group Claims Children are 'Scum'
 

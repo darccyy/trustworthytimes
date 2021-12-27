@@ -1,4 +1,4 @@
-# Congress Introduces Bill to for Everyone to be Nicer
+# CONGRESS Introduces Bill to for EVERYONE to be Nicer
 
 ## 'Just please be nice' said Congress Leader Buddy Warren
 

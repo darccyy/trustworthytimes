@@ -5,8 +5,14 @@ export default function listArticles(articles, length, options) {
   }
 
   // Set options
-  options = { shuffle: true, hidden: false, shown: true, ...options };
-  if (!options.hidden && !options.shown) {
+  options = {
+    shuffle: true,
+    hidden: false,
+    shown: true,
+    exclusive: false,
+    ...options,
+  };
+  if (!options.hidden && !options.shown && !options.exclusive) {
     return [];
   }
 
@@ -18,15 +24,14 @@ export default function listArticles(articles, length, options) {
     }
 
     // Sort by options
-    if (!options.hidden) {
-      if (articles[i].hidden) {
-        continue;
-      }
-    }
-    if (!options.shown) {
-      if (!articles[i].hidden) {
-        continue;
-      }
+    if (
+      (!options.hidden && articles[i].hidden) ||
+      (!options.shown &&
+        !articles[i].hidden &&
+        (!options.exclusive || !articles[i].exclusive)) ||
+      (!options.exclusive && !articles[i].exclusive)
+    ) {
+      continue;
     }
 
     // Special articles
