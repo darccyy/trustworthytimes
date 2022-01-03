@@ -28,19 +28,20 @@ export default (class ContentArticle extends Component {
             );
           })}
 
+          {/* Labs icon */}
           {!article.labs ? (
             <></>
           ) : (
             <h2 className="labs">
-                <i className="fa fa-flask"></i>
-                Trustworthy Labs
+              <i className="fa fa-flask"></i>
+              Trustworthy Labs
             </h2>
           )}
         </div>
 
         {/* Big headline */}
         <h1 className="headline">
-          {article.headline || "Important News Headline"}
+          <span>{article.headline || "Important News Headline"}</span>
         </h1>
 
         {/* Author, Time, and Final Topic */}

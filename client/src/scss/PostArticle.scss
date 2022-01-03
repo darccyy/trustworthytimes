@@ -1,0 +1,79 @@
+.Post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: #020203;
+  
+  main {
+    height: 100%;
+    padding: 0;
+    
+    .PostArticle {
+      position: relative;
+      max-width: 100vw;
+      max-height: 100vh;
+      aspect-ratio: 1/1;
+      margin: auto;
+      border: 4px solid #333;
+      background-color: #161819;
+      color: white;
+      transform: scale(0.9);
+      overflow: hidden;
+
+      .text-contain {
+        padding: 0 10px;
+
+        * {
+          margin: 0;
+        }
+
+        .headline {
+          padding-top: 10px;
+          font-size: clamp(5px, 5.7vw, 35px);
+        }
+
+        .subtitle {
+          padding: 5px 0;
+          font-size: clamp(3px, 3.55vw, 22px);
+          font-weight: 500;
+          color: #BBB;
+        }
+      }
+
+      .img-contain {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .author {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 5px;
+          font-size: clamp(1px, 2.3vw, 15px);
+          color: #CCC;
+          $offset: 2px;
+          $blur: 3px;
+          $color: #111A;
+          text-shadow: $offset $offset $blur $color,
+          #{- $offset} #{- $offset} $blur $color,
+          $offset #{- $offset} $blur $color,
+          #{- $offset} $offset $blur $color;
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
