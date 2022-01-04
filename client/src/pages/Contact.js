@@ -24,6 +24,14 @@ class Contact extends Component {
 
         <hr />
 
+        <a href="https://instagram.com/trustworthytimes/">
+          <h2>Instagram</h2>
+
+          <p>Latest Trustworthy Content</p>
+        </a>
+
+        <hr />
+
         <a href="https://github.com/darccyy/trustworthytimes">
           <h2>GitHub Repo</h2>
 

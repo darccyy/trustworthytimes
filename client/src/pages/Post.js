@@ -1,8 +1,11 @@
 import { Component } from "react";
 import Helmet from "react-helmet";
 
+import "../scss/Post.scss";
+
 // Components
-import PostArticle from "../js/PostArticle";
+import PostThumb from "../js/PostThumb";
+import PostText from "../js/PostText";
 import Error404 from "../pages/Error404";
 
 // Add classes for unloaded / broken images
@@ -50,15 +53,19 @@ class Post extends Component {
         <main id="main">
           {(() => {
             // Article
-            if (this.state.PATH[1]) {
-              if (this.state.article || this.state.article === false) {
-                return (
-                  <>
-                    {/* Article with content */}
-                    <PostArticle article={this.state.article} />
-                  </>
-                );
-              }
+            if (
+              this.state.PATH[1] &&
+              (this.state.article || this.state.article === false)
+            ) {
+              return (
+                <>
+                  {/* Thumbnail for post */}
+                  <PostThumb article={this.state.article} />
+
+                  {/* Text for post */}
+                  <PostText article={this.state.article} />
+                </>
+              );
             }
 
             // 404 Page (For article)

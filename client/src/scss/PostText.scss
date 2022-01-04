@@ -1,0 +1,42 @@
+.PostText {
+  .text-contain {
+    color: white;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    .description {
+
+      .text {
+        margin: 0;
+      }
+
+      .headline {
+        margin: 5px 0;
+        font-size: clamp(5px, 5.7vw, 35px);
+      }
+
+      .subtitle {
+        padding: 5px 0;
+        font-size: clamp(3px, 3.55vw, 22px);
+      }
+
+      .read {
+        padding: 5px 0;
+        font-size: clamp(1px, 2.3vw, 15px);
+      }
+
+      .hashtags {
+        padding: 5px 0;
+        font-size: clamp(1px, 2.3vw, 15px);
+        color: #AAA;
+      }
+    }
+
+    .alt-text {
+      margin: 0;
+      padding-top: 10px;
+      color: #666;
+    }
+  }
+}

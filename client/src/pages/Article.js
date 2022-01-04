@@ -63,30 +63,31 @@ class Article extends Component {
         <main id="main">
           {(() => {
             // Article
-            if (this.state.PATH[1]) {
-              if (this.state.article || this.state.article === false) {
-                return (
-                  <>
-                    {/* Article with content */}
-                    <ContentArticle article={this.state.article} />
+            if (
+              this.state.PATH[1] &&
+              (this.state.article || this.state.article === false)
+            ) {
+              return (
+                <>
+                  {/* Article with content */}
+                  <ContentArticle article={this.state.article} />
 
-                    {/* Buttons for next / previous article */}
-                    <ArticleButtons
-                      news={listArticles(this.state.news, 2, {
-                        siblings: this.state.PATH[1] || null,
-                      })}
-                    />
+                  {/* Buttons for next / previous article */}
+                  <ArticleButtons
+                    news={listArticles(this.state.news, 2, {
+                      siblings: this.state.PATH[1] || null,
+                    })}
+                  />
 
-                    {/* Exclusive article at bottom */}
-                    <Exclusive
-                      news={listArticles(this.state.news, 1, {
-                        exclusive: true,
-                        shown: false,
-                      })}
-                    />
-                  </>
-                );
-              }
+                  {/* Exclusive article at bottom */}
+                  <Exclusive
+                    news={listArticles(this.state.news, 1, {
+                      exclusive: true,
+                      shown: false,
+                    })}
+                  />
+                </>
+              );
             }
 
             // 404 Page (For article)
