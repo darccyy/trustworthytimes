@@ -11,7 +11,6 @@ import copyText from "../functions/copyText";
 export default (class PostText extends Component {
   async componentDidMount() {
     loadImages();
-    console.log(document.querySelector(".PostText"));
   }
 
   copyDescription() {
@@ -59,6 +58,10 @@ export default (class PostText extends Component {
                 "satire",
                 article.labs ? "trustworthylabs" : "",
               ].map((hashtag, index) => {
+                if (!hashtag) {
+                  return;
+                }
+
                 return (
                   <span key={index}>
                     {index ? " " : ""}#{hashtag}
