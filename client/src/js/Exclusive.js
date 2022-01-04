@@ -6,17 +6,20 @@ import loadImages from "../functions/loadImages";
 
 import "../scss/Exclusive.scss";
 
-class Exclusive extends Component {
+export default class Exclusive extends Component {
   componentDidMount() {
     loadImages();
   }
 
   render() {
-    var article = this.props.news?.[0] || {skeleton: true};
+    var article = this.props.news?.[0] || { skeleton: true };
 
     return (
       <div className={"Exclusive" + (article.skeleton ? " skeleton" : "")}>
-        <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
+        <Link
+          to={!this.props.news ? "." : "/news/" + article.id}
+          reloadDocument
+        >
           <img
             src={article.image}
             alt={article.alt || "Headline image"}
@@ -42,5 +45,3 @@ class Exclusive extends Component {
     );
   }
 }
-
-export default Exclusive;

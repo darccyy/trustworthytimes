@@ -5,7 +5,7 @@ import loadImages from "../functions/loadImages";
 import "../scss/Watermark.scss";
 
 // Watermark in top right
-class Watermark extends Component {
+export default class Watermark extends Component {
   state = { lastReload: Date.now() - 2000 }; // Initialize rate limit
 
   // Reload news then reload page, or rate limit
@@ -41,5 +41,3 @@ class Watermark extends Component {
     );
   }
 }
-
-export default Watermark;

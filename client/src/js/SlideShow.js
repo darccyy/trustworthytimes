@@ -5,10 +5,10 @@ import $ from "jquery";
 import "../scss/SlideShow.scss";
 
 // Add classes for unloaded / broken images
-import loadImages from "../functions/loadImages.js";
+import loadImages from "../functions/loadImages";
 
 // Slideshow in home page
-export default (class SlideShow extends Component {
+export default class SlideShow extends Component {
   async componentDidMount() {
     loadImages();
     clearTimeout(this.slide_changer);
@@ -151,4 +151,4 @@ export default (class SlideShow extends Component {
       </div>
     );
   }
-});
+}

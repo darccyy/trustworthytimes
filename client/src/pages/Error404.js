@@ -7,7 +7,7 @@ import "../scss/Error404.scss";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
-class Error404 extends Component {
+export default class Error404 extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -52,5 +52,3 @@ class Error404 extends Component {
     );
   }
 }
-
-export default Error404;

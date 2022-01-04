@@ -8,7 +8,7 @@ import loadImages from "../functions/loadImages";
 import copyText from "../functions/copyText";
 
 // Specific article in /news/*
-export default (class PostText extends Component {
+export default class PostText extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -78,4 +78,4 @@ export default (class PostText extends Component {
       </div>
     );
   }
-});
+}

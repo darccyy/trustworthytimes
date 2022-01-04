@@ -13,7 +13,7 @@ import loadImages from "../functions/loadImages";
 // Shuffle news articles
 import listArticles from "../functions/listArticles";
 
-class Article extends Component {
+export default class Article extends Component {
   // Set default state
   state = {
     article: false,
@@ -98,5 +98,3 @@ class Article extends Component {
     );
   }
 }
-
-export default Article;

@@ -14,7 +14,7 @@
 
 ---
 
-BuckingHam Palace, AKA ^_^_^*^*ingHam Palace, is the home of the Queen of Bri{color:#FFF8}[t]ain and her many friends.
+BuckingHam Palace, AKA \*\*\*\*ingHam Palace, is the home of the Queen of Bri{color:#FFF8}[t]ain and her many friends.
 As a national symbol of Big Castle, it is of course off the property market, for the most part, but local man known as Lawrence Hylda purchased this big house for just under $103.
 But how did he do it, you ask. We asked him in this exclusive interview:
 

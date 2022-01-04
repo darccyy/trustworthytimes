@@ -21,7 +21,7 @@ Can you believe this!?
 This quote was said by me, General Jansen, leader of the Great Liberty People, a group of people.
 
 
-This has gotten out of hand. Public tidyness? What in g^*d's name.
+This has gotten out of hand. Public tidyness? What in g\*d's name.
 
 I say we put an end to this madness by sending them a strongly worded letter explaining 'Can you not!?'
 

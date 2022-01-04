@@ -7,7 +7,7 @@ import "../scss/ArticleButtons.scss";
 import "../functions/loadImages";
 
 // Buttons to go to next / previous article
-class ArticleButtons extends Component {
+export default class ArticleButtons extends Component {
   render() {
     return (
       <div className="ArticleButtons">
@@ -21,7 +21,9 @@ class ArticleButtons extends Component {
             >
               <img
                 src={article.image}
-                alt={article.headline || (index ? "Next" : "Previous") + " Article"}
+                alt={
+                  article.headline || (index ? "Next" : "Previous") + " Article"
+                }
                 title={article.alt || "Headline Image"}
                 className="unloaded"
               />
@@ -31,6 +33,4 @@ class ArticleButtons extends Component {
       </div>
     );
   }
-}
-
-export default ArticleButtons;
+};

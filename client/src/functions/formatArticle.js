@@ -29,7 +29,7 @@ export default function formatArticle(array) {
       // Ignore if escape character active
       if (!escaped) {
         // Escape character
-        if (char === "^") {
+        if (char === "\\") {
           escaped = true;
           continue;
         }
@@ -78,7 +78,7 @@ export default function formatArticle(array) {
       }
 
       // Escape character
-      if (char !== "^") {
+      if (char !== "\\") {
         escaped = false;
       }
 

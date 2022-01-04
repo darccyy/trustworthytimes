@@ -5,7 +5,7 @@ import $ from "jquery";
 import "../scss/Disclaimer.scss";
 
 // Disclaimer footer on every page
-class Disclaimer extends Component {
+export default class Disclaimer extends Component {
   render() {
     return (
       <footer className="Disclaimer">
@@ -46,5 +46,3 @@ class Disclaimer extends Component {
     );
   }
 }
-
-export default Disclaimer;

@@ -77,7 +77,6 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 # Todo
 
 - [ ] Add language support
-- [ ] Make all `export` the same
 - [ ] Add tags for articles
 - [ ] Proofread articles
 - [ ] Scrolling banner not working
@@ -91,6 +90,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 
 <summary> <b>Completed</b> </summary>
 
+- [x] Make all `export` the same
 - [x] Add post text
 - [x] Fix Labs icon for post article
 - [x] Remove alt text in skeleton loading

@@ -5,10 +5,10 @@ import $ from "jquery";
 import "../scss/ScrollBanner.scss";
 
 // Add classes for unloaded / broken images
-import loadImages from "../functions/loadImages.js";
+import loadImages from "../functions/loadImages";
 
 // Scrolling banner on home and article pages
-export default (class ScrollBanner extends Component {
+export default class ScrollBanner extends Component {
   async componentDidMount() {
     loadImages();
 
@@ -80,4 +80,4 @@ export default (class ScrollBanner extends Component {
       </div>
     );
   }
-});
+}

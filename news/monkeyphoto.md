@@ -14,7 +14,7 @@
 
 ---
 
-The image pictured above, submitted by user `XLarge^_` on Rebbit has taken the internet by storm about how cool it is.
+The image pictured above, submitted by user `XLarge\_` on Rebbit has taken the internet by storm about how cool it is.
 
 But recent evidence released by photography scientists say that the image might be faked!
 

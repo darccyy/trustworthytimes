@@ -10,7 +10,7 @@ import VerticalSlide from "../js/VerticalSlide";
 import listArticles from "../functions/listArticles";
 
 // SlideShow & VerticalSlide together
-class Slides extends Component {
+export default class Slides extends Component {
   render() {
     return (
       <div className="Slides">
@@ -24,5 +24,3 @@ class Slides extends Component {
     );
   }
 }
-
-export default Slides;

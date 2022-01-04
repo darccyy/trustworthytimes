@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "../scss/ArticleList.scss";
 
 // Add classes for unloaded / broken images
-import loadImages from "../functions/loadImages.js";
+import loadImages from "../functions/loadImages";
 
 // List of articles in home page
-export default (class ArticleList extends Component {
+export default class ArticleList extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -24,7 +24,10 @@ export default (class ArticleList extends Component {
 
             return (
               <li key={index} className={article.skeleton ? "skeleton" : ""}>
-                <Link to={!this.props.news ? "." : "/news/" + article.id} reloadDocument>
+                <Link
+                  to={!this.props.news ? "." : "/news/" + article.id}
+                  reloadDocument
+                >
                   {/* Image above or left */}
                   <div className="img-contain">
                     <div className="img-wrap">
@@ -58,4 +61,4 @@ export default (class ArticleList extends Component {
       </ul>
     );
   }
-});
+}

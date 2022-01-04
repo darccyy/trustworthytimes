@@ -3,10 +3,10 @@ import React, { Component } from "react";
 import "../scss/PostThumb.scss";
 
 // Add classes for unloaded / broken images
-import loadImages from "../functions/loadImages.js";
+import loadImages from "../functions/loadImages";
 
 // Specific article in /news/*
-export default (class PostThumb extends Component {
+export default class PostThumb extends Component {
   async componentDidMount() {
     loadImages();
     console.log(document.querySelector(".PostThumb"));
@@ -60,4 +60,4 @@ export default (class PostThumb extends Component {
       </div>
     );
   }
-});
+}

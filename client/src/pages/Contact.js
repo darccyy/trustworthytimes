@@ -6,7 +6,7 @@ import "../scss/Contact.scss";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
-class Contact extends Component {
+export default class Contact extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -64,5 +64,3 @@ class Contact extends Component {
     );
   }
 }
-
-export default Contact;

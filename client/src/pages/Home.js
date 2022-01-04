@@ -10,7 +10,7 @@ import loadImages from "../functions/loadImages";
 // Shuffle, sort, and slice news articles
 import listArticles from "../functions/listArticles";
 
-class Home extends Component {
+export default class Home extends Component {
   state = { news: null };
 
   async componentDidMount() {
@@ -38,5 +38,3 @@ class Home extends Component {
     );
   }
 }
-
-export default Home;

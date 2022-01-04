@@ -11,7 +11,7 @@ import Error404 from "../pages/Error404";
 // Add classes for unloaded / broken images
 import loadImages from "../functions/loadImages";
 
-class Post extends Component {
+export default class Post extends Component {
   // Set default state
   state = {
     article: false,
@@ -76,5 +76,3 @@ class Post extends Component {
     );
   }
 }
-
-export default Post;

@@ -3,12 +3,12 @@ import React, { Component } from "react";
 import "../scss/ContentArticle.scss";
 
 // Add classes for unloaded / broken images
-import loadImages from "../functions/loadImages.js";
+import loadImages from "../functions/loadImages";
 // Format article body in markdown-esque style with html
-import formatArticle from "../functions/formatArticle.js";
+import formatArticle from "../functions/formatArticle";
 
 // Specific article in /news/*
-export default (class ContentArticle extends Component {
+export default class ContentArticle extends Component {
   async componentDidMount() {
     loadImages();
   }
@@ -83,4 +83,4 @@ export default (class ContentArticle extends Component {
       </div>
     );
   }
-});
+}
