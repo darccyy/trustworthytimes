@@ -76,15 +76,32 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 
 # Todo
 
-- [ ] Add language support
+## Features
+
+- [ ] Add 'More from this author' feature
 - [ ] Add tags for articles
+
+## Bugs
+
 - [ ] Proofread articles
 - [ ] Scrolling banner not working
+
+## Fixes
+
 - [ ] Add different image resolution loading
 - [ ] Fix readme
+- [ ] Make article formatting markdown compatible
+
+## Overhauls
+
+- [ ] Move to server side rendering
+- [ ] Fix links reloading document
+- [ ] Add language support
+
+## Development
+
 - [ ] Add variables to scss
 - [ ] Clean scss
-- [ ] Move to server side rendering
 
 <details>
 
