@@ -17,14 +17,13 @@ export default class Disclaimer extends Component {
 
           <div>
             <p>
-              This is a parody website.
+              This is a parody website. A lot of things are sarcastic. Do not
+              take this as fact.
               <br />
-              Do not take this as fact.
-              <br />
-              This website is not copyrighted.
+              This website is NOT copyrighted.
               <br />
               If you feel that this website is using your property, or is
-              harmful in any way, please contact us right away.
+              harmful in any way, please contact us right away <i>(See below)</i>.
               <br />
               All characters and other entities appearing in this work are
               fictitious.
@@ -32,13 +31,15 @@ export default class Disclaimer extends Component {
               Any resemblance to real persons, dead or alive, or other real-life
               entities, past or present, is purely coincidental.
               <br />
+              Inquiries here:{" "}
               <Link
                 to="/contact"
                 onClick={() => $("#disclaimer-summary").click()}
                 reloadDocument
               >
-                Contact Page
+                <b>Contact Page</b>
               </Link>
+              📢🤝
             </p>
           </div>
         </details>

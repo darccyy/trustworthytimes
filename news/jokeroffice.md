@@ -24,6 +24,6 @@ Former FDA Scientist, Dr Willy Nuttle explains how and why in this simple broadc
 
 > i dont know where chekosouvlaki is man.
 
-> stop harrasing me i dont even work for fda no moer man 
+> stop harrasing me i dont even work for fda no more man 
 
 Hahaha. Well. Ok. Haha. That solves why The Joker (2019) is in office. Thanks Dr Nuttle.

@@ -75,6 +75,7 @@
         height: 100px;
         border-radius: 3px;
         overflow: hidden;
+        transition: transform 0.2s;
 
         .img-wrap {
           display: flex;

@@ -187,6 +187,7 @@
         background-color: #0006;
         color: #FFFA;
         cursor: pointer;
+        transition: transform 0.2s;
 
         &:hover {
           transform: scale(1.1);

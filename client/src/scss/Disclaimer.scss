@@ -67,6 +67,10 @@
 
         a {
           color: white;
+
+          &:not(:hover) {
+            text-decoration: none;
+          }
         }
       }
     }

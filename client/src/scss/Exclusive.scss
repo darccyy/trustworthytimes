@@ -47,6 +47,10 @@
     padding-top: 110%;
 
     &:hover {
+      img {
+        transform: translateY(-110%) scale(1.05);
+      }
+
       .headline {
         text-decoration: underline;
       }
@@ -63,6 +67,7 @@
       width: 100%;
       height: 100%;
       transform: translateY(-110%);
+      transition: transform 0.5s;
       object-fit: cover;
       background-color: #181a1b;
       color: white;

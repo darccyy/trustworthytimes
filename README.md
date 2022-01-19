@@ -79,6 +79,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 ## Features
 
 - [ ] Add 'More from this author' feature
+- [ ] Add Trustworthy Labs page
 - [ ] Add tags for articles
 
 ## Bugs

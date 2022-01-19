@@ -1,4 +1,4 @@
-# Lettuce Suspected in Deadly Crashes
+# LETTUCE Suspected in Deadly Crashes
 
 ## This Leaf Vegetable is Very Sus
 
