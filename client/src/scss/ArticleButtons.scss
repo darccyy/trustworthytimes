@@ -14,10 +14,40 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
-  right: 0;
   height: $size;
   pointer-events: none;
+
+  &.left {
+    left: 0;
+
+    a {
+      left: 0;
+      border-left: none;
+      transform: translateX(calc(#{$start} + #{$border} - #{$size}));
+
+      &:hover {
+        box-shadow: 10px 20px 0 #0008;
+      }
+    }
+  }
+
+  &.right {
+    right: 0;
+
+    a {
+      right: 0;
+      border-right: none;
+      transform: translateX(calc(#{$size} - #{$start} - #{$border}));
+
+      &:hover {
+        box-shadow: -10px 20px 0 #0008;
+      }
+
+      img.unloaded {
+        margin-left: $start;
+      }
+    }
+  }
 
   a {
     position: absolute;
@@ -36,31 +66,8 @@
       outline: 2px solid white;
     }
 
-    &.left {
-      left: 0;
-      border-left: none;
-      transform: translateX(calc(#{$start} + #{$border} - #{$size}));
-
-      &:hover {
-        box-shadow: 10px 20px 0 #0008;
-      }
-    }
-
-    &.right {
-      right: 0;
-      border-right: none;
-      transform: translateX(calc(#{$size} - #{$start} - #{$border}));
-
-      &:hover {
-        box-shadow: -10px 20px 0 #0008;
-      }
-
-      img.unloaded {
-        margin-left: $start;
-      }
-    }
-
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       transform: translateX(0);
       transition-duration: 0.3s;
       filter: none;

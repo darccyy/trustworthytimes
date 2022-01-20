@@ -93,6 +93,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 - [ ] Add different image resolution loading
 - [ ] Fix readme
 - [ ] Make article formatting markdown compatible
+- [ ] Fix ContentArticle image unloaded
 
 ## Overhauls
 
