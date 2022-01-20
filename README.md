@@ -87,6 +87,7 @@ To create a new article, copy `./news/template.md` and rename it to the new arti
 
 - [ ] Proofread articles
 - [ ] Scrolling banner not working
+- [ ] Some 404 links do not work
 
 ## Fixes
 
