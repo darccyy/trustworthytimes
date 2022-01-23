@@ -13,7 +13,7 @@ export default class ArticleButtons extends Component {
       <>
         {(this.props.news || [{}, {}]).map((article, index) => {
           return (
-            <div className={"ArticleButtons " + (index ? "right" : "left")}>
+            <div className={"ArticleButtons " + (index ? "right" : "left")} key={index}>
               <Link
                 key={index}
                 to={article.id ? "/news/" + article.id : "/"}
