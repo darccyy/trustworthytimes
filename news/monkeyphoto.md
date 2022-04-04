@@ -2,9 +2,9 @@
 
 ## An image circulating the web was recently fact-checked as FALSE!
 
-`https://freshtrust.github.io/images/monke-tomato.png` Totally 'Real' photo of monkey / tomato hybrid
+`https://darccyy.github.io/freshtrust/images/monke-tomato.png` Totally 'Real' photo of monkey / tomato hybrid
 
-> u/XLarge_'s Nemesis
+> u/XLarge\_'s Nemesis
 
 > Quarter past Six in the Afternoon
 
@@ -18,4 +18,4 @@ The image pictured above, submitted by user `XLarge\_` on Rebbit has taken the i
 
 But recent evidence released by photography scientists say that the image might be faked!
 
-Some conspiracy theorists have pointed out that '/MoNkE iS nOt ToMaTo!/' but these comments have been brushed off as just plain stupid. 
+Some conspiracy theorists have pointed out that '/MoNkE iS nOt ToMaTo!/' but these comments have been brushed off as just plain stupid.
